@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Custom Item Requires more information - Email OSID Team</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Blank</letterhead>
+    <name>I.D. Info Required</name>
+    <style>freeForm</style>
+    <subject>Custom Content Item Requires Information</subject>
+    <textOnly>In order to process your request, the ID Team requires more information.
+
+Please add or update the following items:</textOnly>
+    <type>html</type>
+</EmailTemplate>

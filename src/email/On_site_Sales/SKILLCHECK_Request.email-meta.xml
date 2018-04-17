@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SKILLCHECK Request - Email YOUR MANAGER</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Blank</letterhead>
+    <name>SKILLCHECK Request</name>
+    <style>freeForm</style>
+    <subject>SKILLCHECK Request:  {!Training_Event__c.Link} - Email Request to Manager</subject>
+    <type>html</type>
+</EmailTemplate>

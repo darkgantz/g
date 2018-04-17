@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Face to Face Meetings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Face to Face Meetings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Estimated Cost of Visit --></label>
+        <name>Estimated_Cost_of_Visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes from Visit --></label>
+        <name>Notes_from_Visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Face to Face Meetings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Primary Contact for this Face to Face Meeting. --></help>
+        <label><!-- Primary Contact --></label>
+        <name>Primary_Contact__c</name>
+        <relationshipLabel><!-- Face to Face Meetings --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

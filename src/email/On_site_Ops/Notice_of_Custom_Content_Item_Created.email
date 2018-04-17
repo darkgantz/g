@@ -1,0 +1,4 @@
+Custom Content ID: {!Custom_Content_Item__c.Id}
+Opportunity: {!Custom_Content_Item__c.Opportunity__c}
+
+{!Custom_Content_Item__c.Link}

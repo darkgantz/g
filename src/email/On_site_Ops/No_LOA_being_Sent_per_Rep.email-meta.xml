@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>No LOA being Sent per Rep</name>
+    <style>none</style>
+    <subject>No LOA for Training Event #{!Training_Event__c.Training_Event_Number__c} will be sent - Please Confirm</subject>
+    <textOnly>Hello {!Training_Event__c.Opportunity_Owner__c} !  Per the notes at the account and/or contact level or on the event itself, No LOA will be sent for training event #{!Training_Event__c.Training_Event_Number__c}. Please confirm that this is accurate.  Thanks! {!User.FirstName}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

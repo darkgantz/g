@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Custom Content Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Custom Content Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Anything else that might assist content development/production --></help>
+        <label><!-- Additional Info --></label>
+        <name>Additional_Info__c</name>
+    </fields>
+    <fields>
+        <help><!-- Brought from related Opportunity record --></help>
+        <label><!-- Bullets/Page Numbers --></label>
+        <name>Bullets_Page_Numbers__c</name>
+    </fields>
+    <fields>
+        <help><!-- From the Opportunity record --></help>
+        <label><!-- Capacity --></label>
+        <name>Capacity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Industry from Account record --></help>
+        <label><!-- Client Industry --></label>
+        <name>Client_Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Designer --></label>
+        <name>Content_Designer__c</name>
+        <relationshipLabel><!-- Custom Content Items (Content Designer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Date content expected to Production --></help>
+        <label><!-- Content Team Due Date --></label>
+        <name>Content_Team_Due_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- When the rep has all the information for the custom content team to work --></help>
+        <label><!-- Date Submitted --></label>
+        <name>Date_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Design Status --></label>
+        <name>Design_Status__c</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Review</masterLabel>
+            <translation><!-- Customer Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Information</masterLabel>
+            <translation><!-- Missing Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Required</masterLabel>
+            <translation><!-- Not Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reprint</masterLabel>
+            <translation><!-- Reprint --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What their education is (Bachelor&apos;s degree, or higher or lower), from the Opportunity record --></help>
+        <label><!-- Education level? --></label>
+        <name>Education_level__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does Current FG Exist? If available, please attach to email with custom content form. --></help>
+        <label><!-- Existing FG? --></label>
+        <name>Existing_FG__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FG Type Needed --></label>
+        <name>FG_Type_Needed__c</name>
+        <picklistValues>
+            <masterLabel>Level 1: Notes</masterLabel>
+            <translation><!-- Level 1: Notes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 2: Instructions</masterLabel>
+            <translation><!-- Level 2: Instructions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 3: Scripted</masterLabel>
+            <translation><!-- Level 3: Scripted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- File Format --></label>
+        <name>File_Format__c</name>
+        <picklistValues>
+            <masterLabel>MS Word</masterLabel>
+            <translation><!-- MS Word --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF</masterLabel>
+            <translation><!-- PDF --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Item Type --></label>
+        <name>Item_Type__c</name>
+        <picklistValues>
+            <masterLabel>Content License Workbook</masterLabel>
+            <translation><!-- Content License Workbook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Sample</masterLabel>
+            <translation><!-- Content Sample --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Curriculum</masterLabel>
+            <translation><!-- Curriculum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Lite Workbooks</masterLabel>
+            <translation><!-- Custom Lite Workbooks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facilitator Guides</masterLabel>
+            <translation><!-- Facilitator Guides --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flyers</masterLabel>
+            <translation><!-- Flyers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand Outs</masterLabel>
+            <translation><!-- Hand Outs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Blurb</masterLabel>
+            <translation><!-- Marketing Blurb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outline</masterLabel>
+            <translation><!-- Outline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous Workbook Version</masterLabel>
+            <translation><!-- Previous Workbook Version --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RFP</masterLabel>
+            <translation><!-- RFP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Proposal</masterLabel>
+            <translation><!-- Sales Proposal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workbooks</masterLabel>
+            <translation><!-- Workbooks --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What level of supervision are the audience (1st, middle, senior), from the Opportunity --></help>
+        <label><!-- Level of Supervision --></label>
+        <name>Level_of_Supervision__c</name>
+    </fields>
+    <fields>
+        <help><!-- If yes, be sure to attach the logo to the Opportunity record --></help>
+        <label><!-- Logo Needed? --></label>
+        <name>Logo_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- NDA Received Date --></label>
+        <name>NDA_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- OldSalesforceID --></label>
+        <name>OldSalesforceID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Custom Content Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Powerpoint Completed Date --></label>
+        <name>Powerpoint_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please uncheck this box if there is no need for a Powerpoint --></help>
+        <label><!-- Powerpoint Needed --></label>
+        <name>Powerpoint_Needed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please let the Content team know if this item is intended for the pre-sales process --></help>
+        <label><!-- Pre-sales Request? --></label>
+        <name>Pre_sales_Request__c</name>
+    </fields>
+    <fields>
+        <help><!-- Prior training on the topic (what and when), from Opportunity record --></help>
+        <label><!-- Prior Training on Topic --></label>
+        <name>Prior_Training_on_Topic__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date expected back from the Production team --></help>
+        <label><!-- Production Due Date --></label>
+        <name>Production_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Owner --></label>
+        <name>Production_Owner__c</name>
+        <relationshipLabel><!-- Custom Content Items (Production Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Production Status --></label>
+        <name>Production_Status__c</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Information</masterLabel>
+            <translation><!-- Missing Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Required</masterLabel>
+            <translation><!-- Not Required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Program Title --></label>
+        <name>Program_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please let the Content team know you&apos;re ideal timeframe --></help>
+        <label><!-- Requested Due Date --></label>
+        <name>Requested_Due_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only select this if this is promised to the client. --></help>
+        <label><!-- Requires Client Review? --></label>
+        <name>Requires_Client_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Name --></label>
+        <name>Session_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Any additional formatting instructions (binding, graphics, etc.) --></help>
+        <label><!-- Special Formatting Instructions --></label>
+        <name>Special_Formatting_Instructions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Audience --></label>
+        <name>Target_Audience__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic --></label>
+        <name>Topic__c</name>
+        <relationshipLabel><!-- Custom Content Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- From the Opportunity record --></help>
+        <label><!-- Trainer detail --></label>
+        <name>Trainer_detail__c</name>
+    </fields>
+    <fields>
+        <help><!-- From the Opportunity record --></help>
+        <label><!-- Training Contact Info --></label>
+        <name>Training_Contact_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Event --></label>
+        <name>Training_Event_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Location name &amp; city from the Opportunity record --></help>
+        <label><!-- Training Location --></label>
+        <name>Training_Location__c</name>
+    </fields>
+    <fields>
+        <help><!-- From the Opportunity record --></help>
+        <label><!-- Training Start Date --></label>
+        <name>Training_Start_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>Custom Lite Item Layout</layout>
+        <sections>
+            <label><!-- Custom Item Details --></label>
+            <section>Custom Item Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Ownership --></label>
+            <section>Ownership</section>
+        </sections>
+        <sections>
+            <label><!-- Training Details --></label>
+            <section>Training Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Custom Lite Item Layout: Sales Rep</layout>
+        <sections>
+            <label><!-- Custom Item Details --></label>
+            <section>Custom Item Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Ownership --></label>
+            <section>Ownership</section>
+        </sections>
+        <sections>
+            <label><!-- Training Details --></label>
+            <section>Training Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Facilitator Guide Item Layout</layout>
+        <sections>
+            <label><!-- Audience Education &amp; Experience --></label>
+            <section>Audience Education &amp; Experience</section>
+        </sections>
+        <sections>
+            <label><!-- Client Details --></label>
+            <section>Client Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Item Details --></label>
+            <section>Custom Item Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- FG Details --></label>
+            <section>FG Details</section>
+        </sections>
+        <sections>
+            <label><!-- Ownership --></label>
+            <section>Ownership</section>
+        </sections>
+        <sections>
+            <label><!-- Training Details --></label>
+            <section>Training Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Facilitator Guide Item Layout: Sales Rep</layout>
+        <sections>
+            <label><!-- Audience Education &amp; Experience --></label>
+            <section>Audience Education &amp; Experience</section>
+        </sections>
+        <sections>
+            <label><!-- Client Details --></label>
+            <section>Client Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Item Details --></label>
+            <section>Custom Item Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- FG Details --></label>
+            <section>FG Details</section>
+        </sections>
+        <sections>
+            <label><!-- Ownership --></label>
+            <section>Ownership</section>
+        </sections>
+        <sections>
+            <label><!-- Training Details --></label>
+            <section>Training Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Flyer Item Layout</layout>
+        <sections>
+            <label><!-- Custom Item Details --></label>
+            <section>Custom Item Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Ownership --></label>
+            <section>Ownership</section>
+        </sections>
+        <sections>
+            <label><!-- Training Details --></label>
+            <section>Training Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Flyer Item Layout: Sales Rep</layout>
+        <sections>
+            <label><!-- Custom Item Details --></label>
+            <section>Custom Item Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Ownership --></label>
+            <section>Ownership</section>
+        </sections>
+        <sections>
+            <label><!-- Training Details --></label>
+            <section>Training Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>General Item Layout</layout>
+        <sections>
+            <label><!-- Custom Item Details --></label>
+            <section>Custom Item Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Ownership --></label>
+            <section>Ownership</section>
+        </sections>
+        <sections>
+            <label><!-- Training Details --></label>
+            <section>Training Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>General Item Layout: Sales Rep</layout>
+        <sections>
+            <label><!-- Custom Item Details --></label>
+            <section>Custom Item Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Ownership --></label>
+            <section>Ownership</section>
+        </sections>
+        <sections>
+            <label><!-- Training Details --></label>
+            <section>Training Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Workbook Item Layout</layout>
+        <sections>
+            <label><!-- Audience Education &amp; Experience --></label>
+            <section>Audience Education &amp; Experience</section>
+        </sections>
+        <sections>
+            <label><!-- Client Details --></label>
+            <section>Client Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Item Details --></label>
+            <section>Custom Item Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Ownership --></label>
+            <section>Ownership</section>
+        </sections>
+        <sections>
+            <label><!-- Training Details --></label>
+            <section>Training Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Workbook Item Layout: Sales Rep</layout>
+        <sections>
+            <label><!-- Audience Education &amp; Experience --></label>
+            <section>Audience Education &amp; Experience</section>
+        </sections>
+        <sections>
+            <label><!-- Client Details --></label>
+            <section>Client Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Item Details --></label>
+            <section>Custom Item Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Ownership --></label>
+            <section>Ownership</section>
+        </sections>
+        <sections>
+            <label><!-- Training Details --></label>
+            <section>Training Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Custom Lite Workbooks --></label>
+        <name>Custom_Lite_Workbooks</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Facilitator Guide --></label>
+        <name>Facilitator_Guide</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Flyer --></label>
+        <name>Flyer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Other Custom Item --></label>
+        <name>Other_Custom_Item</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Outline --></label>
+        <name>Outline</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Workbook --></label>
+        <name>Workbook</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

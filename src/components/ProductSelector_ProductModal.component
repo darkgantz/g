@@ -1,0 +1,152 @@
+<apex:component >
+<apex:attribute name="isAdd" description="Set this value to true for add product or false to edit." type="Boolean" required="true"/>
+<apex:attribute name="contentItemTypes" description="Content item types. One checkbox is created for each" type="SelectOption[]" required="true"/>
+<apex:attribute name="modalityOptions" description="Options for the modality picklist" type="SelectOption[]" required="true"/>
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<style>
+		.ar-tableFirstTitle{
+			margin-left:27px;
+		}
+		.ar-modalContent{
+			max-height:500px;
+		}
+	</style>
+	<div aria-hidden="true" role="dialog" class="slds-modal slds-fade-in-open slds-hide" id="{!IF(isAdd,'prod-modal','edit-prod-modal')}">
+	    <div class="slds-modal__container" id="{! IF(isAdd,'add-prod-modal-container','edit-prod-modal-container') }">
+	        <div class="slds-modal__header">
+	            <h2 class="slds-text-heading--medium">{! IF(isAdd,'Add','Edit') } <span id="{!IF(isAdd,'modal-prodType','edit-modal-prodType')}"></span> Product</h2>
+	            <button class="slds-button slds-button--icon-inverse slds-modal__close" data-aljs-dismiss="modal">
+	                <svg aria-hidden="true" class="slds-button__icon slds-button__icon--large">
+	                    <use xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/action-sprite/svg/symbols.svg#close"></use>
+	                </svg>
+	                <span class="slds-assistive-text">Close</span>
+	            </button>
+	        </div>
+	        <div class="slds-modal__content ar-modalContent">
+	        	<input id="{!IF(isAdd,'modal-prodId','edit-modal-prodId')}" type='hidden'/>
+		        <fieldset class="slds-form--compound  slds-m-horizontal--medium slds-m-vertical--medium">
+				    <div class="form-element__group">
+				      <div class="slds-form-element__row">
+				        <div class="slds-form-element slds-size--1-of-2">
+				          <label class="slds-form-element__label">Name</label>
+				          <input id="{!IF(isAdd,'modal-prodName','edit-modal-prodName')}" class="slds-input" type="text" disabled='true'/>
+				        </div>
+				        <div class="slds-form-element slds-size--1-of-2" id="{!IF(isAdd,'modal-prodPriceDiv','edit-modal-prodPriceDiv')}">
+				          <label class="slds-form-element__label">Amount $</label>
+				          <input id="{!IF(isAdd,'modal-prodPrice','edit-modal-prodPrice')}" class="slds-input" onblur="this.value = this.value.replace(new RegExp(',', 'g'),'').replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1,')"/>
+				          <div class="slds-form-element__help" id="{!IF(isAdd,'modal-prodPriceError','edit-modal-prodPriceError')}"></div>
+				        </div>
+				      </div>
+				      <div class="slds-form-element__row">
+				         <div class="slds-form-element slds-size--1-of-2" id="{!IF(isAdd,'modal-prodQuantityDiv','edit-modal-prodQuantityDiv')}">
+				          <label class="slds-form-element__label">Number of Days</label>
+				          <input id="{!IF(isAdd,'modal-prodQuantity','edit-modal-prodQuantity')}" class="slds-input" />
+				          <div class="slds-form-element__help" id="{!IF(isAdd,'modal-prodQuantityError','edit-modal-prodQuantityError')}"></div>
+				        </div>
+				        <div class="slds-form-element slds-size--1-of-2">
+				          <label class="slds-form-element__label">Modality</label>
+				          <select id="{!IF(isAdd,'modal-prodModality','edit-modal-prodModality')}" class="slds-select">
+				          	<apex:repeat var="option" value="{!modalityOptions}">
+				          		<option value='{!option.value}'>{!option.label}</option>
+				          	</apex:repeat>
+				          </select>
+				        </div>
+				      </div>
+				      <div class="slds-form-element__row" id="{!IF(isAdd,'modal-prodLineNameDiv','edit-modal-prodLineNameDiv')}">
+				        <div class="slds-form-element slds-size--2-of-2">
+				          <label class="slds-form-element__label" >Custom Title</label>
+				          <input id="{!IF(isAdd,'modal-prodLineName','edit-modal-prodLineName')}" class="slds-input" type="text" />
+				          <div class="slds-form-element__help" id="{!IF(isAdd,'modal-prodLineNameError','edit-modal-prodLineNameError')}"></div>
+				        </div>
+				      </div>
+				      <div class="slds-form-element__row" id="{!IF(isAdd,'modal-prodLineDesc-row','edit-modal-prodLineDesc-row')}">
+				        <div class="slds-form-element slds-size--2-of-2">
+				          <label class="slds-form-element__label">Special Formatting Instructions</label>
+				          <input id="{!IF(isAdd,'modal-prodLineDesc','edit-modal-prodLineDesc')}" class="slds-input" type="text" />
+				        </div>
+				      </div>
+				    </div>
+				</fieldset>
+				<fieldset class="slds-grid slds-wrap slds-grid--pull-padded  slds-m-horizontal--medium slds-m-vertical--medium" id="{! IF(isAdd,'modal-reqCustomContent','edit-modal-reqCustomContent') }">
+			      <legend class="form-element__legend slds-form-element__label">Requested Custom Content</legend>
+			      <div class="slds-grid slds-wrap">
+			      	<div class="slds-form-element slds-size--2-of-4">
+			      		<label class='ar-tableFirstTitle slds-m-top--xx-small slds-form-element__label'>Name</label>
+			      	</div>
+			      	<div class="slds-form-element slds-size--2-of-4">
+			      		<label class='slds-form-element__label'>Requested Due Date</label>
+			      	</div>
+			      	<apex:repeat value="{!contentItemTypes}" var="type">
+				      	<div class="slds-form-element slds-size--2-of-4 slds-align-middle">
+					        <label class="slds-checkbox">
+					          <input type="checkbox" name="{! IF(isAdd,'contentItemType-check','edit-contentItemType-check') }" id="{! IF(isAdd,'','edit-') }{!SUBSTITUTE(SUBSTITUTE(type.value,' ','_'),"'",'_')}" 
+					          onchange="toggleRequestDueDate(this,{!IF(isAdd,'false','true')})"
+					          />
+					          <span class="slds-checkbox--faux"></span>
+					          <span class="slds-text-body--small">{! type.label }</span>
+					        </label>
+					    </div>
+					    <div class="slds-form-element slds-size--2-of-4">
+					    	<div class="slds-input-has-icon slds-input-has-icon--right">
+				                <svg  name="{! IF(isAdd,'requestedDueDateSVG','edit-requestedDueDateSVG') }" id="{! IF(isAdd,'requestedDueDateSVG','edit-requestedDueDateSVG') }{!SUBSTITUTE(SUBSTITUTE(type.value,' ','_'),"'",'_')}" aria-hidden="true" class="slds-input__icon slds-icon-text-default">
+				                    <use xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/utility-sprite/svg/symbols.svg#event"></use>
+				                </svg>
+					      	    <input class='slds-input slds-input--small slds-m-top--xx-small slds-m-bottom--xx-small' name="{! IF(isAdd,'requestedDueDate','edit-requestedDueDate') }" id="{! IF(isAdd,'requestedDueDate','edit-requestedDueDate') }{!SUBSTITUTE(SUBSTITUTE(type.value,' ','_'),"'",'_')}" readonly="true" />
+					      	</div>
+					    </div>
+					</apex:repeat>
+			      </div>
+			      <div class="slds-has-error">
+			    	  <div class="slds-form-element__help" id="{!IF(isAdd,'modal-prodCustomContentError','edit-modal-prodCustomContentError')}"></div>
+			      </div>
+			    </fieldset>
+	        </div> 
+	        <div class="slds-modal__footer">
+	        	<apex:outputPanel rendered="{!isAdd}">
+	      			<button class="slds-button slds-button--neutral slds-button--brand" type='button' onclick='addProductScript()'>Save &#38; Add Product</button>
+	      		</apex:outputPanel>
+	      		<apex:outputPanel rendered="{! !isAdd}">
+	      			<button class="slds-button slds-button--neutral slds-button--brand" type='button' onclick='saveProductScript()' >Save Product</button>
+	      		</apex:outputPanel>
+	            <button class="slds-button slds-button--neutral" data-aljs-dismiss="modal">Cancel</button>    
+	        </div>
+	    </div>
+	    <!-- Confirm delete action modal -->
+	    <apex:outputPanel rendered="{! !isAdd}">
+		    <div class="slds-modal__container" id='delete-prod-modal-container' style='display:none'>
+		       <div class="slds-modal__header">
+		            <h2 class="slds-text-heading--medium">Are you sure you want to delete the selected product?</h2>
+		            <button class="slds-button slds-button--icon-inverse slds-modal__close" data-aljs-dismiss="modal">
+		                <svg aria-hidden="true" class="slds-button__icon slds-button__icon--large">
+		                    <use xmlns:xlink="http://www.w3.org/1999/svg"  xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/action-sprite/svg/symbols.svg#close"></use>
+		                </svg>
+		                <span class="slds-assistive-text">Close</span>
+		            </button>
+		        </div> 
+		        <div class="slds-modal__content">
+		            <fieldset class="slds-form--compound  slds-m-horizontal--medium slds-m-vertical--medium">	          		
+					    <div class="form-element__group">
+					       <input id="delete-modal-prodId" type="hidden" />
+					      <div class="slds-form-element__row">
+					        <div class="slds-form-element slds-size--1-of-2">
+					          <label class="slds-form-element__label slds-float--left">Name</label>
+					          <input id="delete-modal-prodName" class="slds-input" type="text" disabled="true" />
+					        </div>
+					        <div class="slds-form-element slds-size--1-of-2">
+					          <label class="slds-form-element__label slds-float--left">Amount</label>
+					          <input id="delete-modal-prodPrice" class="slds-input" type="currency" disabled="true" />
+					        </div>
+					      </div>
+					    </div>
+					</fieldset>
+		        </div>
+		        <div class="slds-modal__footer">
+		            <button class="slds-button slds-button--neutral" data-aljs-dismiss="modal">No</button>
+		            <button class="slds-button slds-button--neutral slds-button--brand" onclick="deleteProd($('#delete-modal-prodId').val())" data-aljs-dismiss="modal">Yes</button>
+		        </div>
+		    </div>
+		</apex:outputPanel>
+	    <!-- End Confirm delete action modal -->
+	</div>
+</html>
+</apex:component>

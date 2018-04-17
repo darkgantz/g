@@ -1,0 +1,11 @@
+Training Event: {!Change_Request__c.Training_Event__c}
+Training Event Number: {!Change_Request__c.Training_Event_Number__c}
+Type: {!Change_Request__c.Type__c}
+Street: {!Change_Request__c.Street__c}
+City: {!Change_Request__c.City__c}
+State: {!Change_Request__c.State__c}
+Postal Code: {!Change_Request__c.Postal_Code__c}
+Country: {!Change_Request__c.Country__c}
+Shipping Address Line: {!Change_Request__c.Shipping_Address_Line__c}
+
+Link to Change Request: {!Change_Request__c.Link}

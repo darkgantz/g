@@ -1,0 +1,5 @@
+Hi {!Receiving_User.FirstName},
+
+The post event survey results have been received for {!Post_Survey__c.Training_Event__c}. Click the link below to see the results.
+
+{!Post_Survey__c.Link}

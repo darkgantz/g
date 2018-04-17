@@ -1,0 +1,11 @@
+The following Opportunity is closed won: {!Opportunity.Name}
+
+Opportunity: {!Opportunity.Link}
+Amount: {!Opportunity.Amount}
+
+TE Start Date: {!Opportunity.TrainingStartDate__c}
+
+Opportunity Name: {!Opportunity.Name}
+Opportunity Owner: {!Opportunity.OwnerFullName}
+Close Date: {!Opportunity.CloseDate}
+Account Name: {!Opportunity.Account}

@@ -1,0 +1,6 @@
+Training Event: {!Change_Request__c.Training_Event__c}
+Training Event Number: {!Change_Request__c.Training_Event_Number__c}
+Topic: {!Change_Request__c.Topic__c}
+Notes: {!Change_Request__c.Notes__c}
+
+Link to Change Request: {!Change_Request__c.Link}

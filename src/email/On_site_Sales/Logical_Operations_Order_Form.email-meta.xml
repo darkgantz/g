@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Logical Operations Order Form - Email Request to OSMATERIALS (Send from Training Event)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Blank</letterhead>
+    <name>Logical Operations Order Form</name>
+    <style>freeForm</style>
+    <subject>Logical Operations Order Form for Event #{!Training_Event__c.Training_Event_Number__c}</subject>
+    <type>html</type>
+</EmailTemplate>

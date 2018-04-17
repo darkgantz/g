@@ -1,0 +1,2 @@
+Name: {!Training_Event__c.Name}
+Link: {!Training_Event__c.Link}

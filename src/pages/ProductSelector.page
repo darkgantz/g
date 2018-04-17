@@ -1,0 +1,69 @@
+<apex:page standardController="Opportunity" showHeader="false" showChat="false" sideBar="false"  applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" >
+
+	<apex:remoteObjects jsNamespace="myContentItem">
+	    <apex:remoteObjectModel name="Content_Item__c" fields="Item_Type__c,Content_Pack__c,Removed_from_Product_Selector__c,Requested_Due_Date__c"/>
+	</apex:remoteObjects>
+
+	<apex:stylesheet value="{!URLFOR($Resource.SLDS100, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+
+	<script type="text/javascript">
+		 var assetsLocation = '{!URLFOR($Resource.SLDS100)}';
+	</script>
+
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script src='{!URLFOR($Resource.momentjs)}' />
+	<script src="{!URLFOR($Resource.aljs, '/jquery/jquery.aljs-all.min.js')}"></script>
+<!--	<script src="{!URLFOR($Resource.aljs, '/jquery/jquery.aljs-tabs.min.js')}"></script>
+	<script src="{!URLFOR($Resource.aljs, '/jquery/jquery.aljs-picklist.min.js')}"></script> 
+	<script src="{!URLFOR($Resource.aljs, '/jquery/jquery.aljs-modal.min.js')}"></script> 
+	<script src="{!URLFOR($Resource.aljs, '/jquery/jquery.aljs-datepicker.min.js')}"></script>  -->
+	<script src='{!URLFOR($Resource.animatingNumbers)}' />
+	<script src='{!URLFOR($Resource.ProductSelector_JSScript)}' />
+	
+	<header>
+		<title>Product Selector</title>
+	</header>
+	<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<apex:form id="apForm">	
+			<div class='slds'>
+				<div class="slds-page-header" role="banner">
+				  <div class="slds-media">
+					  <div class="slds-media__body">
+					    <p class="slds-text-heading--label">{!opportunity.Name}</p>
+					    <div class="slds-grid">
+				            <h1 class="slds-page-header__title slds-m-right--small slds-truncate slds-align-middle" title="Record Title">Opportunity Products</h1>
+				            <span class='slds-align-middle slds-text-heading--medium'>$&nbsp;<span id='totalAmount' >0</span></span>
+				            <div class="slds-col slds-shrink-none slds-grid slds-grid--align-end">
+				              <button type='button' class="slds-button slds-button--neutral slds-not-selected" aria-live="assertive" onclick='returnToOpp()'>
+				                <span class="slds-text-not-selected">
+				                  <svg aria-hidden="true" class="slds-button__icon--stateful slds-button__icon--left">
+				                    <use xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/utility-sprite/svg/symbols.svg#back"></use>
+				                  </svg>Return to Opportunity
+				                </span>
+				              </button>  
+				            </div>
+				        </div>
+				      </div>
+				  </div>
+				  <p class="slds-text-body--small slds-page-header__info">Select a set of product from the current offerings or change the existing products for this opportunity.</p>
+				</div>
+				<div class="slds-tabs--default" data-aljs="tabs">
+				    <ul class="slds-tabs--default__nav" role="tablist">
+				      <li class="slds-tabs--default__item slds-text-heading--label slds-active" title="Add Products" role="presentation">
+				        <a class="slds-tabs--default__link" href="#tab-AddProducts" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-AddProducts" data-aljs-show="tab-AddProducts">Add Products</a>
+				      </li>
+				      <li class="slds-tabs--default__item slds-text-heading--label" title="Change Products" role="presentation">
+				        <a class="slds-tabs--default__link" href="#tab-ChangeProducts" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-ChangeProducts" data-aljs-show="tab-ChangeProducts">Change Products</a>
+				      </li>
+				    </ul>
+				    <div id="tab-AddProducts" class="slds-tabs--default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">
+				    	<c:ProductSelector_AddProducts />
+				   </div>
+				    <div id="tab-ChangeProducts" class="slds-tabs--default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">
+				    	<c:ProductSelector_ChangeProducts />
+				    </div>
+			    </div> 
+			</div>
+		</apex:form>
+	</html>
+</apex:page>

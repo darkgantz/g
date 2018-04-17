@@ -1,0 +1,164 @@
+<apex:component controller="ProductSelector_ChangeProds_Controller" allowDML="true" >
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<apex:actionFunction name="refreshOppProductList" 
+                         action="{!refreshOppProductList}" 
+                         rerender="oppProductTable"
+                         status="myStatus2"
+                         oncomplete="renderSVGChangeProds(),$('.ar-column-field').digits()"
+                         >
+	</apex:actionFunction>
+	<apex:actionFunction name="sortChangeProdsColumn" 
+                         action="{!sortProductsByField}" 
+                         immediate="true"
+                         rerender="oppProductTable,oppAmountPanel"
+                         status="myStatus2"
+                         oncomplete="renderSVGChangeProds(),$('.ar-column-field').digits()"
+                         >
+		<apex:param name="columnIndex" value=""/>
+	</apex:actionFunction>
+	<apex:actionFunction name="saveProd" 
+                         action="{!saveProduct}" 
+                         rerender="oppProductTable,edit-errorMsgs"
+                         status="myStatus2"
+                         oncomplete="productSuccessfullyAdded(true,false),refreshOpp()"
+                         >
+		<apex:param name="productInfo" value=""/>
+	</apex:actionFunction>
+	<apex:actionFunction name="deleteProd" 
+                         action="{!deleteProduct}" 
+                         rerender="oppProductTable,edit-errorMsgs"
+                         status="myStatus2"
+                         oncomplete="productSuccessfullyAdded(false,true),refreshOpp()"
+                         >
+		<apex:param name="oppProductId" value=""/>
+	</apex:actionFunction>
+
+	<script>
+		function renderSVGChangeProds(){
+
+      	for(index=0;index< {!columntitles.size} ;index++){
+
+	      	if($('#edit-columnOrder-' + index).val()=='DESC'){
+	      	    imageURL = "{!URLFOR($Resource.SLDS100, 'assets/icons/utility-sprite/svg/symbols.svg#arrowup')}";
+	      	}else{
+	      		imageURL = "{!URLFOR($Resource.SLDS100, 'assets/icons/utility-sprite/svg/symbols.svg#arrowdown')}";
+	      	}
+	         
+
+	        var SVG = $('<svg/>', {
+	           class: 'slds-button__icon slds-button__icon--small',
+	        });
+
+	        var SVGUse = $('<use/>');
+	        SVGUse.attr('xlink:href',imageURL);
+	        $('#edit-sortButton-' + index).html('');
+	        $('#edit-sortButton-' + index).prepend(SVG.append(SVGUse));
+	        $('#edit-sortButton-' + index).html($('#edit-sortButton-' + index).html());
+
+	    }
+      } 
+	</script>
+    <style>
+		.ar-dropdownMenuProdAct{
+        	top:20px;
+		}
+	</style>
+
+	<div id="edit-divSuccessMsg" class="slds-notify slds-notify--alert slds-theme--success slds-hide" role="alert">
+	    <button class="slds-button slds-button--icon-inverse slds-notify__close" type='button' onclick="$('#edit-divSuccessMsg').hide('slow')">
+	        <svg aria-hidden="true" class="slds-button__icon">
+	            <use xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/action-sprite/svg/symbols.svg#close"></use>
+	        </svg>
+	        <span class="slds-assistive-text">Close</span>
+	    </button>
+	    <h2>
+		    <svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-m-right--x-small slds-align-top slds-m-top--xxx-small">
+	          <use xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+	        </svg>
+	        <span id='edit-txtSuccessMsg'>
+	        </span>
+        </h2>
+	</div>
+
+	<apex:pageMessages id="edit-errorMsgs"/>
+
+	<apex:outputPanel >
+		<apex:actionStatus startText="loading..." id="myStatus2">
+			<apex:facet name="start">
+			  <div class="slds-spinner_container slds-m-top--xx-large">
+			    <div class="slds-spinner slds-spinner--large" aria-hidden="false" role="alert">
+			      <div class="slds-spinner__dot-a"></div>
+			      <div class="slds-spinner__dot-b"></div>
+			    </div>
+			  </div>
+			</apex:facet>
+	        <apex:facet name="stop">
+	        	<apex:outputPanel id="oppProductTable">
+				 <table class="slds-table slds-table--bordered">
+				    <thead class='ar-tableHeader'>
+				      <tr class="slds-text-heading--label">
+				        <th class="slds-cell-shrink">
+				        </th>
+				        <apex:variable value="{! 0}" var="index"/>
+				        <apex:repeat value="{!columnTitles}" var="title">
+					        <th class="slds-is-sortable" scope="col" onclick="sortChangeProdsColumn('{!index}')">
+					          <div class="slds-truncate" >{!title}	
+					          	<input type='hidden' value='{!sortOrders[index]}' id='edit-columnOrder-{!index}'/>
+						        <button class="slds-button slds-button--icon-bare" id='edit-sortButton-{!index}' type='button' >
+							          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+						                <use  xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+						              </svg>
+					                <span class="slds-assistive-text">Sort</span>
+					            </button>
+					          </div>
+					        </th>
+					        <apex:variable value="{! IF(index< columnTitles.size -1 ,index + 1,index)}" var="index"/>
+					    </apex:repeat>
+					  </tr>
+				    </thead>
+				    <tbody>
+				      <apex:repeat value="{!products}" var="product">
+					      <tr class="slds-hint-parent">
+					    	<td class="slds-cell-shrink" data-label="Select Row" onmouseleave="showHideProdActDropdown(false,'{!product.prod.Id}')">
+					    	 <div >
+						          <button type='button' class="slds-button slds-button--icon-border-filled" onclick="showHideProdActDropdown(true,'{!product.prod.Id}')">
+								     <svg class="slds-button__icon">
+								      <use xmlns:xlink="http://www.w3.org/1999/svg" xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+								     </svg> 
+								    <span class="slds-assistive-text">Select Row</span>
+									<div class="slds-dropdown slds-dropdown--left ar-dropdownMenuProdAct" id='pDropDown-{!product.prod.Id}'  >
+									      <ul class="dropdown__list" role="menu">
+									        <li class="slds-dropdown__item">
+									          <a role="menuitem" onclick="showEditModal('{!product.prod.Type__c}','{!product.prod.Id}','{!JSINHTMLENCODE(product.prod.Product_Name__c)}','{!product.prod.UnitPrice}','{!JSINHTMLENCODE(product.prod.Content_Pack_Name__c)}','{!JSINHTMLENCODE(product.prod.Description)}','{!product.prod.Content_Pack__c}','{!product.prod.Quantity}','{!product.prod.Modality__c}')">
+									            Edit
+									          </a>
+									        </li>
+									        <li class="slds-dropdown__item">
+									          <a role="menuitem" onclick="showDeleteModal('{!product.prod.Id}','{!JSINHTMLENCODE(product.prod.Product_Name__c)}','{!product.prod.UnitPrice}')" >
+									            Delete
+									          </a>
+									        </li>
+									      </ul>
+									 </div>
+								  </button>
+								</div>
+					        </td>
+					        <apex:variable value="{! 0 }" var="i"/>
+					      	<apex:repeat value="{!fieldNames}" var="field">
+						        <td class="slds-truncate {! IF(LOWER(fieldTypes[i])=='currency' || LOWER(fieldTypes[i])=='integer' || LOWER(fieldTypes[i])=='double','ar-column-field','') }" data-label="Account Name">
+						        	{! IF( field!='ListPrice' && field!='UnitPrice','', '$') }
+						        	{!product.prod[field]}
+						        </td>
+						        <apex:variable value="{! i + 1 }" var="i"/>
+						    </apex:repeat>
+					      </tr>
+					   </apex:repeat>
+				    </tbody>
+				  </table>
+				</apex:outputPanel>
+			</apex:facet>
+		</apex:actionStatus>
+	</apex:outputPanel> 
+</html>
+<c:ProductSelector_ProductModal isAdd="false" contentItemTypes="{!contentTypes}" modalityOptions="{!modalityOptions}"/>
+</apex:component>

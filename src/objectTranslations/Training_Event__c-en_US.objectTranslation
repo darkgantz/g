@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Training Event</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Training Events</value>
+    </caseValues>
+    <fields>
+        <help><!-- Follow up with the Client to get feedback on the seminar. Within 24 hours of completion of training. --></help>
+        <label><!-- AM Client Follow up --></label>
+        <name>AM_Client_Follow_up__c</name>
+    </fields>
+    <fields>
+        <help><!-- Confirm Shipping Information and Training Location is CORRECT. 1 month before seminar date. --></help>
+        <label><!-- AM Locations Verification --></label>
+        <name>AM_Locations_Verification__c</name>
+    </fields>
+    <fields>
+        <help><!-- Prep Trainer for Tailoring Call. Within 1 week of confirmation that the trainer has been scheduled. --></help>
+        <label><!-- AM Prep Trainer --></label>
+        <name>AM_Prep_Trainer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Confirm Tailoring Call is Complete. 2 weeks prior to the seminar date. --></help>
+        <label><!-- AM Tailoring Call --></label>
+        <name>AM_Tailoring_Call__c</name>
+    </fields>
+    <fields>
+        <help><!-- Send Thank You Card. Within 48 hours of completion of the training. --></help>
+        <label><!-- AM Thank You Card --></label>
+        <name>AM_Thank_You_Card__c</name>
+    </fields>
+    <fields>
+        <help><!-- Follow up with the Trainer to get feedback on the seminar. Within 24 hours of completion of training. --></help>
+        <label><!-- AM Trainer Follow Up --></label>
+        <name>AM_Trainer_Follow_Up__c</name>
+    </fields>
+    <fields>
+        <help><!-- Call client to confirm workbooks have been received, and are correct. (Must check total number received and workbook title). Re-confirm training location. 5 days prior to the seminar date. --></help>
+        <label><!-- AM Wkbk Confirmation --></label>
+        <name>AM_Wkbk_Confirmation__c</name>
+    </fields>
+    <fields>
+        <label><!-- AM Workbook Confirmation Received --></label>
+        <name>AM_Workbook_Confirmation_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Level Travel Notes --></label>
+        <name>Account_Level_Travel_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Training Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Addendum Needed --></label>
+        <name>Addendum_Needed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Driving time from airport to training site --></help>
+        <label><!-- Airport Drive-time --></label>
+        <name>Airport_Drive_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount of each SkillCheck --></label>
+        <name>Amount_of_each_SkillCheck__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculating from the Topics Total Price field --></help>
+        <label><!-- Base Event Price --></label>
+        <name>Base_Event_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed Hard Expenses (Local Currency) --></label>
+        <name>Billed_Hard_Expenses_Local_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Contact --></label>
+        <name>Billing_Contact__c</name>
+        <relationshipLabel><!-- Training Events (Billing Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Currency --></label>
+        <name>Billing_Currency__c</name>
+        <relationshipLabel><!-- Training Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If the Event status is cancelled, please provide the date cancelled. --></help>
+        <label><!-- Cancellation Date --></label>
+        <name>Cancellation_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- From the Opportunity Record --></help>
+        <label><!-- Cancellation Fee --></label>
+        <name>Cancellation_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled Amount --></label>
+        <name>Cancelled_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Webinar Platform --></label>
+        <name>Client_Webinar_Platform__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Combined Billing &amp; Invoicing --></label>
+        <name>Combined_Billing_Invoicing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Combined NDA Received Date --></label>
+        <name>Combined_NDA_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Combined Payable Period --></label>
+        <name>Combined_Payable_Period_new__c</name>
+    </fields>
+    <fields>
+        <label><!-- Combined Scheduling Notes --></label>
+        <name>Combined_Scheduling_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Combined Tax Exempt # --></label>
+        <name>Combined_Tax_Exempt_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Combined Trainer Notes --></label>
+        <name>Combined_Trainer_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Combined Travel Notes --></label>
+        <name>Combined_Travel_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmation call date --></label>
+        <name>Confirm_call_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmation Call Completed --></label>
+        <name>Confirmation_Call_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmation Call Date --></label>
+        <name>Confirmation_Call_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmation Call Notes --></label>
+        <name>Confirmation_Call_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmation Call Owner --></label>
+        <name>Confirmation_Call_Owner__c</name>
+        <relationshipLabel><!-- Training Events (Confirmation Call Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- From Opportunity Record --></help>
+        <label><!-- Conversion Rate --></label>
+        <name>Conversion_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- From Opportunity Record --></help>
+        <label><!-- Cost per Additional Attendee --></label>
+        <name>Cost_per_Additional_Attendee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Combined LOA verbiage --></label>
+        <name>DM_specific_LOA_verbiage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Delivered --></label>
+        <name>Date_Delivered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Options Available --></label>
+        <name>Date_Options_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Options --></label>
+        <name>Date_Options__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date box(es) were shipped. --></help>
+        <label><!-- Date Shipped --></label>
+        <name>Date_Shipped__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date SkillChecks Requested --></label>
+        <name>Date_SkillChecks_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date SkillChecks Sent --></label>
+        <name>Date_SkillChecks_Sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the training performs, calculate training start date minus Close Date. Until the start date, track days since sold. --></help>
+        <label><!-- Days Since Sold --></label>
+        <name>Days_Since_Sold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Maker Email --></label>
+        <name>Decision_Maker_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Maker First Name --></label>
+        <name>Decision_Maker_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Maker Last Name --></label>
+        <name>Decision_Maker_Last_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- From Opportunity Record --></help>
+        <label><!-- Decision Maker --></label>
+        <name>Decision_Maker__c</name>
+        <relationshipLabel><!-- Training Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Time --></label>
+        <name>End_Time__c</name>
+        <picklistValues>
+            <masterLabel>10:00 AM</masterLabel>
+            <translation><!-- 10:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10:00 PM</masterLabel>
+            <translation><!-- 10:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10:30 AM</masterLabel>
+            <translation><!-- 10:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10:30 PM</masterLabel>
+            <translation><!-- 10:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:00 AM</masterLabel>
+            <translation><!-- 11:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:00 PM</masterLabel>
+            <translation><!-- 11:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:30 AM</masterLabel>
+            <translation><!-- 11:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:30 PM</masterLabel>
+            <translation><!-- 11:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:00 AM</masterLabel>
+            <translation><!-- 12:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:00 PM</masterLabel>
+            <translation><!-- 12:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:30 AM</masterLabel>
+            <translation><!-- 12:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:30 PM</masterLabel>
+            <translation><!-- 12:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1:00 AM</masterLabel>
+            <translation><!-- 1:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1:00 PM</masterLabel>
+            <translation><!-- 1:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1:30 AM</masterLabel>
+            <translation><!-- 1:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1:30 PM</masterLabel>
+            <translation><!-- 1:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2:00 AM</masterLabel>
+            <translation><!-- 2:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2:00 PM</masterLabel>
+            <translation><!-- 2:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2:30 AM</masterLabel>
+            <translation><!-- 2:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2:30 PM</masterLabel>
+            <translation><!-- 2:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3:00 AM</masterLabel>
+            <translation><!-- 3:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3:00 PM</masterLabel>
+            <translation><!-- 3:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3:30 AM</masterLabel>
+            <translation><!-- 3:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3:30 PM</masterLabel>
+            <translation><!-- 3:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4:00 AM</masterLabel>
+            <translation><!-- 4:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4:00 PM</masterLabel>
+            <translation><!-- 4:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4:30 AM</masterLabel>
+            <translation><!-- 4:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4:30 PM</masterLabel>
+            <translation><!-- 4:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5:00 AM</masterLabel>
+            <translation><!-- 5:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5:00 PM</masterLabel>
+            <translation><!-- 5:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5:30 AM</masterLabel>
+            <translation><!-- 5:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5:30 PM</masterLabel>
+            <translation><!-- 5:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5:45 PM</masterLabel>
+            <translation><!-- 5:45 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6:00 AM</masterLabel>
+            <translation><!-- 6:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6:00 PM</masterLabel>
+            <translation><!-- 6:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6:30 AM</masterLabel>
+            <translation><!-- 6:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6:30 PM</masterLabel>
+            <translation><!-- 6:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7:00 AM</masterLabel>
+            <translation><!-- 7:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7:00 PM</masterLabel>
+            <translation><!-- 7:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7:30 AM</masterLabel>
+            <translation><!-- 7:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7:30 PM</masterLabel>
+            <translation><!-- 7:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:00 AM</masterLabel>
+            <translation><!-- 8:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:00 PM</masterLabel>
+            <translation><!-- 8:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:30 AM</masterLabel>
+            <translation><!-- 8:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:30 PM</masterLabel>
+            <translation><!-- 8:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:00 AM</masterLabel>
+            <translation><!-- 9:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:00 PM</masterLabel>
+            <translation><!-- 9:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:30 AM</masterLabel>
+            <translation><!-- 9:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:30 PM</masterLabel>
+            <translation><!-- 9:30 PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Entity-specific LOA verbiage --></label>
+        <name>Entity_specific_LOA_verbiage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Billing Notes --></label>
+        <name>Event_Billing_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event-specific Trainer Notes --></label>
+        <name>Event_specific_Trainer_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Notes --></label>
+        <name>General_Session_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hard Expenses (USD) --></label>
+        <name>Hard_Expenses_USD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Trainer Fee --></label>
+        <name>Individual_Trainer_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Invoice Date --></label>
+        <name>Initial_Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shipping Notes visible only to Operations. For internal use only. --></help>
+        <label><!-- Internal Shipping Notes --></label>
+        <name>Internal_Shipping_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Hard Expenses? --></label>
+        <name>Invoice_Hard_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOA Owner --></label>
+        <name>LOA_Owner__c</name>
+        <relationshipLabel><!-- Training Events (LOA Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LOA Pending Approval --></label>
+        <name>LOA_Pending_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOA Sent Date --></label>
+        <name>LOA_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy OSM ID --></label>
+        <name>Legacy_OSM_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logistical Contact --></label>
+        <name>Logistical_Contact2__c</name>
+        <relationshipLabel><!-- Training Events (Logistical Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Logistical Contact --></label>
+        <name>Logistical_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mandatory Attendance --></label>
+        <name>Mandatory_Attendance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the maximum number of attendees for this event. Additional attendees will need to be charged as a separate line item. --></help>
+        <label><!-- Max # Attendees --></label>
+        <name>Max_Attendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- NDA Received Date --></label>
+        <name>NDA_Received_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box if the Opportunity was Closed Won by a former employee and is now being fulfilled by a different Rep who will not receive commission for this TE. --></help>
+        <label><!-- Non-Commissionable --></label>
+        <name>Non_Commissionable__c</name>
+    </fields>
+    <fields>
+        <label><!-- # SkillChecks Requested --></label>
+        <name>Num_SkillChecks_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Non-Standard Workbooks --></label>
+        <name>Number_of_Non_Standard_Workbooks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Selected Topics --></label>
+        <name>Number_of_Selected_Topics__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Training --></label>
+        <name>Number_of_Training__c</name>
+    </fields>
+    <fields>
+        <label><!-- OldSalesforceID --></label>
+        <name>OldSalesforceID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Closed Won Date --></label>
+        <name>Opportunity_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Description --></label>
+        <name>Opportunity_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner Email --></label>
+        <name>Opportunity_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner Phone --></label>
+        <name>Opportunity_Owner_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner Title --></label>
+        <name>Opportunity_Owner_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner --></label>
+        <name>Opportunity_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- xOpportunity Record Type Name --></label>
+        <name>Opportunity_Record_Type_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Record Type --></label>
+        <name>Opportunity_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Training Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Original TE Owner --></label>
+        <name>Original_TE_Owner__c</name>
+        <relationshipLabel><!-- Training Events (Original TE Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- From Opportunity Record --></help>
+        <label><!-- PO Number --></label>
+        <name>PO_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- PPT sent to Trainer --></label>
+        <name>PPT_sent_to_Trainer__c</name>
+    </fields>
+    <fields>
+        <help><!-- From Opportunity record --></help>
+        <label><!-- Payable Period --></label>
+        <name>Payable_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Power of One --></label>
+        <name>Power_of_One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projector Provided --></label>
+        <name>Projector_Provided__c</name>
+    </fields>
+    <fields>
+        <help><!-- Filled in by workflow when the event date is passed and the status is completed --></help>
+        <label><!-- Quarter Performed --></label>
+        <name>Quarter_Performed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates that the shipping information is correct and that the workbooks are ready to ship. --></help>
+        <label><!-- Ready To Ship --></label>
+        <name>Ready_To_Ship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hotel Recommendation --></label>
+        <name>Recommended_Hotel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Training Location Tax from Opportunity Record --></help>
+        <label><!-- Tax Rate --></label>
+        <name>Related_Tax_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Delivery Date --></label>
+        <name>Requested_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- STAR12 Eligible --></label>
+        <name>STAR12_Eligible__c</name>
+    </fields>
+    <fields>
+        <label><!-- STAR12 Invoice # --></label>
+        <name>STAR12_Invoice_Num__c</name>
+    </fields>
+    <fields>
+        <label><!-- SafeID --></label>
+        <name>SafeID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Deadline --></label>
+        <name>Scheduling_Deadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Detail --></label>
+        <name>Scheduling_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Specific Scheduling Notes --></label>
+        <name>Scheduling_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Owner --></label>
+        <name>Scheduling_Owner__c</name>
+        <relationshipLabel><!-- Training Events (Scheduling Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The date an &quot;on demand&quot; workbook order is sent to the printer for this Training Event. --></help>
+        <label><!-- Sent to Printer --></label>
+        <name>Sent_to_Printer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Attention Line --></label>
+        <name>Shipping_Attention_Line__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Comments --></label>
+        <name>Shipping_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Contact --></label>
+        <name>Shipping_Contact__c</name>
+        <relationshipLabel><!-- Training Events (Shipping Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Shipping Location Address --></label>
+        <name>Shipping_Location_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Method --></label>
+        <name>Shipping_Method__c</name>
+        <picklistValues>
+            <masterLabel>1  Fedex Intl Air</masterLabel>
+            <translation><!-- 1  Fedex Intl Air --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2  Fedex Ground</masterLabel>
+            <translation><!-- 2  Fedex Ground --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3  Fedex Standard Overnight</masterLabel>
+            <translation><!-- 3  Fedex Standard Overnight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4  Fedex Priority Overnight</masterLabel>
+            <translation><!-- 4  Fedex Priority Overnight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X  Fedex 2nd Day</masterLabel>
+            <translation><!-- X  Fedex 2nd Day --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Shipping ID Number(s) for shipped boxes. --></help>
+        <label><!-- Tracking Numbers --></label>
+        <name>Shipping_Number_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Owner --></label>
+        <name>Shipping_Owner__c</name>
+        <relationshipLabel><!-- Training Events (Shipping Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SkillChecks Requested --></label>
+        <name>SkillChecks_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Software sent to Trainer --></label>
+        <name>Software_sent_to_Trainer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Billing Instructions --></label>
+        <name>Special_Billing_Instructions__c</name>
+        <picklistValues>
+            <masterLabel>Bill Immediately</masterLabel>
+            <translation><!-- Bill Immediately --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hold</masterLabel>
+            <translation><!-- Hold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Special Billing Terms --></label>
+        <name>Special_Billing_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Time --></label>
+        <name>Start_Time__c</name>
+        <picklistValues>
+            <masterLabel>10:00 AM</masterLabel>
+            <translation><!-- 10:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10:00 PM</masterLabel>
+            <translation><!-- 10:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10:15 AM</masterLabel>
+            <translation><!-- 10:15 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10:30 AM</masterLabel>
+            <translation><!-- 10:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10:30 PM</masterLabel>
+            <translation><!-- 10:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:00 AM</masterLabel>
+            <translation><!-- 11:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:00 PM</masterLabel>
+            <translation><!-- 11:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:30 AM</masterLabel>
+            <translation><!-- 11:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:30 PM</masterLabel>
+            <translation><!-- 11:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:00 AM</masterLabel>
+            <translation><!-- 12:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:00 PM</masterLabel>
+            <translation><!-- 12:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:30 AM</masterLabel>
+            <translation><!-- 12:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:30 PM</masterLabel>
+            <translation><!-- 12:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1:00 AM</masterLabel>
+            <translation><!-- 1:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1:00 PM</masterLabel>
+            <translation><!-- 1:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1:30 AM</masterLabel>
+            <translation><!-- 1:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1:30 PM</masterLabel>
+            <translation><!-- 1:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2:00 AM</masterLabel>
+            <translation><!-- 2:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2:00 PM</masterLabel>
+            <translation><!-- 2:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2:30 AM</masterLabel>
+            <translation><!-- 2:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2:30 PM</masterLabel>
+            <translation><!-- 2:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3:00 AM</masterLabel>
+            <translation><!-- 3:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3:00 PM</masterLabel>
+            <translation><!-- 3:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3:30 AM</masterLabel>
+            <translation><!-- 3:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3:30 PM</masterLabel>
+            <translation><!-- 3:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4:00 AM</masterLabel>
+            <translation><!-- 4:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4:00 PM</masterLabel>
+            <translation><!-- 4:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4:30 AM</masterLabel>
+            <translation><!-- 4:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4:30 PM</masterLabel>
+            <translation><!-- 4:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5:00 AM</masterLabel>
+            <translation><!-- 5:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5:00 PM</masterLabel>
+            <translation><!-- 5:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5:30 AM</masterLabel>
+            <translation><!-- 5:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5:30 PM</masterLabel>
+            <translation><!-- 5:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6:00 AM</masterLabel>
+            <translation><!-- 6:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6:00 PM</masterLabel>
+            <translation><!-- 6:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6:30 AM</masterLabel>
+            <translation><!-- 6:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6:30 PM</masterLabel>
+            <translation><!-- 6:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7:00 AM</masterLabel>
+            <translation><!-- 7:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7:00 PM</masterLabel>
+            <translation><!-- 7:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7:30 AM</masterLabel>
+            <translation><!-- 7:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7:30 PM</masterLabel>
+            <translation><!-- 7:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:00 AM</masterLabel>
+            <translation><!-- 8:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:00 PM</masterLabel>
+            <translation><!-- 8:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:30 AM</masterLabel>
+            <translation><!-- 8:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:30 PM</masterLabel>
+            <translation><!-- 8:30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:00 AM</masterLabel>
+            <translation><!-- 9:00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:00 PM</masterLabel>
+            <translation><!-- 9:00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:30 AM</masterLabel>
+            <translation><!-- 9:30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:30 PM</masterLabel>
+            <translation><!-- 9:30 PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status Banner --></label>
+        <name>Status_Banner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Indicator --></label>
+        <name>Status_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performed</masterLabel>
+            <translation><!-- Performed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>star12</masterLabel>
+            <translation><!-- star12 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sum of Sales Price --></label>
+        <name>Sum_of_Sales_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- TBD Date --></label>
+        <name>TBD_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- TE Contract Amount --></label>
+        <name>TE_Contract_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Conversion --></label>
+        <name>TE_Currency_Conversion__c</name>
+    </fields>
+    <fields>
+        <label><!-- TE Scheduling Notes --></label>
+        <name>TE_Scheduling_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Calculation --></label>
+        <name>TE_Tax_Calculation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tailoring Call date --></label>
+        <name>Tailoring_Call_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Exempt No. --></label>
+        <name>Tax_Exempt_No__c</name>
+    </fields>
+    <fields>
+        <help><!-- Actual Trainer assigned to this event. --></help>
+        <label><!-- Trainer Assigned --></label>
+        <name>Trainer_Assigned__c</name>
+        <relationshipLabel><!-- Training Events (Trainer - Actual) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Trainer Change --></label>
+        <name>Trainer_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trainer Fee Per Day --></label>
+        <name>Trainer_Fee_Per_Day__c</name>
+    </fields>
+    <fields>
+        <help><!-- From formula on the Account --></help>
+        <label><!-- Account Level Trainer Notes --></label>
+        <name>Trainer_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date when Trainer Paperwork was sent. --></help>
+        <label><!-- Trainer Notified --></label>
+        <name>Trainer_Notified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trainer Requested --></label>
+        <name>Trainer_Requested_Contact__c</name>
+        <relationshipLabel><!-- Training Events (Trainer Requested Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Trainer requested by AM --></help>
+        <label><!-- xTrainer Requested --></label>
+        <name>Trainer_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trainer Requirements --></label>
+        <name>Trainer_detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Capacity --></label>
+        <name>Training_Capacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Coming Within 30 Days --></label>
+        <name>Training_Coming_Within_30_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Date Change Tracking --></label>
+        <name>Training_Date_Change_Tracking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training End Date --></label>
+        <name>Training_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Event Number --></label>
+        <name>Training_Event_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Location Address --></label>
+        <name>Training_Location_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Location Contact City --></label>
+        <name>Training_Location_Contact_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Location Contact Country --></label>
+        <name>Training_Location_Contact_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Location Contact Name --></label>
+        <name>Training_Location_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Location Contact Postal Code --></label>
+        <name>Training_Location_Contact_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Location Contact State --></label>
+        <name>Training_Location_Contact_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Location Contact Street --></label>
+        <name>Training_Location_Contact_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Location Contact --></label>
+        <name>Training_Location_Contact__c</name>
+        <relationshipLabel><!-- Training Events (Training Location Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Number of consecutive training days --></help>
+        <label><!-- Training # of Days --></label>
+        <name>Training_Num_of_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Series --></label>
+        <name>Training_Series__c</name>
+        <relationshipLabel><!-- Training Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Training Start Date --></label>
+        <name>Training_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Notes --></label>
+        <name>Travel_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Webinar Attendees Per Session --></label>
+        <name>Webinar_Attendees_Per_Session__c</name>
+    </fields>
+    <fields>
+        <label><!-- Webinar Conference Line Needed? --></label>
+        <name>Webinar_Conference_Line_Nee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Webinar Evaluation Link --></label>
+        <name>Webinar_Evaluation_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Webinar Hosting --></label>
+        <name>Webinar_Hosting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Webinar International Conference Line --></label>
+        <name>Webinar_International_Conference_Line__c</name>
+    </fields>
+    <fields>
+        <label><!-- Webinar Notes --></label>
+        <name>Webinar_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Webinar Recording Required --></label>
+        <name>Webinar_Recording_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Webinar Same Attendees per Session --></label>
+        <name>Webinar_Same_Attendees_per_Session__c</name>
+    </fields>
+    <fields>
+        <label><!-- Webinar Session Times --></label>
+        <name>Webinar_Session_Times__c</name>
+    </fields>
+    <fields>
+        <label><!-- Webinar SkillPath Sends Invites? --></label>
+        <name>Webinar_SkillPath_Sends_Invites__c</name>
+    </fields>
+    <fields>
+        <label><!-- Webinar Time Zone --></label>
+        <name>Webinar_Time_Zone__c</name>
+        <picklistValues>
+            <masterLabel>Central</masterLabel>
+            <translation><!-- Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eastern</masterLabel>
+            <translation><!-- Eastern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mountain</masterLabel>
+            <translation><!-- Mountain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pacific</masterLabel>
+            <translation><!-- Pacific --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Workbook confirmation date --></label>
+        <name>Workbook_confirmation_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workbook sent to Trainer --></label>
+        <name>Workbook_sent_to_Trainer__c</name>
+    </fields>
+    <layouts>
+        <layout>Ops Training Event Layout</layout>
+        <sections>
+            <label><!-- AM Follow Up To-Dos --></label>
+            <section>AM Follow Up To-Dos</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Billing Info --></label>
+            <section>Additional Billing Info</section>
+        </sections>
+        <sections>
+            <label><!-- Banner Section --></label>
+            <section>Banner Section</section>
+        </sections>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Combined Account/DM-Specific Details --></label>
+            <section>Combined Account/DM-Specific Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Trainer Info --></label>
+            <section>General Trainer Info</section>
+        </sections>
+        <sections>
+            <label><!-- Main Information --></label>
+            <section>Main Information</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Detail --></label>
+            <section>Opportunity Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Information --></label>
+            <section>Shipping Information</section>
+        </sections>
+        <sections>
+            <label><!-- SkillChecks --></label>
+            <section>SkillChecks</section>
+        </sections>
+        <sections>
+            <label><!-- Training Event Specifics --></label>
+            <section>Training Event Specifics</section>
+        </sections>
+        <sections>
+            <label><!-- Webinar Information --></label>
+            <section>Webinar Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales Rep Training Event Layout</layout>
+        <sections>
+            <label><!-- AM Follow Up To-Dos --></label>
+            <section>AM Follow Up To-Dos</section>
+        </sections>
+        <sections>
+            <label><!-- Additional Billing Info --></label>
+            <section>Additional Billing Info</section>
+        </sections>
+        <sections>
+            <label><!-- Banner Section --></label>
+            <section>Banner Section</section>
+        </sections>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Combined Account/DM-Specific Details --></label>
+            <section>Combined Account/DM-Specific Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Trainer Info --></label>
+            <section>General Trainer Info</section>
+        </sections>
+        <sections>
+            <label><!-- Main Information --></label>
+            <section>Main Information</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Detail --></label>
+            <section>Opportunity Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Information --></label>
+            <section>Shipping Information</section>
+        </sections>
+        <sections>
+            <label><!-- SkillChecks --></label>
+            <section>SkillChecks</section>
+        </sections>
+        <sections>
+            <label><!-- Training Event Specifics --></label>
+            <section>Training Event Specifics</section>
+        </sections>
+        <sections>
+            <label><!-- Webinar Information --></label>
+            <section>Webinar Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Training Event Layout</layout>
+        <sections>
+            <label><!-- Account Detail --></label>
+            <section>Account Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Billing Information --></label>
+            <section>Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Change/Cancel Fee --></label>
+            <section>Change/Cancel Fee</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Trainer Info --></label>
+            <section>General Trainer Info</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Detail --></label>
+            <section>Opportunity Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Information --></label>
+            <section>Shipping Information</section>
+        </sections>
+        <sections>
+            <label><!-- Training Event Information --></label>
+            <section>Training Event Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If you update the status to cancelled, please also provide the date cancelled in the Cancellation Date field provided. --></errorMessage>
+        <name>Enter_Cancellation_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sales reps must email the appropriate person in Operations to update the Training Event once it&apos;s moved into an open status. --></errorMessage>
+        <name>No_Sales_Rep_Edits_Once_Open</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure Shipping Contact has valid address &amp; Attention Line, Requested Delivery Date, Shipping Method fields are filled in. --></errorMessage>
+        <name>Ready_to_Ship_Requires_All_Shipping_Info</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A training event&apos;s status may not be blank. --></errorMessage>
+        <name>Training_Event_Status_Cannot_Be_Blank</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Auto_Create_LOA --></label>
+        <name>Auto_Create_LOA</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Auto_Create_Trainer_Paperwork --></label>
+        <name>Auto_Create_Trainer_Paperwork</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_LOA --></label>
+        <name>Create_LOA</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Pick_Ticket --></label>
+        <name>Create_Pick_Ticket</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Trainer_Paperwork --></label>
+        <name>Create_Trainer_Paperwork</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Training_Event_Conga --></label>
+        <name>Training_Event_Conga</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,306 @@
+<apex:component controller="ProductSelector_AddProducts_Controller" allowDML="true">
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<apex:actionFunction name="filterProds" 
+                         action="{!filterProducts}" 
+                         rerender="productTable,errorMsgs"
+                         status="myStatus"
+                         oncomplete="renderSVG(),$('.ar-column-field').digits()"
+                         >
+		<apex:param name="filteringOptions" value=""/>
+	</apex:actionFunction>
+	<apex:actionFunction name="clearRes" 
+                         action="{!clearResults}" 
+                         rerender="productTable,errorMsgs"
+                         status="myStatus"
+                         oncomplete="renderSVG(),$('.ar-column-field').digits()"
+                         >
+	</apex:actionFunction>
+	<apex:actionFunction name="sortColumn" 
+                         action="{!sortProductsByField}" 
+                         immediate="true"
+                         rerender="productTable"
+                         status="myStatus"
+                         oncomplete="renderSVG(),$('.ar-column-field').digits()"
+                         >
+		<apex:param name="columnIndex" value=""/>
+	</apex:actionFunction>
+	<apex:actionFunction name="addProd" 
+                         action="{!addProduct}" 
+                         rerender="oppAmountPanel,errorMsgs"
+                         status="myStatus"
+                         oncomplete="productSuccessfullyAdded(false,false),refreshOppProductList()"
+                         >
+		<apex:param name="productInfo" value=""/>
+	</apex:actionFunction>
+	<apex:actionFunction name="refreshOpp" 
+                         action="{!refreshOpportunity}" 
+                         rerender="oppAmountPanel"
+                         oncomplete="animateAmount()"
+                         >
+	</apex:actionFunction>
+
+	<style>
+		.slds .slds-picklist__label.ar-picklistFilter{
+			width:100%;
+		}
+		.slds .slds-picklist .ark-picklistSmall{
+			width:100%;	
+		}
+		.ar-dropdownMenuProdAct{
+			display: none;
+        	top:20px;
+		}
+		.ar-tableHeader{
+			background: #FBFBFF;
+		}
+	</style>
+
+	<script>
+
+      function renderSVG(){
+
+      	for(index=0;index< {!columntitles.size} ;index++){
+
+	      	if($('#columnOrder-' + index).val()=='DESC'){
+	      	    imageURL = "{!URLFOR($Resource.SLDS100, 'assets/icons/utility-sprite/svg/symbols.svg#arrowup')}";
+	      	}else{
+	      		imageURL = "{!URLFOR($Resource.SLDS100, 'assets/icons/utility-sprite/svg/symbols.svg#arrowdown')}";
+	      	}
+	         
+
+	        var SVG = $('<svg/>', {
+	           class: 'slds-button__icon slds-button__icon--small',
+	        });
+
+	        var SVGUse = $('<use/>');
+	        SVGUse.attr('xlink:href',imageURL);
+	        $('#sortButton-' + index).html('');
+	        $('#sortButton-' + index).prepend(SVG.append(SVGUse));
+	        $('#sortButton-' + index).html($('#sortButton-' + index).html());
+
+	    }
+      } 
+
+    </script>
+
+    <apex:outputPanel id="oppAmountPanel">
+   		 <input type='hidden' id='oppAmount' value='{!opp.Amount}'/>
+   	</apex:outputPanel>
+
+    <div class="slds-form--compound slds-size--11-of-12 slds-m-horizontal--large slds-m-bottom--medium">
+	    <legend class="slds-form-element__label">Search for Products</legend>
+	    <div class="form-element__group">
+	      <div class="slds-form-element__row slds-wrap">
+	        <div class="slds-m-right--x-small">
+	          <label class="slds-form-element__label">By Name or Code</label>
+	          <input id="byNameOrCode" class="slds-input" type="text" placeholder="Type text here..." onchange='productFilteringOptions.ByNameOrCode=this.value'/>
+	        </div>
+	        <div class="slds-m-right--x-small slds-size--2-of-12">
+	          <label class="slds-form-element__label">By Field</label>
+	          <!-- select by field start -->
+				<div class="slds-picklist" aria-expanded="true" data-aljs="picklistByField" id='ByFieldPicklist'>
+				    <button type='button' class="slds-button slds-button--neutral ar-picklistFilter slds-picklist__label" aria-haspopup="true">
+				        <span class="slds-truncate">Select a Field</span>
+				        <svg aria-hidden="true" class="slds-icon">
+				            <use xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+				        </svg>
+				    </button>
+				    <div class="slds-dropdown slds-dropdown--left slds-dropdown--menu slds-hide">
+				        <ul class="slds-dropdown__list" role="menu">
+				        	<apex:repeat value="{!searchByFieldOptions}" var="option">
+					            <li id="{!option.fieldPath}-{!option.type}"  class="slds-dropdown__item">
+					                <a  role="menuitemradio">
+					                    <p class="slds-truncate">
+					                        {!option.label}
+					                    </p>
+					                </a>
+					            </li>
+				            </apex:repeat> 
+				        </ul>
+				    </div>
+				</div>
+	            <!-- select by field end   -->
+	        </div>
+	        <div class="slds-m-right--x-small slds-align-bottom slds-size--1-of-8">
+	        	 <!-- select comparator start -->
+				<div class="slds-picklist" aria-expanded="true" data-aljs="picklistComparator" id='comparatorPicklist'>
+				    <button type='button' class="slds-button slds-button--neutral slds-picklist__label ark-picklistSmall" aria-haspopup="true">
+				        <span class="slds-truncate">Select an Option</span>
+				        <svg aria-hidden="true" class="slds-icon">
+				            <use xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+				        </svg>
+				    </button>
+				    <div class="slds-dropdown slds-dropdown--left slds-dropdown--menu slds-hide ark-picklistSmall">
+				        <ul class="slds-dropdown__list" role="menu">
+				        	<apex:repeat value="{!searchComparatorOptions}" var="option">
+					            <li id="{!option.value}"  class="slds-dropdown__item">
+					                <a  role="menuitemradio">
+					                    <p class="slds-truncate">
+					                        {!option.label}
+					                    </p>
+					                </a>
+					            </li>
+				            </apex:repeat> 
+				        </ul>
+				    </div>
+				</div>
+	         	 <!-- select comparator end   -->
+	         	 <!-- select boolean comparator start -->
+				<div class="slds-picklist" aria-expanded="true" data-aljs="picklistComparator" style="display:none" id='comparatorPicklistForBoolean'>
+				    <button type='button' class="slds-button slds-button--neutral slds-picklist__label ark-picklistSmall" aria-haspopup="true">
+				        <span class="slds-truncate">Select an Option</span>
+				        <svg aria-hidden="true" class="slds-icon">
+				            <use xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+				        </svg>
+				    </button>
+				    <div class="slds-dropdown slds-dropdown--left slds-dropdown--menu slds-hide ark-picklistSmall">
+				        <ul class="slds-dropdown__list" role="menu">
+				            <li id="true"  class="slds-dropdown__item">
+				                <a  role="menuitemradio">
+				                    <p class="slds-truncate">
+				                        true
+				                    </p>
+				                </a>
+				            </li>
+				            <li id="false"  class="slds-dropdown__item">
+				                <a  role="menuitemradio">
+				                    <p class="slds-truncate">
+				                        false
+				                    </p>
+				                </a>
+				            </li>
+				        </ul>
+				    </div>
+				</div>
+	         	 <!-- select boolean comparator end   -->
+	        </div>
+	        <div class="slds-m-right--x-small slds-align-bottom">
+	          <input id="searchText" class="slds-input" type="text" placeholder="Type text here..." onchange='productFilteringOptions.Text=this.value'/>
+	        </div>
+	        <div class="slds-align-bottom slds-m-top--x-small" role="group">
+			  <button class="slds-button slds-button--brand" type='button' onclick='filter()'>Search</button>
+			  <button class="slds-button slds-button--neutral" type='button' onclick='clearRes()'>Clear Results</button>
+			</div>
+	      </div>
+	    </div>
+ 	</div>
+
+ 	<div id="divMsg" class="slds-notify slds-notify--alert slds-theme--error slds-hide" role="alert">
+	    <button class="slds-button slds-button--icon-inverse slds-notify__close" type='button' onclick="$('#divMsg').hide('slow')">
+	        <svg aria-hidden="true" class="slds-button__icon">
+	            <use xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/action-sprite/svg/symbols.svg#close"></use>
+	        </svg>
+	        <span class="slds-assistive-text">Close</span>
+	    </button>
+	    <h2>
+	    	<svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-m-right--x-small slds-align-top slds-m-top--xxx-small">
+	          <use  xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/utility-sprite/svg/symbols.svg#error"></use>
+	        </svg>
+	        <span id='txtMsg'>
+	        </span>
+	    </h2>
+	</div>
+	<div id="divSuccessMsg" class="slds-notify slds-notify--alert slds-theme--success slds-hide" role="alert">
+	    <button class="slds-button slds-button--icon-inverse slds-notify__close" type='button' onclick="$('#divSuccessMsg').hide('slow')">
+	        <svg aria-hidden="true" class="slds-button__icon">
+	            <use xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/action-sprite/svg/symbols.svg#close"></use>
+	        </svg>
+	        <span class="slds-assistive-text">Close</span>
+	    </button>
+	    <h2>
+		    <svg aria-hidden="true" class="slds-icon slds-icon--x-small slds-m-right--x-small slds-align-top slds-m-top--xxx-small">
+	          <use xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+	        </svg>
+	        <span id='txtSuccessMsg'>
+	        </span>
+        </h2>
+	</div>
+ 	<apex:pageMessages id="errorMsgs"/>
+
+ 	<apex:outputPanel >
+		<apex:actionStatus startText="loading..." id="myStatus">
+			<apex:facet name="start">
+			  <div class="slds-spinner_container slds-m-top--xx-large">
+			    <div class="slds-spinner slds-spinner--large" aria-hidden="false" role="alert">
+			      <div class="slds-spinner__dot-a"></div>
+			      <div class="slds-spinner__dot-b"></div>
+			    </div>
+			  </div>
+			</apex:facet>
+	        <apex:facet name="stop">
+	        	<apex:outputPanel id="productTable">
+				 <table class="slds-table slds-table--bordered">
+				    <thead class='ar-tableHeader'>
+				      <tr class="slds-text-heading--label">
+				        <th class="slds-cell-shrink">
+				        </th>
+				        <apex:variable value="{! 0}" var="indx"/>
+				        <apex:repeat value="{!columnTitles}" var="title">
+					        <th class="slds-is-sortable" scope="col" onclick="sortColumn('{!indx}')">
+					          <div class="slds-truncate" >{!title}	
+					          	<input type='hidden' value='{!sortOrders[indx]}' id='columnOrder-{!indx}'/>
+						        <button class="slds-button slds-button--icon-bare" id='sortButton-{!indx}' type='button' >
+							          <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+						                <use  xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+						              </svg>
+					                <span class="slds-assistive-text">Sort</span>
+					            </button>
+					          </div>
+					        </th>
+					        <apex:variable value="{! IF(indx< columnTitles.size -1 ,indx + 1,indx)}" var="indx"/>
+					    </apex:repeat>
+					  </tr>
+				    </thead>
+				    <tbody>
+                      <apex:variable value="{! 0}" var="j"/>
+				      <apex:repeat value="{!products}" var="product">
+					      <tr class="slds-hint-parent">
+					    	<td class="slds-cell-shrink" data-label="Select Row" onmouseleave="showHideProdActDropdown(false,'{!product.prod.Id}')" >
+					    	 <div>
+						          <button type='button' class="slds-button slds-button--icon-border-filled" onclick="showHideProdActDropdown(true,'{!product.prod.Id}')">
+								     <svg class="slds-button__icon">
+								      <use xmlns:xlink="http://www.w3.org/1999/svg" xlink:href="{!URLFOR($Resource.SLDS100)}/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+								     </svg> 
+								    <span class="slds-assistive-text">Select Row</span>
+									<div class="slds-dropdown slds-dropdown--left ar-dropdownMenuProdAct" id='pDropDown-{!product.prod.Id}'  >
+									      <ul class="dropdown__list" role="menu">
+									        <li class="slds-dropdown__item">
+                                                <a role="menuitem" onclick="showModal('Standard','{!productsEscaped[j].prod.Id}','{!productsEscaped[j].prod.Name}','{!productsEscaped[j].prod.PricebookEntries[0].UnitPrice}')">
+									            Add as Standard
+									          </a>
+									        </li>
+									        <li class="slds-dropdown__item">
+									          <a  role="menuitem" onclick="showModal('Custom Lite','{!productsEscaped[j].prod.Id}','{!productsEscaped[j].prod.Name}','{!productsEscaped[j].prod.PricebookEntries[0].UnitPrice}')">
+									            Add as Custom Lite
+									          </a>
+									        </li>
+									        <li class="slds-dropdown__item">
+									          <a  role="menuitem" onclick="showModal('Custom','{!productsEscaped[j].prod.Id}','{!productsEscaped[j].prod.Name}','{!productsEscaped[j].prod.PricebookEntries[0].UnitPrice}')">
+									            Add as Custom
+									          </a>
+									        </li>
+									      </ul>
+									 </div>
+								  </button>
+								</div>
+					        </td>
+					        <apex:variable value="{! 0 }" var="i"/>
+					      	<apex:repeat value="{!fieldNames}" var="field">
+						        <td class="slds-truncate {! IF(LOWER(fieldTypes[i])=='currency' || LOWER(fieldTypes[i])=='integer' || LOWER(fieldTypes[i])=='double','ar-column-field','') }" data-label="Account Name">
+						        	{! IF( field!='PricebookEntries','', '$') }
+						        	{! IF( field!='PricebookEntries',product.prod[field], product.prod[field][0].UnitPrice) }
+						        </td>
+						         <apex:variable value="{! i + 1 }" var="i"/>
+						    </apex:repeat>
+					      </tr>
+                       		<apex:variable value="{! j + 1 }" var="j"/>
+					   </apex:repeat>
+				    </tbody>
+				  </table>
+				</apex:outputPanel>
+			</apex:facet>
+		</apex:actionStatus>
+	</apex:outputPanel> 
+</html>
+<c:ProductSelector_ProductModal isAdd="true" contentItemTypes="{!contentTypes}"  modalityOptions="{!modalityOptions}" />
+</apex:component>

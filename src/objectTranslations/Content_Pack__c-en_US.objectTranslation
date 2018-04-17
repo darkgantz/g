@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Content Pack</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Content Packs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Date --></label>
+        <name>Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Team Due Date --></label>
+        <name>Content_Team_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Submitted --></label>
+        <name>Date_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Design Status --></label>
+        <name>Design_Status__c</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Review</masterLabel>
+            <translation><!-- Customer Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Information</masterLabel>
+            <translation><!-- Missing Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Required</masterLabel>
+            <translation><!-- Not Required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Existing PowerPoint to be Modified? --></label>
+        <name>Existing_PowerPoint_to_be_Modified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fees Per Day --></label>
+        <name>Fees_Per_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logo Needed? --></label>
+        <name>Logo_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Content Items --></label>
+        <name>Number_of_Content_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- OldSalesforceID --></label>
+        <name>OldSalesforceID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Won? --></label>
+        <name>Opp_Won__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Amount --></label>
+        <name>Opportunity_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Stage --></label>
+        <name>Opportunity_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Content Packs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Powerpoint Due Date --></label>
+        <name>Powerpoint_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Powerpoint Needed --></label>
+        <name>Powerpoint_Needed__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needed</masterLabel>
+            <translation><!-- Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Needed</masterLabel>
+            <translation><!-- Not Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Existing</masterLabel>
+            <translation><!-- Pre-Existing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Powerpoint Owner --></label>
+        <name>Powerpoint_Owner__c</name>
+        <relationshipLabel><!-- Content Packs (Powerpoint Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pre-Sales Request? --></label>
+        <name>Pre_Sales_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Content Designer --></label>
+        <name>Primary_Content_Designer__c</name>
+        <relationshipLabel><!-- Content Packs (Primary Content Designer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Production Owner --></label>
+        <name>Primary_Production_Owner__c</name>
+        <relationshipLabel><!-- Content Packs (Primary Production Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Production Due Date --></label>
+        <name>Production_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Status --></label>
+        <name>Production_Status__c</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Information</masterLabel>
+            <translation><!-- Missing Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Required</masterLabel>
+            <translation><!-- Not Required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Program Title --></label>
+        <name>Program_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Removed from Product Selector --></label>
+        <name>Removed_from_Product_Selector__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Due Date --></label>
+        <name>Requested_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requires Client Review? --></label>
+        <name>Requires_Client_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent to Faculty --></label>
+        <name>Sent_to_Faculty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent to Trainer --></label>
+        <name>Sent_to_Trainer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Formatting Instructions --></label>
+        <name>Special_Formatting_Instructions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Cost per day of training --></help>
+        <label><!-- Standard Price --></label>
+        <name>Standard_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Content Pack Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description &amp; Instructions --></label>
+            <section>Description &amp; Instructions</section>
+        </sections>
+        <sections>
+            <label><!-- Initial Request Details --></label>
+            <section>Initial Request Details</section>
+        </sections>
+        <sections>
+            <label><!-- Powerpoint --></label>
+            <section>Powerpoint</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

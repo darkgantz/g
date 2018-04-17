@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Topic</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Topics</value>
+    </caseValues>
+    <fields>
+        <label><!-- Clear Product Lookup --></label>
+        <name>Clear_Product_Lookup__c</name>
+    </fields>
+    <fields>
+        <help><!-- Copied from the Opportunity product --></help>
+        <label><!-- Commission Adjustment Percent --></label>
+        <name>Commission_Adjustment_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Pack --></label>
+        <name>Content_Pack__c</name>
+        <relationshipLabel><!-- Topics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Event Start Date --></label>
+        <name>Event_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Lookup --></label>
+        <name>Fill_product_values__c</name>
+        <relationshipLabel><!-- Topics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Has Content Pack --></label>
+        <name>Has_Content_Pack__c</name>
+    </fields>
+    <fields>
+        <help><!-- Copied from the Opportunity product --></help>
+        <label><!-- Line Item Commission Percent --></label>
+        <name>Line_Item_Commission_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Modality --></label>
+        <name>Modality__c</name>
+        <picklistValues>
+            <masterLabel>Content License</masterLabel>
+            <translation><!-- Content License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite</masterLabel>
+            <translation><!-- Onsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite PLUS Webinar</masterLabel>
+            <translation><!-- Onsite PLUS Webinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STAR12</masterLabel>
+            <translation><!-- STAR12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecoaching</masterLabel>
+            <translation><!-- Telecoaching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar</masterLabel>
+            <translation><!-- Webinar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Copied from the Opportunity product --></help>
+        <label><!-- Number of Hours --></label>
+        <name>Number_of_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of workbooks --></label>
+        <name>Number_of_workbooks__c</name>
+    </fields>
+    <fields>
+        <label><!-- OldSalesforceID --></label>
+        <name>OldSalesforceID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity_LineItem_ID --></label>
+        <name>Opportunity_LineItem_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Copied from the Opportunity product --></help>
+        <label><!-- Product Code --></label>
+        <name>Product_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Copied from the Opportunity product --></help>
+        <label><!-- Product Name --></label>
+        <name>Product_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Copied from the Opportunity product --></help>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Copied from the Opportunity product --></help>
+        <label><!-- Sale Price --></label>
+        <name>Sales_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Delivery Date --></label>
+        <name>Shipping_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Signer --></label>
+        <name>Shipping_Signer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Tracking No. --></label>
+        <name>Shipping_Tracking_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic # --></label>
+        <name>Topic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Price --></label>
+        <name>Total_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Event Number --></label>
+        <name>Training_Event_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Event --></label>
+        <name>Training_Event__c</name>
+        <relationshipLabel><!-- Topics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- xTraining Start Date --></label>
+        <name>Training_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- xWorkbook Country --></label>
+        <name>Workbook_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workbook ID --></label>
+        <name>Workbook_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workbook Location --></label>
+        <name>Workbook_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- xWorkbook UPC --></label>
+        <name>Workbook_UPC__c</name>
+    </fields>
+    <fields>
+        <label><!-- null value --></label>
+        <name>null_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- product selected for prefill --></label>
+        <name>product_selected_for_prefill__c</name>
+    </fields>
+    <fields>
+        <help><!-- Assigned by Operations --></help>
+        <label><!-- xAssigned Trainer --></label>
+        <name>xAssigned_Trainer__c</name>
+        <relationshipLabel><!-- Topics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- xEnd Time --></label>
+        <name>xEnd_Time__c</name>
+        <picklistValues>
+            <masterLabel>10:00</masterLabel>
+            <translation><!-- 10:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10:30</masterLabel>
+            <translation><!-- 10:30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:00</masterLabel>
+            <translation><!-- 11:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:30</masterLabel>
+            <translation><!-- 11:30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:00</masterLabel>
+            <translation><!-- 12:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:30</masterLabel>
+            <translation><!-- 12:30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1:00</masterLabel>
+            <translation><!-- 1:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1:30</masterLabel>
+            <translation><!-- 1:30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2:00</masterLabel>
+            <translation><!-- 2:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2:30</masterLabel>
+            <translation><!-- 2:30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3:00</masterLabel>
+            <translation><!-- 3:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3:30</masterLabel>
+            <translation><!-- 3:30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4:00</masterLabel>
+            <translation><!-- 4:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4:30</masterLabel>
+            <translation><!-- 4:30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5:00</masterLabel>
+            <translation><!-- 5:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5:30</masterLabel>
+            <translation><!-- 5:30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6:00</masterLabel>
+            <translation><!-- 6:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7:00</masterLabel>
+            <translation><!-- 7:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7:30</masterLabel>
+            <translation><!-- 7:30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:00</masterLabel>
+            <translation><!-- 8:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:30</masterLabel>
+            <translation><!-- 8:30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:00</masterLabel>
+            <translation><!-- 9:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:30</masterLabel>
+            <translation><!-- 9:30 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- xTrainer Notified --></label>
+        <name>xTrainer_Notified__c</name>
+    </fields>
+    <fields>
+        <label><!-- xTraining End Date &amp; Time --></label>
+        <name>xTraining_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- xTraining End Date --></label>
+        <name>xTraining_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- xTraining Start Date &amp; Time --></label>
+        <name>xTraining_Start_Date_Time__c</name>
+    </fields>
+    <layouts>
+        <layout>Operations Topic Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Info --></label>
+            <section>Pricing Info</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Session Info --></label>
+            <section>Session Info</section>
+        </sections>
+        <sections>
+            <label><!-- Workbook Detail --></label>
+            <section>Workbook Detail</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales Rep Topic Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Info --></label>
+            <section>Pricing Info</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Session Info --></label>
+            <section>Session Info</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Detail --></label>
+            <section>Shipping Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Workbook Detail --></label>
+            <section>Workbook Detail</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Session Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Info --></label>
+            <section>Pricing Info</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Session Info --></label>
+            <section>Session Info</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Detail --></label>
+            <section>Shipping Detail</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>prefill Operations Topic Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Info --></label>
+            <section>Pricing Info</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Session Info --></label>
+            <section>Session Info</section>
+        </sections>
+        <sections>
+            <label><!-- Workbook Detail --></label>
+            <section>Workbook Detail</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&apos;/&apos; + Content_Pack__r.Opportunity__r.AccountId , Content_Pack__r.Opportunity__r.Account.Name , &apos;_self&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Info__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Info</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Client_Review_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Review Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Completed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Completed Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Content_Designer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Content Designer</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Content_Items_Designer</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Content_Item_Number__c</fullName>
+        <displayFormat>NS-{00000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Content Item Number</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Content_Pack__c</fullName>
+        <externalId>false</externalId>
+        <label>Content Pack</label>
+        <referenceTo>Content_Pack__c</referenceTo>
+        <relationshipLabel>Content Items</relationshipLabel>
+        <relationshipName>Content_Items</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Content_Team_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Content Team Due Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Submitted__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Submitted</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Design_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Design Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>New</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Missing Information</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reprint</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Required</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Existing_FG__c</fullName>
+        <externalId>false</externalId>
+        <label>Existing FG</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>FG_Type_Needed__c</fullName>
+        <externalId>false</externalId>
+        <label>FG Type Needed</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Level 1: Notes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Level 2: Instructions</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Level 3: Scripted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>File_Format__c</fullName>
+        <externalId>false</externalId>
+        <label>File Format</label>
+        <picklist>
+            <picklistValues>
+                <fullName>MS Word</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PDF</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Item_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Item Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Workbook - Custom</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Workbook - Custom Lite</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Workbook - Content License</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Workbook - Previous Version on File</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Workbook - Logical Operations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Handout</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Facilitator&apos;s Guide</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flyers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing Blurb</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Content Sample</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Curriculum</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Outline</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RFP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Proposal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Logo_Needed__c</fullName>
+        <externalId>false</externalId>
+        <formula>Content_Pack__r.Logo_Needed__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This is set on the Content Pack.</inlineHelpText>
+        <label>Logo Needed?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OldSalesforceID__c</fullName>
+        <externalId>true</externalId>
+        <label>OldSalesforceID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opp_Won__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Opp Won?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Stage__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Content_Pack__r.Opportunity__r.StageName)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&apos;/&apos; + Content_Pack__r.Opportunity__r.Id , Content_Pack__r.Opportunity__r.Name , &apos;_self&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Powerpoint_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Content_Pack__r.Powerpoint_Due_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>From Content Pack field</inlineHelpText>
+        <label>Powerpoint Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Powerpoint_Needed__c</fullName>
+        <externalId>false</externalId>
+        <formula>text (Content_Pack__r.Powerpoint_Needed__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>From Content Pack</inlineHelpText>
+        <label>Powerpoint Needed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Code__c</fullName>
+        <externalId>true</externalId>
+        <label>Product Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Production_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Production Due Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Production_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Production Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Content_Items_Producer</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Production_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Production Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>New</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Missing Information</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Required</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Program_Title__c</fullName>
+        <externalId>false</externalId>
+        <label>Program Title</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Removed_from_Product_Selector__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>If this is checked, then a user removed this from their custom lite or custom product within the Product Selector window.</inlineHelpText>
+        <label>Removed from Product Selector</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Requested_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Requested Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Special_Formatting_Instructions__c</fullName>
+        <externalId>false</externalId>
+        <label>Special Formatting Instructions</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Workbook_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Workbook Location</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Workbook_UPC__c</fullName>
+        <externalId>true</externalId>
+        <label>Workbook UPC</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Content Item</label>
+    <listViews>
+        <fullName>All_Content_Items2</fullName>
+        <booleanFilter>1 or 2</booleanFilter>
+        <columns>Content_Item_Number__c</columns>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Requested_Due_Date__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Opportunity_Stage__c</columns>
+        <columns>Design_Status__c</columns>
+        <columns>Content_Designer__c</columns>
+        <columns>Production_Due_Date__c</columns>
+        <columns>Production_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>In Progress</value>
+        </filters>
+        <filters>
+            <field>Production_Status__c</field>
+            <operation>equals</operation>
+            <value>In Progress</value>
+        </filters>
+        <label>Content Items  - InProgress</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Incomplete_Content_Items</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>Content_Item_Number__c</columns>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Requested_Due_Date__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Opportunity_Stage__c</columns>
+        <columns>Design_Status__c</columns>
+        <columns>Content_Designer__c</columns>
+        <columns>Production_Due_Date__c</columns>
+        <columns>Production_Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Completed,Reprint,Not Required,Canceled</value>
+        </filters>
+        <filters>
+            <field>Production_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Completed,Not Required,Canceled</value>
+        </filters>
+        <label>All Incomplete Content Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Amy_s_Content_Completed_Items</fullName>
+        <columns>Content_Item_Number__c</columns>
+        <columns>Account__c</columns>
+        <columns>NAME</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Date_Submitted__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Design_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Amy Van Trump</value>
+        </filters>
+        <label>Amy&apos;s Content Completed Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Amy_s_Content_Items</fullName>
+        <columns>Content_Item_Number__c</columns>
+        <columns>Account__c</columns>
+        <columns>NAME</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Date_Submitted__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Design_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>Reprint,New,In Progress</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Amy Van Trump</value>
+        </filters>
+        <label>Amy&apos;s Content Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Andrea_S_Content_Completed_Items</fullName>
+        <columns>NAME</columns>
+        <columns>Content_Item_Number__c</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Account__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Production_Due_Date__c</columns>
+        <columns>Production_Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Andrea Strong</value>
+        </filters>
+        <label>Andrea&apos;s Content Completed Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Andrea_s_Content_Items</fullName>
+        <columns>Content_Item_Number__c</columns>
+        <columns>Account__c</columns>
+        <columns>NAME</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Date_Submitted__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Design_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>New,In Progress,Customer Review,Missing Information</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Andrea Strong</value>
+        </filters>
+        <label>Andrea&apos;s Content Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Chanda_Content_Completed_Items</fullName>
+        <columns>NAME</columns>
+        <columns>Content_Item_Number__c</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Account__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Requested_Due_Date__c</columns>
+        <columns>Production_Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Chanda Zimmerman</value>
+        </filters>
+        <label>Chanda Content Completed Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Chandas_Content_Items</fullName>
+        <columns>Content_Item_Number__c</columns>
+        <columns>Account__c</columns>
+        <columns>NAME</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Date_Submitted__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Design_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>New,In Progress,Customer Review,Missing Information</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Chanda Zimmerman</value>
+        </filters>
+        <label>Chanda&apos;s Content Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Jessica_B_Content_Completed_Items</fullName>
+        <columns>NAME</columns>
+        <columns>Content_Item_Number__c</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Account__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Requested_Due_Date__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Jessica Bishop</value>
+        </filters>
+        <label>Jessica B Content Completed Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Jessica_B_s_Content_Items</fullName>
+        <columns>Content_Item_Number__c</columns>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Date_Submitted__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Design_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>New,In Progress,Customer Review,Missing Information</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Jessica Bishop</value>
+        </filters>
+        <label>Jessica B&apos;s Content Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Ken_s_Content_Completed_Items</fullName>
+        <columns>NAME</columns>
+        <columns>Content_Item_Number__c</columns>
+        <columns>Content_Designer__c</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Design_Status__c</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Production_Due_Date__c</columns>
+        <columns>Production_Status__c</columns>
+        <columns>Account__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed,Canceled</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Kenneth Nicely</value>
+        </filters>
+        <label>Ken&apos;s Content Completed Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Mary_s_Content_Completed_Items</fullName>
+        <columns>Content_Item_Number__c</columns>
+        <columns>NAME</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Account__c</columns>
+        <columns>Opportunity_Stage__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Production_Due_Date__c</columns>
+        <columns>Production_Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed,Canceled</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Mary Carroll</value>
+        </filters>
+        <label>Mary&apos;s Content Completed Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Mary_s_Content_Items</fullName>
+        <columns>NAME</columns>
+        <columns>Content_Item_Number__c</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Design_Status__c</columns>
+        <columns>Completed_Date__c</columns>
+        <columns>Production_Due_Date__c</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Date_Submitted__c</columns>
+        <columns>Account__c</columns>
+        <columns>Content_Designer__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>New,In Progress,Customer Review,Missing Information</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Kenneth Nicely</value>
+        </filters>
+        <label>Ken&apos;s Content Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Mary_s_Content_Items1</fullName>
+        <columns>Content_Item_Number__c</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>NAME</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Account__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Production_Due_Date__c</columns>
+        <columns>Design_Status__c</columns>
+        <columns>Date_Submitted__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Mary Carroll</value>
+        </filters>
+        <label>Mary&apos;s Content Items-All</label>
+    </listViews>
+    <listViews>
+        <fullName>Marys_Content_Items</fullName>
+        <columns>Content_Item_Number__c</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>NAME</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Account__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Production_Due_Date__c</columns>
+        <columns>Design_Status__c</columns>
+        <columns>Date_Submitted__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>New,In Progress,Customer Review,Missing Information</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Mary Carroll</value>
+        </filters>
+        <label>Mary&apos;s Content Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Sara_Content_Completed_Items</fullName>
+        <columns>NAME</columns>
+        <columns>Content_Item_Number__c</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Account__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Production_Due_Date__c</columns>
+        <columns>Production_Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Sara Valins</value>
+        </filters>
+        <label>Sara Content Completed Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Saras_Content_Items</fullName>
+        <columns>Content_Item_Number__c</columns>
+        <columns>NAME</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Date_Submitted__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Design_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>New,In Progress,Customer Review,Missing Information</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Sara Valins</value>
+        </filters>
+        <label>Sara&apos;s Content Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Susan_s_Content_Completed_Items</fullName>
+        <columns>Content_Item_Number__c</columns>
+        <columns>Account__c</columns>
+        <columns>NAME</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Opportunity_Stage__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Production_Due_Date__c</columns>
+        <columns>Production_Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed,Canceled</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Susan Enyeart</value>
+        </filters>
+        <label>Susan&apos;s Content Completed Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Susan_s_Revised_Content_Items</fullName>
+        <columns>Content_Item_Number__c</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>NAME</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Account__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Production_Due_Date__c</columns>
+        <columns>Design_Status__c</columns>
+        <columns>Date_Submitted__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>New,In Progress,Customer Review,Missing Information</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Susan Enyeart</value>
+        </filters>
+        <label>Susan&apos;s Content Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Tammicole_Content_Completed_Items</fullName>
+        <columns>NAME</columns>
+        <columns>Content_Item_Number__c</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Account__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Production_Due_Date__c</columns>
+        <columns>Production_Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Tammicole Benefield</value>
+        </filters>
+        <label>Tammicole Content Completed Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Tammicoles_Content_Items</fullName>
+        <columns>Content_Item_Number__c</columns>
+        <columns>Account__c</columns>
+        <columns>NAME</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Content_Team_Due_Date__c</columns>
+        <columns>Date_Submitted__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Design_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>equals</operation>
+            <value>New,In Progress,Customer Review,Missing Information</value>
+        </filters>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+            <value>Tammicole Benefield</value>
+        </filters>
+        <label>Tammicole&apos;s Content Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Unassigned_Closed_Won_Content_Items</fullName>
+        <columns>Content_Item_Number__c</columns>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Content_Pack__c</columns>
+        <columns>Design_Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Requested_Due_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Opportunity_Stage__c</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </filters>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>notEqual</operation>
+            <value>In Progress,Customer Review,Missing Information,Completed,Not Required,Canceled</value>
+        </filters>
+        <label>Unassigned Closed Won Content Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Unassigned_Content_Items</fullName>
+        <columns>Content_Item_Number__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Account__c</columns>
+        <columns>NAME</columns>
+        <columns>Opportunity_Stage__c</columns>
+        <columns>Design_Status__c</columns>
+        <columns>Content_Designer__c</columns>
+        <columns>Requested_Due_Date__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>notEqual</operation>
+            <value>In Progress,Customer Review,Missing Information,Completed,Not Required,Canceled</value>
+        </filters>
+        <filters>
+            <field>Opportunity_Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Closed Lost</value>
+        </filters>
+        <label>Unassigned Content Items</label>
+    </listViews>
+    <listViews>
+        <fullName>Unassigned_Pre_Sales_Content_Items</fullName>
+        <columns>Content_Item_Number__c</columns>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Opportunity_Stage__c</columns>
+        <columns>Design_Status__c</columns>
+        <columns>Requested_Due_Date__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Content_Pack__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Content_Designer__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Item_Type__c</field>
+            <operation>equals</operation>
+            <value>Content Sample,Curriculum,Outline,RFP,Sales Proposal,Other,Flyers</value>
+        </filters>
+        <filters>
+            <field>Design_Status__c</field>
+            <operation>notEqual</operation>
+            <value>In Progress,Customer Review,Missing Information,Completed,Not Required,Canceled</value>
+        </filters>
+        <filters>
+            <field>Opportunity_Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Closed Lost</value>
+        </filters>
+        <filters>
+            <field>Opportunity_Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Closed Won</value>
+        </filters>
+        <label>Unassigned Pre-Sales Content Items</label>
+    </listViews>
+    <nameField>
+        <label>Content Item Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Content Items</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Content_Item_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Content_Designer__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Production_Due_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Production_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Design_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Item_Type__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

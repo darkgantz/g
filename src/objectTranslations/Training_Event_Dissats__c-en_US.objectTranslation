@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Training Event Dissat/Incident</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Training Event Dissats/Incidents</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Training Event Dissats/Incidents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Action Taken to Date --></label>
+        <name>Action_Taken_to_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Requested --></label>
+        <name>Client_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Resolved --></label>
+        <name>Date_Resolved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hard Costs --></label>
+        <name>Hard_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Is Currently With --></label>
+        <name>Issue_Is_Currently_With__c</name>
+        <picklistValues>
+            <masterLabel>Account Manager</masterLabel>
+            <translation><!-- Account Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supervisor</masterLabel>
+            <translation><!-- Supervisor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Manager Name --></label>
+        <name>Manager_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- OldSalesforceID --></label>
+        <name>OldSalesforceID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner --></label>
+        <name>Opportunity_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>Reason__c</name>
+        <picklistValues>
+            <masterLabel>Account Manager Miscommunication</masterLabel>
+            <translation><!-- Account Manager Miscommunication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content not on the mark</masterLabel>
+            <translation><!-- Content not on the mark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content too basic</masterLabel>
+            <translation><!-- Content too basic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Material</masterLabel>
+            <translation><!-- Custom Material --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deviated from contract</masterLabel>
+            <translation><!-- Deviated from contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environment</masterLabel>
+            <translation><!-- Environment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow-up call not received</masterLabel>
+            <translation><!-- Follow-up call not received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giving out personal information</masterLabel>
+            <translation><!-- Giving out personal information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inadequate tailoring</masterLabel>
+            <translation><!-- Inadequate tailoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inappropriate comments</masterLabel>
+            <translation><!-- Inappropriate comments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presentation style</masterLabel>
+            <translation><!-- Presentation style --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procedures not followed</masterLabel>
+            <translation><!-- Procedures not followed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self promotion</masterLabel>
+            <translation><!-- Self promotion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subject knowledge</masterLabel>
+            <translation><!-- Subject knowledge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tardiness</masterLabel>
+            <translation><!-- Tardiness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too much information</masterLabel>
+            <translation><!-- Too much information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer didn&apos;t call client</masterLabel>
+            <translation><!-- Trainer didn&apos;t call client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer no-show</masterLabel>
+            <translation><!-- Trainer no-show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer unprepared</masterLabel>
+            <translation><!-- Trainer unprepared --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unrelated content presented</masterLabel>
+            <translation><!-- Unrelated content presented --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workbook</masterLabel>
+            <translation><!-- Workbook --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resolution --></label>
+        <name>Resolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Soft Costs --></label>
+        <name>Soft_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved</masterLabel>
+            <translation><!-- Resolved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TE Contract Amount --></label>
+        <name>TE_Contract_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- TE Days --></label>
+        <name>TE_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- TE Number --></label>
+        <name>TE_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- TE Start Date --></label>
+        <name>TE_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- TE Trainer Lookup --></label>
+        <name>TE_Trainer_Lookup__c</name>
+        <relationshipLabel><!-- Training Event Dissats/Incidents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TE Trainer --></label>
+        <name>TE_Trainer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Event --></label>
+        <name>Training_Event__c</name>
+        <relationshipLabel><!-- Training Event Dissats/Incidents --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Ops - Training Event Dissats Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dissat Details --></label>
+            <section>Dissat Details</section>
+        </sections>
+        <sections>
+            <label><!-- Training Event Details --></label>
+            <section>Training Event Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales - Training Event Dissats Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dissat Details --></label>
+            <section>Dissat Details</section>
+        </sections>
+        <sections>
+            <label><!-- Training Event Details --></label>
+            <section>Training Event Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Training Event Dissats Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

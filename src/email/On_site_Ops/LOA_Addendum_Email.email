@@ -1,0 +1,15 @@
+<font face="Calibri">
+Hello, {!Training_Event__c.Decision_Maker_First_Name__c},
+
+<br><br>Attached please find an addendum to our Letter of Agreement reflecting change(s) to your training event(s). If you have any questions regarding these changes, please contact me or your account manager, {!Training_Event__c.Opportunity_Owner__c}.
+
+<br><br>We look forward to working with you on this training initiative.
+
+ 
+<br><br>Regards,
+ 
+<br><br>{!User.FirstName} {!User.LastName}
+<br>Logistics Coordinator
+<br>National Seminars Training
+<br>D: (913) 261-7255    F: (913) 677-5224
+<br>{!User.Email}</font>

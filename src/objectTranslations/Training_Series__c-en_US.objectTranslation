@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Training Series</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Training Series</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account-Specific LOA Verbiage --></label>
+        <name>Account_Specific_LOA_Verbiage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Training Series --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Contact --></label>
+        <name>Billing_Contact__c</name>
+        <relationshipLabel><!-- Training Series (Billing Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Currency --></label>
+        <name>Billing_Currency__c</name>
+        <relationshipLabel><!-- Training Series --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cost per Additional Attendee --></label>
+        <name>Cost_per_Additional_Attendee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Maker --></label>
+        <name>Decision_Maker__c</name>
+        <relationshipLabel><!-- Training Series --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LOA Owner --></label>
+        <name>LOA_Owner__c</name>
+        <relationshipLabel><!-- Training Series (LOA Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LOA Pending Approval --></label>
+        <name>LOA_Pending_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOA Sent Date --></label>
+        <name>LOA_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- NDA Received Date --></label>
+        <name>NDA_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Days Remaining --></label>
+        <name>Number_of_Days_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- OldSalesforceID --></label>
+        <name>OldSalesforceID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Close Date --></label>
+        <name>Opportunity_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner --></label>
+        <name>Opportunity_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Record Type --></label>
+        <name>Opportunity_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Training Series --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PO Number --></label>
+        <name>PO_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payable Period --></label>
+        <name>Payable_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold By --></label>
+        <name>Sold_By__c</name>
+        <relationshipLabel><!-- Training Series (Sold By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Special Billing Terms --></label>
+        <name>Special_Billing_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Exempt No. --></label>
+        <name>Tax_Exempt_No__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

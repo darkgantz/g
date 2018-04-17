@@ -1,0 +1,5 @@
+{!Training_Event__c.Training_Event_Number__c} {!Training_Event__c.Name} has been changed to   {!Training_Event__c.Status__c}
+
+https://na35.salesforce.com/{!Training_Event__c.Id}
+
+Please update related content packs and items as needed.

@@ -1,0 +1,9 @@
+Content Item #: {!Content_Item__c.Content_Item_Number__c}
+
+Opportunity: {!Content_Item__c.Opportunity__c} 
+
+Stage: {!Opportunity.StageName}
+
+Content Item:  {!Content_Item__c.Link}
+
+Content Pack:  {!Content_Item__c.Content_Pack__c}

@@ -1,0 +1,21 @@
+<font face="Calibri">
+Hello, {!Training_Event__c.Decision_Maker_First_Name__c},
+
+<br><br>Thank you again for choosing National Seminars Training! The attached Letter of Agreement confirms the conversation with your account manager, {!Training_Event__c.Opportunity_Owner__c}, and serves as our binding contract.  It does NOT need to be signed or returned.
+
+<br><br>Please review all information within this Agreement. If any changes are necessary to the Billing Information, such as a Purchase Order  number you would like included on your invoice(s), please email Laura Hartman at lnhartman@natsem,net. <b>Please send all other correspondence pertaining to this training to me or your account manager, {!Training_Event__c.Opportunity_Owner__c}, at {!Training_Event__c.Opportunity_Owner_Email__c} or {!Training_Event__c.Opportunity_Owner_Phone__c}.</b>
+
+<br><br>National’s goal is to give you the best possible training experience. To help us meet your specific needs, please take a few minutes to complete the attached Tailoring Questionnaire and email it back to your account manager. We will give the results to your scheduled trainer to use in the custom-tailoring of your training event(s).
+
+<br><br>I have also included our coaching flyer. National’s specialty coaching model is an excellent way to reinforce your training and can be tailored to suit your workplace environment. Should you have a need for coaching for this initiative, or in the future, please contact your account manager.
+
+<br><br>We look forward to working with you on this training initiative and many more to come.
+
+ 
+<br><br>Regards,
+ 
+<br><br>{!User.FirstName} {!User.LastName}
+<br>Logistics Coordinator
+<br>National Seminars Training
+<br>D: (913) 261-7255    F: (913) 677-5224
+<br>{!User.Email}</font>

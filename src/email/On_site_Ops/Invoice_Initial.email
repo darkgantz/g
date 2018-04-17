@@ -1,0 +1,7 @@
+<font face="Calibri">Your invoice for training with National Seminars Training is attached. We appreciate your business and look forward to other training initiatives with your organization. 
+<br><br>Thank you!
+
+<br><br><b>{!User.FirstName} {!User.LastName} | National Seminars Training </b>
+<br>{!User.Title}
+<br>{!User.Phone}; {!User.Email}
+<br><a href="http://www.nationalseminarstraining.com">Website</a> <a href="https://www.linkedin.com/company-beta/55941">LinkedIn</a> <a href="https://www.facebook.com/NationalSeminarsTraining">Facebook</a> <a href="https://twitter.com/nst_insights">Twitter</a></font>

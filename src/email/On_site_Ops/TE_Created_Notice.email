@@ -1,0 +1,16 @@
+The following Training Event has been created: {!Training_Event__c.Name}
+
+Training Event link: {!Training_Event__c.Link}
+
+Training Event #: {!Training_Event__c.Training_Event_Number__c}
+
+TE Start Date: {!Training_Event__c.Training_Start_Date__c}
+Training Location: {!Training_Event__c.Training_Location_Address__c}
+Trainer Requested: {!Training_Event__c.Trainer_Requested__c}
+General Session Notes: {!Training_Event__c.General_Session_Notes__c}
+Date Option: {!Training_Event__c.Date_Options__c}
+
+Opportunity Name: {!Training_Event__c.Opportunity__c}
+Opportunity Owner: {!Training_Event__c.Opportunity_Owner__c}
+Close Date: {!Training_Event__c.Opportunity_Close_Date__c}
+Account Name: {!Training_Event__c.Account__c}

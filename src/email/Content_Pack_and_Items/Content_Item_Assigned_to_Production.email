@@ -1,0 +1,3 @@
+{!Content_Item__c.Link} 
+
+CI #: {!Content_Item__c.Name}

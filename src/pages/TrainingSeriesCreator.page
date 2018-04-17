@@ -1,0 +1,561 @@
+<apex:page standardController="Training_Series__c" tabStyle="Account" extensions="TrainingSeriesCreatorController" showHeader="true" sidebar="true" >
+
+    <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.SLDS100, '/assets/styles/salesforce-lightning-design-system-vf.css')}" ></link>
+    <apex:includeScript value="{!$Resource.jQuery1_11}"/>
+
+    <script src="{!URLFOR($Resource.aljs2, 'aljs/jquery/jquery.aljs-init.min.js')}"></script>
+    <script src="{!URLFOR($Resource.aljs2, 'aljs/jquery/moment.js')}"></script>
+    <script src="{!URLFOR($Resource.aljs2, 'aljs/jquery/jquery.aljs-datepicker.min.js')}"></script>
+    
+    <style>
+
+        .buttonsAtTop{
+            margin-left: 100px;
+        }
+
+        .top-button-container{
+            width:100%;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .more-top{
+            margin-top: 40px;
+        }
+
+        input.user-input,.picker-container,input.shrink-input, .slds-select{
+            max-width:96%;
+            margin-right: 5px;
+        }
+
+        .slds-form-element{
+            margin-top:10px;
+        }
+
+        .slds-section-title--divider.plus-space{
+            margin-top: 20px;
+        }
+
+        ul.opp-detail{
+            margin-top: 10px;
+            padding: 0px 15px 0px 15px;
+        }
+
+        .opp-detail li{
+            padding: 6px;
+            display: inline-block;
+        }
+
+        .content-label{
+            left: 150px;
+        }
+
+        .slds-text-heading--label.header-label{
+            font-weight: bold;
+        }
+
+        .field-label{
+            width: 110px;
+        }
+
+        .p-remaining.slds-form-element__label{
+            margin-top: 10px;
+            font-size: 13px;
+        }
+
+        .lookupInput a{
+            margin-left: -35px;
+        }
+
+        .slds-table.slds-table--bordered.event-table{
+            margin: 20px 30px 10px 15px;
+            width:96%;
+        }
+
+        .message{
+             display:none; 
+        }
+
+        .messages-div{
+            margin-bottom: 15px;
+            width:99%;
+       }
+
+       .errorM.slds-notify_container{
+           position: relative;
+       }
+
+	   .slds .littleInput{
+       		width:60px;     
+       }
+
+	   .slds .inputCell{
+       		text-align:center;    
+       }
+
+       .errorM.slds-notify_container .slds-notify.slds-notify--toast{
+           width: 100%;
+           padding: 10px 15px;
+       }
+
+       .errorM.slds-notify_container .slds-notify.slds-notify--toast h2{
+            font-size: 1.1em;
+       }
+
+        .mainActionStatusClass{
+            display:block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            position: fixed;
+            text-align: center;
+            color: gray;
+            font-weight: bold;
+            background: url('{!URLFOR($Resource.SLDS100, "/assets/images/spinners/slds_spinner_brand.gif")}') 50% 200px no-repeat rgba(245,245,245,0.3);
+            background-size: 60px 60px;
+            opacity: 0.9; 
+        }
+
+        abbr.slds-required.required-spaced{
+            margin-right: 5px;
+        }
+
+        .slds .slds-dropdown--left{
+            left: 10px !important;
+
+       }
+
+        .slds .picker-container .dateFormat{
+            display:none;  
+         }
+
+        .slds .textareaField{
+            width:96%;
+        }
+		.slds-form-element span{
+            display:block;
+        }
+        img.closeIcon{
+        	display:none;    
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        var assetsLocation = '{!$Resource.SLDS100}';
+
+        $.aljsInit({
+            assetsLocation: assetsLocation,
+            scoped: true
+        });
+
+        var dateUtc = '';
+
+        function updateStyles(){
+            $('.lookupInput input').addClass('slds-input');
+
+            var resourcePath = "{!URLFOR($Resource.SLDS100,'/assets/icons/utility-sprite/svg/symbols.svg#search')}";
+            var resourceWarning = "{!URLFOR($Resource.SLDS100, '/assets/icons/utility-sprite/svg/symbols.svg#warning')}";
+            var resourceSuccess = "{!URLFOR($Resource.SLDS100, '/assets/icons/utility-sprite/svg/symbols.svg#success')}";
+            var resourcePicker = "{!URLFOR($Resource.SLDS100, '/assets/icons/utility-sprite/svg/symbols.svg#event')}";
+            var resourceClose = "{!URLFOR($Resource.SLDS100, '/assets/icons/utility-sprite/svg/symbols.svg#close')}";
+            var resourceUp = "{!URLFOR($Resource.SLDS100, '/assets/icons/utility-sprite/svg/symbols.svg#up')}";
+
+            $('.lookupInput a').html('<svg aria-hidden="true" class="slds-icon slds-icon--small slds-icon-text-default" style="width:18px;height:18px"><use xlink:href="'+resourcePath+'"></use></svg>');
+
+            $('.picker-container').find('span').prepend('<svg aria-hidden="true" class="slds-input__icon slds-icon-text-default"><use xlink:href="'+resourcePicker+'"></use></svg>');
+
+            $('.close-button').html('<svg aria-hidden="true" class="slds-button__icon slds-button__icon--large"><use xlink:href="'+resourceClose+'"></use></svg>');
+
+            $('.event-name-container').prepend('<svg aria-hidden="true" class="slds-input__icon slds-icon-text-default" style="width:16px;height:16px;margin-top:-3;padding:0" onclick="toggleEvent(this)"><use xlink:href="'+resourceUp+'"></use></svg>');
+
+            var pickers = document.getElementsByClassName('date-input');
+            for(i=0; i<=pickers.length -1; i++){
+                dateUtc = '';
+                if($(pickers[i]).val() != null && $(pickers[i]).val() != '') {
+                    var date = moment.parseZone($(pickers[i]).val());
+                    dateUtc = new Date(date.year(),date.month(),date.get('date'));
+                }
+                
+                $(pickers[i]).datepicker({
+                    numYearsBefore: 5,
+                    numYearsAfter: 5,
+                    format: 'M/D/YYYY',
+                    initDate: dateUtc,
+                    onChange: function(){
+                        $('.date-input').change();
+                    }
+                });
+                
+            }
+            
+            var message = document.getElementsByClassName('message');
+              if(message.length > 0){
+
+                if($('.messageTable').has('li').html() != null){
+                    var errors = $(message[0]).find('.messageTable').find('li');
+                    $('.errorContent').html('');
+                    
+                    var message = '';
+                    for(var i = 0; i < errors.length; i++){
+                        message = $(errors[i]).html() + '</br>';
+                        $('.errorContent').append(message);
+                    }
+                } else {
+                  $('.errorContent').html($('.messageText').html());
+                  $('.errorContent span').css('display','none');
+                }
+                 
+                  $('.errorM').removeClass('slds-hide');
+
+                  if($(message[0]).hasClass('confirmM3')){
+                      $('.notify__content').prepend('<svg id="icon" aria-hidden="true" class="slds-icon slds-icon--small slds-m-right--small slds-col slds-no-flex"><use xlink:href="'+resourceSuccess+'"></use></svg>');
+
+                      $('.slds-notify').removeClass('slds-theme--error');
+                      $('.slds-notify').addClass('slds-theme--success');
+                  } else {
+                    $('.notify__content').prepend('<svg id="icon" aria-hidden="true" class="slds-icon slds-icon--small slds-m-right--small slds-col slds-no-flex"><use xlink:href="'+resourceWarning+'"></use></svg>');
+
+                    $('.slds-notify').removeClass('slds-theme--success');
+                    $('.slds-notify').addClass('slds-theme--error');
+                  }
+
+             }
+ 
+              
+        }
+	
+		function toggleTopicCheckbox(element){
+            $(element).closest("tr.topicRow").find("input:eq(1)").val('');
+            $(element).closest("tr.topicRow").find("input:eq(2)").val('');
+        }
+
+        function toggleEvent(button){
+            var resource = '';
+            var container = $(button.parentElement.parentElement).children('.event-content');
+            $(container).slideToggle(650);
+
+            if($(container).hasClass('arrow-up')){
+                resource = "{!URLFOR($Resource.SLDS100, '/assets/icons/utility-sprite/svg/symbols.svg#down')}";
+                
+                $(container).removeClass('arrow-up');
+                $(container).addClass('arrow-down');
+            } else {
+                resource = "{!URLFOR($Resource.SLDS100, '/assets/icons/utility-sprite/svg/symbols.svg#up')}";
+
+                $(container).addClass('arrow-up');
+                $(container).removeClass('arrow-down');
+            } 
+
+            $(button).html('<use xlink:href="'+resource+'"></use>');
+        }
+
+        function removeToast(){
+            $('.errorM').addClass('slds-hide');
+        }
+
+        function stopRequest(){
+            updateStyles();
+        }  
+
+        function checkAll(input,index){
+            if(input.checked){
+                $('.select-prod-'+index).prop('checked',true);
+            } else{
+                $('.select-prod-'+index).prop('checked',false);
+            }
+        }
+
+        function addDateInHiddenInput(elem){
+            $(elem).next('input').val( $(elem).val() );
+        }
+        
+        function disableDivs() {
+            for (var i = 0; i < $("div[id='training-event-container']").length; i++) {
+                if ($("div[id='training-event-container']")[i].className == 'disabledDiv') {
+                    $($("div[id='training-event-container']")[i]).find(":input").prop("disabled",true);
+                    $($("div[id='training-event-container']")[i]).find("svg").remove();
+                }
+            }
+        }
+
+        function disableAllButtons(){
+         	$('.slds').find('button').prop('disabled',true);  
+            $('.slds').find('input:submit').css('display','none'); 
+            $('.slds').find('input').removeAttr('disabled');
+        }
+		
+		function enableAllButtons(){
+         	$('.slds').find('button').removeAttr('disabled'); 
+            $('.slds').find('input:submit').css('display',''); 
+        }
+
+        $(document).ready(function(){ 
+             updateStyles();
+             disableDivs();
+        });
+    </script>
+
+<div class="slds" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <apex:actionStatus startStyleClass="mainActionStatusClass" id="mainStatusProgress" onstop="javascript:stopRequest();" />
+    
+    <apex:form id="formTraining" styleClass="">
+        <apex:pageMessages />
+        
+        <div class="messages-div">
+            <div class="errorM slds-notify_container slds-hide">
+                <div class="slds-notify slds-notify--toast slds-theme--error" role="alert">
+                    <div class="notify__content slds-grid" style="height:inherit">
+                        
+                        <div class="slds-col slds-align-middle">
+                            <h2 class="slds-text-heading--small errorContent" style="text-align: justify;">Error!</h2>
+                        </div> 
+                        <button type="button" class="slds-button slds-button--icon-inverse slds-notify__close slds-align-middle slds-col slds-no-flex close-button" onclick="removeToast();">
+                            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--large">
+                                <use xlink:href="{!URLFOR($Resource.SLDS100, '/assets/icons/utility-sprite/svg/symbols.svg#close')}"></use>
+                            </svg>
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                    </div> 
+                </div>
+            </div> 
+        </div>  
+        
+        <div class="top-button-container">
+            <apex:commandButton value="Save" action="{!saveAll}" onclick="disableAllButtons()"  styleClass="slds-button slds-button--brand"/>
+            <apex:commandButton value="Back" action="{!backToOpp}" styleClass="slds-button slds-button--neutral" immediate="true"/>
+        </div>
+        
+        <h2 class="slds-section-title--divider plus-space">Opportunity Details</h2>
+        
+        <ul class="opp-detail">
+            <apex:repeat value="{!$ObjectType.Opportunity.FieldSets.Field_Set_for_Training_Creator}" var="f">
+                <li class='slds-size--2-of-5'><label class="slds-form-element__label field-label">{! f.Label}:</label>
+                    <label class="content-label" ><apex:outputField value="{!opp[f]}" /></label>
+                </li>
+            </apex:repeat>
+        </ul>
+        
+        <apex:pageMessages />
+        
+        <div class="messages-div">
+            <div class="errorM slds-notify_container slds-hide">
+                <div class="slds-notify slds-notify--toast slds-theme--error" role="alert">
+                    <div class="notify__content slds-grid" style="height:inherit">
+                        
+                        <div class="slds-col slds-align-middle">
+                            <h2 class="slds-text-heading--small errorContent" style="text-align: justify;">Error!</h2>
+                        </div> 
+                        <button type="button" class="slds-button slds-button--icon-inverse slds-notify__close slds-align-middle slds-col slds-no-flex close-button" onclick="removeToast();">
+                            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--large">
+                                <use xlink:href="{!URLFOR($Resource.SLDS100, '/assets/icons/utility-sprite/svg/symbols.svg#close')}"></use>
+                            </svg>
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                    </div> 
+                </div>
+            </div> 
+        </div>  
+        
+        <apex:commandButton value="Add Training Event" reRender="trainingEvents,formTraining" action="{!addEvent}" disabled="{!IF(FLOOR(NumberOfDayRemaining) != 0,false,true)}" oncomplete="disableDivs()" styleClass="slds-button slds-button--brand" status="mainStatusProgress"/>
+        <apex:commandButton value="Quick Save" action="{!quickSave}" onclick="disableAllButtons()" oncomplete="disableDivs(),enableAllButtons()" reRender="trainingEvents,formTraining" styleClass="slds-button slds-button--neutral" status="mainStatusProgress"/>
+        
+        <apex:outputPanel id="trainingEvents">
+            <br/>
+            <label class="p-remaining slds-form-element__label">Number of Remaining Days: {! FLOOR(NumberOfDayRemaining) }</label>
+            
+            <!-- Training Event based on Opportunity's # of days-->
+            <apex:variable var="cnt" value="{!1}" /> 
+
+            <apex:repeat value="{!listOfInnerTrainingEvents}" var="trainingEvent">
+                <div id="training-event-container" class="{! IF(trainingEvent.tEvent.Status__c != 'Perform',IF(trainingEvent.tEvent.Id != null && modifyAllProfile == false, 'disabledDiv', ''),'slds-hide') }">
+                    
+                    <h2 class="slds-section-title--divider plus-space event-name-container">
+                        Training Event {!cnt}
+                    </h2>
+                    
+                    <apex:inputField value="{!trainingEvent.tEvent.Account__c}" style="display:none"/>
+                    
+                    <div class="slds-grid slds-wrap event-content arrow-up">
+                        <div class="slds-form-element slds-col--padded slds-size--1-of-2 slds-no-flex is-required">
+                            <label class="slds-form-element__label">
+                                <abbr class="slds-required required-spaced" title="required">*</abbr>Training Event Name
+                            </label>
+                            <apex:inputField value="{!trainingEvent.tEvent.Name}" required="true" styleClass="slds-input shrink-input" rendered="{! canUserEditTopic || trainingEvent.tEvent.Id=='' }"/>
+                            <apex:outputField value="{!trainingEvent.tEvent.Name}" styleClass="slds-input shrink-input" rendered="{! !canUserEditTopic && trainingEvent.tEvent.Id!='' }"/>
+                        </div>
+                        
+                        <!-- Make the correct validation for this required field -->
+                        <div class="slds-form-element slds-col--padded slds-size--1-of-2 slds-no-flex is-required">
+                            <label class="slds-form-element__label">
+                                <abbr class="slds-required required-spaced" title="required">*</abbr>Training Start Date
+                            </label>
+                            
+                            <div class="slds-form-element__control">
+                                <div class="slds-input-has-icon slds-input-has-icon--right picker-container">
+                                    <apex:outputPanel rendered="{! canUserEditTopic || trainingEvent.tEvent.Id=='' }">
+                                        <input id="{!trainingEvent.tEvent.Id}DATE"  class="slds-input date-input" type="text" placeholder="Pick a Date"  readonly="readonly" value="{!trainingEvent.tEvent.Training_Start_Date__c}" style="cursor:pointer" onchange="addDateInHiddenInput(this)" />
+                                        <apex:inputHidden id="event-date" rendered="{! $ObjectType.Training_Event__c.updateable || ISBLANK(trainingEvent.tEvent.Id) }" value="{!trainingEvent.tEvent.Training_Start_Date__c}"/> 
+                                    </apex:outputPanel>
+                                    <apex:outputPanel rendered="{! !canUserEditTopic && trainingEvent.tEvent.Id!='' }">
+                                        <apex:outputField value="{!trainingEvent.tEvent.Training_Start_Date__c}"/>
+                                    </apex:outputPanel>
+                                </div>
+                                <apex:outputText value="{!errorMessage[cnt-1]}" styleClass="errorMsg" rendered="{!LEN(errorMessage[cnt-1])>0}"/>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="slds-form-element slds-col--padded slds-size--1-of-2 slds-no-flex">
+                            <label class="slds-form-element__label">Training Location Contact</label>
+                            <apex:inputField value="{!trainingEvent.tEvent.Training_Location_Contact__c}" styleClass="user-input" rendered="{! canUserEditTopic || trainingEvent.tEvent.Id=='' }"/>
+                            <apex:outputField value="{!trainingEvent.tEvent.Training_Location_Contact__c}" styleClass="slds-input shrink-input" rendered="{! !canUserEditTopic && trainingEvent.tEvent.Id!='' }"/>
+                        </div>
+                        
+                        <div class="slds-form-element slds-col--padded slds-size--1-of-2 slds-no-flex is-required">
+                            <label class="slds-form-element__label">
+                                <abbr class="slds-required required-spaced" title="required">*</abbr>Training # of Days
+                            </label>
+                            <apex:inputField value="{!trainingEvent.tEvent.Training_Num_of_Days__c}" required="true" styleClass="slds-input shrink-input" rendered="{! canUserEditTopic || trainingEvent.tEvent.Id=='' }"/>
+                            <apex:outputField value="{!trainingEvent.tEvent.Training_Num_of_Days__c}" styleClass="slds-input shrink-input" rendered="{! !canUserEditTopic && trainingEvent.tEvent.Id!='' }"/>
+                        </div>
+                                                   
+                        <div class="slds-form-element slds-col--padded slds-size--1-of-2 slds-no-flex">
+                            <label class="slds-form-element__label">Trainer Request</label>
+                            <apex:inputField value="{!trainingEvent.tEvent.Trainer_Requested_Contact__c}" styleClass="user-input" rendered="{! canUserEditTopic || trainingEvent.tEvent.Id=='' }"/>
+                            <apex:outputField value="{!trainingEvent.tEvent.Trainer_Requested_Contact__c}" styleClass="slds-input shrink-input" rendered="{! !canUserEditTopic && trainingEvent.tEvent.Id!='' }"/>
+                        </div>
+                        
+                        <div class="slds-form-element slds-col--padded slds-size--1-of-2 slds-no-flex">
+                            <label class="slds-form-element__label">Billing Contact</label>
+                            <apex:inputField value="{!trainingEvent.tEvent.Billing_Contact__c}" styleClass="user-input" rendered="{! canUserEditTopic || trainingEvent.tEvent.Id=='' }"/>
+                            <apex:outputField value="{!trainingEvent.tEvent.Billing_Contact__c}" styleClass="slds-input shrink-input" rendered="{! !canUserEditTopic && trainingEvent.tEvent.Id!='' }"/>
+                        </div>   
+                        
+                        <div class="slds-form-element slds-col--padded slds-size--1-of-2 slds-no-flex">
+                            <label class="slds-form-element__label">Shipping Contact</label>
+                            <apex:inputField value="{!trainingEvent.tEvent.Shipping_Contact__c}" styleClass="user-input" rendered="{! canUserEditTopic || trainingEvent.tEvent.Id=='' }"/>
+                            <apex:outputField value="{!trainingEvent.tEvent.Shipping_Contact__c}" styleClass="slds-input shrink-input" rendered="{! !canUserEditTopic && trainingEvent.tEvent.Id!='' }"/>
+                        </div>
+                        
+                        <div class="slds-form-element slds-col--padded slds-size--1-of-2 slds-no-flex">
+                            <label class="slds-form-element__label">Shipping Attention Line</label>
+                            <apex:inputField value="{!trainingEvent.tEvent.Shipping_Attention_Line__c}" styleClass="slds-input shrink-input" rendered="{! canUserEditTopic || trainingEvent.tEvent.Id=='' }"/>
+                            <apex:outputField value="{!trainingEvent.tEvent.Shipping_Attention_Line__c}" styleClass="slds-input shrink-input" rendered="{! !canUserEditTopic && trainingEvent.tEvent.Id!='' }"/>
+                        </div>
+                        
+                        <div class="slds-form-element slds-col--padded slds-size--1-of-2 slds-no-flex">
+                            <label class="slds-form-element__label">Logistical Contact</label>
+                            <apex:inputField value="{!trainingEvent.tEvent.Logistical_Contact2__c}" styleClass="user-input" rendered="{! canUserEditTopic || trainingEvent.tEvent.Id=='' }"/>
+                            <apex:outputField value="{!trainingEvent.tEvent.Logistical_Contact2__c}" styleClass="slds-input shrink-input" rendered="{! !canUserEditTopic && trainingEvent.tEvent.Id!='' }"/>
+                        </div>
+                        
+                        <div class="slds-form-element slds-col--padded slds-size--1-of-2 slds-no-flex">
+                            <label class="slds-form-element__label" for="start_time">Training Start Time</label>
+                            <div class="slds-form-element__control slds-picklist">
+                                <apex:inputfield id="start_time" value="{!trainingEvent.tEvent.Start_Time__c}" required="true" styleclass="slds-select" rendered="{! canUserEditTopic || trainingEvent.tEvent.Id=='' }"/>
+                                <apex:outputField value="{!trainingEvent.tEvent.Start_Time__c}" rendered="{! !canUserEditTopic && trainingEvent.tEvent.Id!='' }"/>
+                            </div>
+                        </div>
+                        
+                        <div class="slds-form-element slds-col--padded slds-size--1-of-2 slds-no-flex">
+                            <label class="slds-form-element__label" for="end_time">Date Options</label>
+                            <div class="slds-form-element__control">
+                                <apex:inputfield id="date_options" value="{!trainingEvent.tEvent.Date_Options__c}" styleclass="slds-input textareaField" rendered="{! canUserEditTopic || trainingEvent.tEvent.Id=='' }"/>
+                                <apex:outputField value="{!trainingEvent.tEvent.Date_Options__c}" rendered="{! !canUserEditTopic && trainingEvent.tEvent.Id!='' }"/>
+                            </div>
+                        </div> 
+                        
+                        <div class="slds-form-element slds-col--padded slds-size--1-of-2 slds-no-flex slds-container--right">
+                            <label class="slds-form-element__label" for="end_time">Training End Time</label>
+                            <div class="slds-form-element__control slds-picklist">
+                                <apex:inputfield id="end_time" value="{!trainingEvent.tEvent.End_Time__c}" required="true" styleclass="slds-select"  rendered="{! canUserEditTopic || trainingEvent.tEvent.Id=='' }"/>
+                                <apex:outputField value="{!trainingEvent.tEvent.End_Time__c}" rendered="{! !canUserEditTopic && trainingEvent.tEvent.Id!='' }"/>
+                            </div>
+                        </div> 
+                        
+                        <div class="slds-form-element slds-col--padded slds-size--1-of-2 slds-no-flex">
+                            <label class="slds-form-element__label" for="end_time">Session Times</label>
+                            <div class="slds-form-element__control">
+                                <apex:inputfield id="session_time" value="{!trainingEvent.tEvent.Webinar_Session_Times__c }" styleclass="slds-input textareaField" rendered="{! canUserEditTopic || trainingEvent.tEvent.Id=='' }"/>
+                                <apex:outputField value="{!trainingEvent.tEvent.Webinar_Session_Times__c }" rendered="{! !canUserEditTopic && trainingEvent.tEvent.Id!='' }"/>
+                            </div>
+                        </div> 
+                        
+                        <table class="slds-table slds-table--bordered event-table"  border="0" cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div>
+                                            <div class="slds-form-element__control">
+                                                <label class="slds-checkbox">
+                                                    <input type="checkbox" id="main" onclick="return checkAll(this,'{! cnt }')"  />
+                                                    <span class="slds-checkbox--faux"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <apex:repeat value="{!$ObjectType.OpportunityLineItem.FieldSets.Training_Event_Products_Columns}" var="field">
+                                        <th>
+                                            <div>
+                                                <label class="slds-text-heading--label header-label">{!field.label}</label>
+                                            </div>
+                                        </th>
+                                    </apex:repeat>
+                                    <th class="inputCell">
+                                        <div>
+                                            <label class="slds-text-heading--label header-label">Quantity</label>
+                                        </div>
+                                    </th>
+                                    <th class="inputCell">
+                                        <div>
+                                            <label class="slds-text-heading--label header-label">Number of Workbooks</label>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <apex:repeat value="{!trainingEvent.tEventProducts}" var="innerOppProd" >
+                                    <tr class='topicRow'>
+                                        <td>
+                                            <div class="slds-form-element__control">
+                                                <label class="slds-checkbox">
+                                                    <apex:inputCheckbox value="{!innerOppProd.isSelected}" styleClass="slds-checkbox select-prod-{! cnt }" onchange="toggleTopicCheckbox(this)"/>
+                                                    <span class="slds-checkbox--faux"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <apex:repeat value="{!$ObjectType.OpportunityLineItem.FieldSets.Training_Event_Products_Columns}" var="field">
+                                            <td>
+                                                <span>{!innerOppProd.oppProd[field]}</span>
+                                            </td>
+                                        </apex:repeat>
+                                        <td class="inputCell">
+                                            <apex:inputText styleClass="slds-input littleInput" value="{!innerOppProd.quantity}"/>
+                                        </td>
+                                        <td class="inputCell">
+                                            <apex:inputText styleClass="slds-input littleInput" value="{!innerOppProd.numberOfWorkbooks}"/>
+                                        </td>
+                                    </tr>
+                                </apex:repeat>  
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <apex:variable var="cnt" value="{! cnt + 1 }"/>
+            </apex:repeat> 
+        </apex:outputPanel>  
+        
+        <div class="top-button-container more-top">
+            <apex:commandButton value="Save" action="{!saveAll}" onclick="disableAllButtons()" styleClass="slds-button slds-button--brand"/>
+            <apex:commandButton value="Back" action="{!backToOpp}" styleClass="slds-button slds-button--neutral" immediate="true"/>
+        </div>
+        
+        
+    </apex:form>
+    
+</div>
+</apex:page>

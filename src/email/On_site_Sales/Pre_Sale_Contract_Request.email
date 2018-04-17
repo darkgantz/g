@@ -1,0 +1,57 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<p class="MsoNormal" align="center" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; margin-bottom: 0.0001pt; text-align: center;"><b><span style="font-size:16.0pt;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;">Pre-Sale/PL
+Contract Request Form<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" align="center" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; margin-bottom: 0.0001pt; text-align: center;"><b>ALL FIELDS ARE REQUIRED.</b><span style="font-size:
+12.0pt;mso-bidi-font-size:16.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-font-weight:bold"> <br>
+</span><i>request cannot be processed if any information is
+missing<o:p></o:p></i></p>
+
+<p class="MsoNormal" align="center" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; margin-bottom: 0.0001pt; text-align: center;"><span style="font-size: 12pt;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; margin: 6pt 0in 0.0001pt 1.5in; text-indent: -1.5in;"><span style="font-size:12.0pt;line-height:115%"><b>Type of Contract:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; margin: 6pt 0in 0.0001pt 1.5in; text-indent: -1.5in;"><span style="font-size:12.0pt;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-font-weight:
+bold"><b>Date Needed by:</b><a name="Text1"><b>&nbsp; </b>&nbsp; &nbsp; &nbsp;&nbsp;</a></span><span style="font-size: 12pt; text-indent: -1.5in;">&nbsp; &nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin: 6pt 0in 0.0001pt 1.5in; text-indent: -1.5in;"><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><b>Company Name:</b> &nbsp; &nbsp; &nbsp; &nbsp;</span><font face="arial">{!Opportunity.Account}</font><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-indent: -1.5in;">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; margin: 6pt 0in 0.0001pt 1.5in; text-indent: -1.5in;"><span style="font-size:12.0pt;line-height:115%"><b>Topic(s) / Content:</b> &nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; margin: 6pt 0in 0.0001pt 1.5in; text-indent: -1.5in;"><span style="font-size:12.0pt;line-height:115%"><b>Date(s):</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-tab-span" style="white-space:pre">		</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 6pt 0in 0.0001pt 1.5in; text-indent: -1.5in;"><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; line-height: 115%;"><b>Fee Per Date/Day:</b> &nbsp; &nbsp;&nbsp;</span><font face="arial"><span style="line-height: 18.3999996185303px;">{!Opportunity.Fee_Per_Day__c}</span></font><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; line-height: 115%; text-indent: -1.5in;">&nbsp; &nbsp; &nbsp;</span></p>
+
+<p class="MsoNormal" style="margin: 6pt 0in 0.0001pt 1.5in; text-indent: -1.5in;"><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; line-height: 115%;"><b>Total Cost: &nbsp; </b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><font face="arial"><span style="line-height: 18.3999996185303px;">{!Opportunity.Contract_Amount__c}</span></font><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; line-height: 115%; text-indent: -1.5in;">&nbsp; &nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin: 6pt 0in 0.0001pt 1.5in; text-indent: -1.5in;"><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; line-height: 115%;"><b># of attendees:</b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<o:p></o:p></span><font face="arial"><span style="line-height: 18.3999996185303px;">{!Opportunity.Max_Attendees__c}</span></font></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; margin: 6pt 0in 0.0001pt 1.5in; text-indent: -1.5in;"><span style="font-size:12.0pt;line-height:115%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; margin: 6pt 0in 0.0001pt 1.5in; text-indent: -117pt;"><span style="font-size:12.0pt;line-height:115%">A<b>Additional Language*:&nbsp;</b>&nbsp; <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; margin: 6pt 0in 0.0001pt 1.5in; text-indent: -117pt;"><span style="font-size:12.0pt;line-height:115%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; margin: 6pt 0in 0.0001pt;"><span style="font-size:10.0pt;
+mso-bidi-font-size:12.0pt;line-height:115%"><i>*We can correct basic grammar and
+spelling “issues” but please make sure to list the phrase(s) exactly as you
+would like it to appear on the contract.</i><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; margin: 6pt 0in 0.0001pt;"><span style="font-size:10.0pt;
+mso-bidi-font-size:12.0pt;line-height:115%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; margin: 6pt 0in 0.0001pt;"><b><i><span style="font-size:12.0pt;line-height:
+115%">Content License Contracts are required to have a client <u>and</u> Sales
+Manager signature line. <o:p></o:p></span></i></b></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; margin: 6pt 0in 0.0001pt;"><b><i><span style="font-size:12.0pt;line-height:
+115%">Pre-Sale contracts will default to a client signature line only. If you
+would like a signature line for your Sales Manager, please note that in
+Additional Language.<o:p></o:p></span></i></b></p>]]></td>
+</tr>
+</table>

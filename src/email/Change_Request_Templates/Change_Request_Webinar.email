@@ -1,0 +1,14 @@
+Training Event: {!Change_Request__c.Training_Event__c}
+Training Event Number: {!Change_Request__c.Training_Event_Number__c}
+Topic: {!Change_Request__c.Topic__c}
+Notes: {!Change_Request__c.Notes__c}
+Webinar Recording Required: {!Change_Request__c.Webinar_Recording_Required__c}
+Webinar Same Attendees per Session: {!Change_Request__c.Webinar_Same_Attendees_per_Session__c}
+Webinar Time Zone: {!Change_Request__c.Webinar_Time_Zone__c}
+Webinar Session Times: {!Change_Request__c.Webinar_Session_Times__c}
+Webinar Attendees Per Session: {!Change_Request__c.Webinar_Attendees_Per_Session__c}
+Webinar Evaluation Link: {!Change_Request__c.Webinar_Evaluation_Link__c}
+Webinar Hosting: {!Change_Request__c.Webinar_Hosting__c}
+Webinar Notes: {!Change_Request__c.Webinar_Notes__c}
+
+Link to Change Request: {!Change_Request__c.Link}

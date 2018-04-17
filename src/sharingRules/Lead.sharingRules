@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>On_site_Exec</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>On-site Exec</label>
+        <sharedTo>
+            <roleAndSubordinates>On_site_Exec</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>On_site_Exec</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityContactRoles$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$Owner</column>
+            <operator>equals</operator>
+            <value>Amanda Huie</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$CloseDate</column>
+            <operator>greaterOrEqual</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$StageName</column>
+            <operator>equals</operator>
+            <value>Prospecting,Qualification,Needs Analysis,Value Proposition,Id. Decision Makers,Perception Analysis,Proposal/Price Quote,Negotiation/Review</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Amanda Huie FrontSpin Current Open Opps</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_or_without_contact_roles__c</reportType>
+    <roleHierarchyFilter>On_site_Management</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

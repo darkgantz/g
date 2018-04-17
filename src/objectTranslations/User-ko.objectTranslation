@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Number of appointments Lead Gens need per month --></help>
+        <label><!-- Appt Min --></label>
+        <name>Appt_Min__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy SLX ID --></label>
+        <name>Legacy_SLX_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Migrate --></label>
+        <name>Migrate__c</name>
+    </fields>
+    <fields>
+        <label><!-- OldSalesforceID --></label>
+        <name>OldSalesforceID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select the user&apos;s role or Account team --></help>
+        <label><!-- User Team --></label>
+        <name>User_Team__c</name>
+        <picklistValues>
+            <masterLabel>BDRs</masterLabel>
+            <translation><!-- BDRs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracts</masterLabel>
+            <translation><!-- Contracts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faculty</masterLabel>
+            <translation><!-- Faculty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Former</masterLabel>
+            <translation><!-- Former --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Money Badgers</masterLabel>
+            <translation><!-- Money Badgers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ops</masterLabel>
+            <translation><!-- Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POOL</masterLabel>
+            <translation><!-- POOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sale Team 6</masterLabel>
+            <translation><!-- Sale Team 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduling</masterLabel>
+            <translation><!-- Scheduling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spartans</masterLabel>
+            <translation><!-- Spartans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iSell</masterLabel>
+            <translation><!-- iSell --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check this box so that others in this Salesforce organization can send Document Cloud agreements on behalf of this user. --></help>
+        <label><!-- Adobe Sign Allow Sending As Other Users --></label>
+        <name>echosign_dev1__EchoSign_Allow_Delegated_Sending__c</name>
+    </fields>
+    <fields>
+        <help><!-- This checkbox indicates that the user&apos;s email address has been validated in Document Cloud API. --></help>
+        <label><!-- Adobe Sign Email Verified --></label>
+        <name>echosign_dev1__EchoSign_Email_Verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduling --></label>
+        <name>scheduling__c</name>
+        <relationshipLabel><!-- Users --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>User Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Profile Layout</layout>
+        <layoutType>UserAlt</layoutType>
+        <sections>
+            <label><!-- About --></label>
+            <section>About</section>
+        </sections>
+        <sections>
+            <label><!-- Background --></label>
+            <section>Background</section>
+        </sections>
+        <sections>
+            <label><!-- Contact --></label>
+            <section>Contact</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clone --></label>
+        <name>ctu__Clone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Sync_EchoSign_User --></label>
+        <name>echosign_dev1__Sync_EchoSign_User</name>
+    </webLinks>
+</CustomObjectTranslation>

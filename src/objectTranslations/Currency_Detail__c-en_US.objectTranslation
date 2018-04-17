@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Currency Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Currency Details</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conversion Rate --></label>
+        <name>Conversion_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Abbreviation --></label>
+        <name>Currency_Abbreviation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- OldSalesforceID --></label>
+        <name>OldSalesforceID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Rate Abbreviation --></label>
+        <name>Tax_Rate_Abbreviation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tax Rate represented as a whole number. --></help>
+        <label><!-- Tax Rate --></label>
+        <name>Tax_Rate__c</name>
+    </fields>
+    <layouts>
+        <layout>Conversion Detail Layout</layout>
+        <sections>
+            <label><!-- Conversion --></label>
+            <section>Conversion</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Currency Detail Layout</layout>
+        <sections>
+            <label><!-- Conversion --></label>
+            <section>Conversion</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Tax --></label>
+            <section>Tax</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tax Detail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Tax --></label>
+            <section>Tax</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Conversion Record Type --></label>
+        <name>Conversion_Record_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Tax Record Type --></label>
+        <name>Tax_Record_Type</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

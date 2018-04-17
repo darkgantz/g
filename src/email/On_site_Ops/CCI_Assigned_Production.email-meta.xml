@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>sent via WF rule when CCI is Assigned to Production</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Custom Content Item Assigned to Production</name>
+    <style>none</style>
+    <subject>SF NOTICE: Custom Content Item {!Custom_Content_Item__c.Name} Assigned to Production</subject>
+    <type>text</type>
+</EmailTemplate>

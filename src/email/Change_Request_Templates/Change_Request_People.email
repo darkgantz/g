@@ -1,0 +1,9 @@
+Training Event: {!Change_Request__c.Training_Event__c}
+Training Event Number: {!Change_Request__c.Training_Event_Number__c}
+Type: {!Change_Request__c.Type__c}
+Billing / DM Contact: {!Change_Request__c.Billing_DM_Contact__c}
+First Name / Last Name: {!Change_Request__c.First_Name__c} {!Change_Request__c.Last_Name__c}
+Phone: {!Change_Request__c.Phone__c}
+Email: {!Change_Request__c.Email__c}
+
+Link to Change Request: {!Change_Request__c.Link}

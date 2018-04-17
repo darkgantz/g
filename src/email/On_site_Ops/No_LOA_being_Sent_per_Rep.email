@@ -1,0 +1,8 @@
+<font face="Calibri">Hello {!Training_Event__c.Opportunity_Owner__c} !
+
+<br><br>Per the notes at the account and/or contact level or on the event itself, No LOA will be sent for training event #{!Training_Event__c.Training_Event_Number__c}. Please confirm that this is accurate and ensure that Operations has the signed master agreement or that it is uploaded to the account.
+
+<br><br>Thanks!
+<br>{!User.FirstName}
+
+<br><br>Training Event Link: {!Training_Event__c.Link} </font>

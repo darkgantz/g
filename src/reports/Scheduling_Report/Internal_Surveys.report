@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Training_Event__c$Opportunity_Owner__c</field>
+    </columns>
+    <columns>
+        <field>Training_Event__c$Training_Event_Number__c</field>
+    </columns>
+    <columns>
+        <field>Training_Event__c$Training_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Training_Event__c.Training_Event_Internal_Surveys__r$Trainer_Name__c</field>
+    </columns>
+    <columns>
+        <field>Training_Event__c$Account__c</field>
+    </columns>
+    <columns>
+        <field>Training_Event__c$Name</field>
+    </columns>
+    <columns>
+        <field>Training_Event__c.Training_Event_Internal_Surveys__r$Name</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Internal Surveys</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Training_Events_with_Internal_Surveys__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Training_Event__c$Training_Start_Date__c</dateColumn>
+        <endDate>2017-07-29</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-07-02</startDate>
+    </timeFrameFilter>
+</Report>

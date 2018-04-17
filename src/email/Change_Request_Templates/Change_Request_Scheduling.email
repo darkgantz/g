@@ -1,0 +1,10 @@
+Training Event: {!Change_Request__c.Training_Event__c}
+Training Event Number: {!Change_Request__c.Training_Event_Number__c}
+Trainer Requested: {!Change_Request__c.Trainer_Requested__c}
+Start Date: {!Change_Request__c.Start_Date__c}
+Start Time: {!Change_Request__c.Start_Time__c}
+Number of Days: {!Change_Request__c.Number_of_Days__c}
+Date Options: {!Change_Request__c.Date_Options__c}
+Notes: {!Change_Request__c.Notes__c}
+
+Link to Change Request: {!Change_Request__c.Link}

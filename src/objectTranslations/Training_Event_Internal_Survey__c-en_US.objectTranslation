@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Training Event Internal Survey</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Training Event Internal Surveys</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- The client was pleased with the trainer’s communication before the training? --></help>
+        <label><!-- Client Communications --></label>
+        <name>Client_Communications__c</name>
+    </fields>
+    <fields>
+        <help><!-- The client was pleased with the content delivered? --></help>
+        <label><!-- Client Content --></label>
+        <name>Client_Content__c</name>
+    </fields>
+    <fields>
+        <help><!-- The client was pleased with the level of customization the trainer delivered? --></help>
+        <label><!-- Client Customization --></label>
+        <name>Client_Customization__c</name>
+    </fields>
+    <fields>
+        <help><!-- The client was pleased with the amount of interaction, engagement and activities? --></help>
+        <label><!-- Client Engagement --></label>
+        <name>Client_Engagement__c</name>
+    </fields>
+    <fields>
+        <help><!-- Neutral or negative feedback the client mentioned: --></help>
+        <label><!-- Client Negative --></label>
+        <name>Client_Negative__c</name>
+    </fields>
+    <fields>
+        <help><!-- The client’s overall rating of the trainer (1=poor, 3=average and 5=superior) --></help>
+        <label><!-- Client Overall --></label>
+        <name>Client_Overall__c</name>
+    </fields>
+    <fields>
+        <help><!-- Positive feedback the client mentioned: --></help>
+        <label><!-- Client Positive --></label>
+        <name>Client_Positive__c</name>
+    </fields>
+    <fields>
+        <help><!-- The client was pleased with trainer’s professionalism and style? --></help>
+        <label><!-- Client Professionalism --></label>
+        <name>Client_Professionalism__c</name>
+    </fields>
+    <fields>
+        <help><!-- The client was pleased with the level of tailoring the trainer delivered? --></help>
+        <label><!-- Client Tailoring --></label>
+        <name>Client_Tailoring__c</name>
+    </fields>
+    <fields>
+        <help><!-- How much interaction was there? 
+(Strongly Disagree=80 trainer facilitation/20 participant interactivity, Undecided= 50/50 and Strongly Agree=20/80) --></help>
+        <label><!-- Client interaction --></label>
+        <name>Client_interaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOA Creation --></label>
+        <name>LOA_Creation__c</name>
+    </fields>
+    <fields>
+        <label><!-- OldSalesforceID --></label>
+        <name>OldSalesforceID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operations Comments --></label>
+        <name>Operations_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Rating Comments --></label>
+        <name>Overall_Rating_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Rating --></label>
+        <name>Overall_Rating__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Trainer Assignment --></label>
+        <name>Trainer_Assignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trainer Comments --></label>
+        <name>Trainer_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- The trainer seemed confident in their ability to deliver the customized training as requested? --></help>
+        <label><!-- Trainer Customizing --></label>
+        <name>Trainer_Customizing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do you think this trainer would do a good job with other clients? --></help>
+        <label><!-- Trainer Future Use --></label>
+        <name>Trainer_Future_Use__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trainer Initial Contact --></label>
+        <name>Trainer_Initial_Contact__c</name>
+        <picklistValues>
+            <masterLabel>-</masterLabel>
+            <translation><!-- - --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Trainer Name --></label>
+        <name>Trainer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trainer Overall Comments --></label>
+        <name>Trainer_Overall_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trainer Overall Rating --></label>
+        <name>Trainer_Overall_Rating__c</name>
+    </fields>
+    <fields>
+        <help><!-- The trainer was easy to work with --></help>
+        <label><!-- Trainer Professionalism --></label>
+        <name>Trainer_Professionalism__c</name>
+    </fields>
+    <fields>
+        <help><!-- The trainer was responsive to calls and emails --></help>
+        <label><!-- Trainer Responsiveness --></label>
+        <name>Trainer_Responsiveness__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trainer Scheduling --></label>
+        <name>Trainer_Scheduling__c</name>
+        <picklistValues>
+            <masterLabel>-</masterLabel>
+            <translation><!-- - --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please describe the trainer’s style (examples: stoic, professional, trendy, entertaining, boring, etc.): --></help>
+        <label><!-- Trainer Style --></label>
+        <name>Trainer_Style__c</name>
+    </fields>
+    <fields>
+        <help><!-- The trainer seemed confident in their ability to deliver the training and tailor as requested? --></help>
+        <label><!-- Trainer Tailoring --></label>
+        <name>Trainer_Tailoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trainer Understood Needs --></label>
+        <name>Trainer_Understood_Needs__c</name>
+        <picklistValues>
+            <masterLabel>-</masterLabel>
+            <translation><!-- - --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Training Event --></label>
+        <name>Training_Event__c</name>
+        <relationshipLabel><!-- Training Event Internal Surveys --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Training Event Internal Survey Layout</layout>
+        <sections>
+            <label><!-- Client Feedback - To be filled in by Sales Rep --></label>
+            <section>Client Feedback - To be filled in by Sales Rep</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Rep Feedback - To be filled in by Sales Rep --></label>
+            <section>Sales Rep Feedback - To be filled in by Sales Rep</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Content Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Content Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Info --></label>
+        <name>Additional_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Review Due Date --></label>
+        <name>Client_Review_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Date --></label>
+        <name>Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Designer --></label>
+        <name>Content_Designer__c</name>
+        <relationshipLabel><!-- Content Items (Content Designer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Content Item Number --></label>
+        <name>Content_Item_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Pack --></label>
+        <name>Content_Pack__c</name>
+        <relationshipLabel><!-- Content Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Content Team Due Date --></label>
+        <name>Content_Team_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Submitted --></label>
+        <name>Date_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Design Status --></label>
+        <name>Design_Status__c</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Review</masterLabel>
+            <translation><!-- Customer Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Information</masterLabel>
+            <translation><!-- Missing Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Required</masterLabel>
+            <translation><!-- Not Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reprint</masterLabel>
+            <translation><!-- Reprint --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Existing FG --></label>
+        <name>Existing_FG__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FG Type Needed --></label>
+        <name>FG_Type_Needed__c</name>
+        <picklistValues>
+            <masterLabel>Level 1: Notes</masterLabel>
+            <translation><!-- Level 1: Notes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 2: Instructions</masterLabel>
+            <translation><!-- Level 2: Instructions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 3: Scripted</masterLabel>
+            <translation><!-- Level 3: Scripted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- File Format --></label>
+        <name>File_Format__c</name>
+        <picklistValues>
+            <masterLabel>MS Word</masterLabel>
+            <translation><!-- MS Word --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF</masterLabel>
+            <translation><!-- PDF --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Item Type --></label>
+        <name>Item_Type__c</name>
+        <picklistValues>
+            <masterLabel>Content Sample</masterLabel>
+            <translation><!-- Content Sample --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Curriculum</masterLabel>
+            <translation><!-- Curriculum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facilitator&apos;s Guide</masterLabel>
+            <translation><!-- Facilitator&apos;s Guide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flyers</masterLabel>
+            <translation><!-- Flyers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Handout</masterLabel>
+            <translation><!-- Handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Blurb</masterLabel>
+            <translation><!-- Marketing Blurb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outline</masterLabel>
+            <translation><!-- Outline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RFP</masterLabel>
+            <translation><!-- RFP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Proposal</masterLabel>
+            <translation><!-- Sales Proposal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workbook - Content License</masterLabel>
+            <translation><!-- Workbook - Content License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workbook - Custom</masterLabel>
+            <translation><!-- Workbook - Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workbook - Custom Lite</masterLabel>
+            <translation><!-- Workbook - Custom Lite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workbook - Logical Operations</masterLabel>
+            <translation><!-- Workbook - Logical Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workbook - Previous Version on File</masterLabel>
+            <translation><!-- Workbook - Previous Version on File --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is set on the Content Pack. --></help>
+        <label><!-- Logo Needed? --></label>
+        <name>Logo_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- OldSalesforceID --></label>
+        <name>OldSalesforceID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Won? --></label>
+        <name>Opp_Won__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Stage --></label>
+        <name>Opportunity_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- From Content Pack field --></help>
+        <label><!-- Powerpoint Due Date --></label>
+        <name>Powerpoint_Due_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- From Content Pack --></help>
+        <label><!-- Powerpoint Needed --></label>
+        <name>Powerpoint_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Code --></label>
+        <name>Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Due Date --></label>
+        <name>Production_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Owner --></label>
+        <name>Production_Owner__c</name>
+        <relationshipLabel><!-- Content Items (Production Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Production Status --></label>
+        <name>Production_Status__c</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Information</masterLabel>
+            <translation><!-- Missing Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Required</masterLabel>
+            <translation><!-- Not Required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Program Title --></label>
+        <name>Program_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this is checked, then a user removed this from their custom lite or custom product within the Product Selector window. --></help>
+        <label><!-- Removed from Product Selector --></label>
+        <name>Removed_from_Product_Selector__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Due Date --></label>
+        <name>Requested_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Formatting Instructions --></label>
+        <name>Special_Formatting_Instructions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workbook Location --></label>
+        <name>Workbook_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workbook UPC --></label>
+        <name>Workbook_UPC__c</name>
+    </fields>
+    <layouts>
+        <layout>Content Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Info &amp; Instructions --></label>
+            <section>Info &amp; Instructions</section>
+        </sections>
+        <sections>
+            <label><!-- Initial Request Details --></label>
+            <section>Initial Request Details</section>
+        </sections>
+        <sections>
+            <label><!-- Ownership --></label>
+            <section>Ownership</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

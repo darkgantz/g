@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Training Event Post Survey</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Training Event Post Surveys</value>
+    </caseValues>
+    <fields>
+        <label><!-- AM_Accountabillity --></label>
+        <name>AM_Accountabillity__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AM_Additional Comments --></label>
+        <name>AM_Additional_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- AM_Availability --></label>
+        <name>AM_Availability__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AM_Follow-up --></label>
+        <name>AM_Follow_up__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AM_Initial_Contact --></label>
+        <name>AM_Initial_Contact__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AM_Professionalism --></label>
+        <name>AM_Professionalism__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AM_Understood_Needs --></label>
+        <name>AM_Understood_Needs__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account_Manager --></label>
+        <name>Account_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Training Event Post Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Annual_Training_Budget --></label>
+        <name>Annual_Training_Budget__c</name>
+        <picklistValues>
+            <masterLabel>$20,000-$100,000</masterLabel>
+            <translation><!-- $20,000-$100,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over $100,000</masterLabel>
+            <translation><!-- Over $100,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under $20,000</masterLabel>
+            <translation><!-- Under $20,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Company --></label>
+        <name>Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact_Email --></label>
+        <name>Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact_Phone --></label>
+        <name>Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Training Event Post Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Final Comments --></label>
+        <name>Final_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Training Needs --></label>
+        <name>Future_Needs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry --></label>
+        <name>Industry__c</name>
+        <picklistValues>
+            <masterLabel>Advertising/Marketing</masterLabel>
+            <translation><!-- Advertising/Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automotive/Aerospace</masterLabel>
+            <translation><!-- Automotive/Aerospace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals/Agriculture</masterLabel>
+            <translation><!-- Chemicals/Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Computers/Electronics/High Tech</masterLabel>
+            <translation><!-- Computers/Electronics/High Tech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction/Engineering</masterLabel>
+            <translation><!-- Construction/Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distribution/Wholesale</masterLabel>
+            <translation><!-- Distribution/Wholesale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy/Utilities</masterLabel>
+            <translation><!-- Energy/Utilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment/Media/Publishing</masterLabel>
+            <translation><!-- Entertainment/Media/Publishing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial/Insurance/Real Estate</masterLabel>
+            <translation><!-- Financial/Insurance/Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government/Public Sector</masterLabel>
+            <translation><!-- Government/Public Sector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare/Medical/Pharmaceutical</masterLabel>
+            <translation><!-- Healthcare/Medical/Pharmaceutical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mining</masterLabel>
+            <translation><!-- Mining --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Profit</masterLabel>
+            <translation><!-- Non-Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail/Consumer Goods</masterLabel>
+            <translation><!-- Retail/Consumer Goods --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services/Consulting</masterLabel>
+            <translation><!-- Services/Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation/Shipping</masterLabel>
+            <translation><!-- Transportation/Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel/Hospitality/Recreation</masterLabel>
+            <translation><!-- Travel/Hospitality/Recreation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- OldSalesforceID --></label>
+        <name>OldSalesforceID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Training Contacts --></label>
+        <name>Other_Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall_Rating_Comments --></label>
+        <name>Overall_Rating_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Rating --></label>
+        <name>Overall_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- SurveyID --></label>
+        <name>SurveyID__c</name>
+    </fields>
+    <fields>
+        <label><!-- TR_Content --></label>
+        <name>TR_Content__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TR_Examples_Used --></label>
+        <name>TR_Examples_Used__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TR_Initial_Contact --></label>
+        <name>TR_Initial_Contact__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TR_Interaction/Activities --></label>
+        <name>TR_Interaction_Activities__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TR_Overall_Comments --></label>
+        <name>TR_Overall_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- TR_Overall_Rating --></label>
+        <name>TR_Overall_Rating__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TR_Presentation --></label>
+        <name>TR_Presentation__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TR_Professionalism --></label>
+        <name>TR_Professionalism__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TR_Tailoring --></label>
+        <name>TR_Tailoring__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TR_Understood_Needs --></label>
+        <name>TR_Understood_Needs__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Trainer_Name --></label>
+        <name>Trainer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trainer --></label>
+        <name>Trainer__c</name>
+        <relationshipLabel><!-- Training Event Post Surveys (Trainer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Training_Date --></label>
+        <name>Training_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Each Tailoring Survey should be related to an existing Training Event. --></help>
+        <label><!-- Training Event --></label>
+        <name>Training_Event__c</name>
+        <relationshipLabel><!-- Training Event Post Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- May we use you as a reference? --></label>
+        <name>Use_As_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Uses_Coaching --></label>
+        <name>Uses_Coaching__c</name>
+    </fields>
+    <fields>
+        <label><!-- Uses_Contact --></label>
+        <name>Uses_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Uses_Perpetual_Licensing/Content_Dev --></label>
+        <name>Uses_Perpetual_Licensing_Content_Dev__c</name>
+    </fields>
+    <fields>
+        <label><!-- Uses_Trainer_Certification --></label>
+        <name>Uses_Trainer_Certification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Uses_Training_Webinars --></label>
+        <name>Uses_Training_Webinars__c</name>
+    </fields>
+    <fields>
+        <label><!-- Worbook_Quality --></label>
+        <name>Worbook_Quality__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor</masterLabel>
+            <translation><!-- Poor --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Training Event Tailoring Survey Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Other Needs --></label>
+            <section>Other Needs</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Results --></label>
+            <section>Survey Results</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

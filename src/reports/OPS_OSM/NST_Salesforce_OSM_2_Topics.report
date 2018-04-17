@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Training_Event__c$Id</field>
+    </columns>
+    <columns>
+        <field>Training_Event__c.Sessions__r$Id</field>
+    </columns>
+    <columns>
+        <field>Training_Event__c.Sessions__r$Product_Code__c</field>
+    </columns>
+    <columns>
+        <field>Training_Event__c.Sessions__r$Topic_Name__c</field>
+    </columns>
+    <columns>
+        <field>Training_Event__c.Sessions__r$Quantity__c</field>
+    </columns>
+    <columns>
+        <field>Training_Event__c.Sessions__r$Sales_Price__c</field>
+    </columns>
+    <columns>
+        <field>Training_Event__c.Sessions__r$Total_Price__c</field>
+    </columns>
+    <columns>
+        <field>Training_Event__c.Sessions__r$Modality__c</field>
+    </columns>
+    <columns>
+        <field>Training_Event__c.Sessions__r$Type__c</field>
+    </columns>
+    <columns>
+        <field>Training_Event__c.Sessions__r$Content_Pack__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>NST - Salesforce OSM 2 Topics</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Training_Events__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Training_Event__c$Close_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

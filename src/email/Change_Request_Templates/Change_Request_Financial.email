@@ -1,0 +1,10 @@
+Training Event: {!Change_Request__c.Training_Event__c}
+Training Event Number: {!Change_Request__c.Training_Event_Number__c}
+Price: {!Change_Request__c.Price__c}
+Cancellation Fee: {!Change_Request__c.Cancel__c}
+Cost per Attendee: {!Change_Request__c.Cost_per_Attendee__c}
+Number of Attendees: {!Change_Request__c.Number_of_Attendees__c}
+Hard Expense: {!Change_Request__c.Hard_Expense__c}
+PO Number: {!Change_Request__c.PO_Number__c}
+
+Link to Change Request: {!Change_Request__c.Link}

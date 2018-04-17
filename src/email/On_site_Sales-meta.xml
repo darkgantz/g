@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>On-site Sales</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <roleAndSubordinates>On_site_Exec</roleAndSubordinates>
+        <roleAndSubordinates>On_site_Management</roleAndSubordinates>
+        <roleAndSubordinates>On_site_Rep</roleAndSubordinates>
+    </sharedTo>
+</EmailFolder>

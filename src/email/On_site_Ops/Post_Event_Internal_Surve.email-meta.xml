@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>SkillPath</letterhead>
+    <name>Post Event Internal Survey</name>
+    <style>freeForm</style>
+    <subject>We would like your opinion on TE # {!Training_Event__c.Training_Event_Number__c}</subject>
+    <textOnly>In an effort to capture more information about our Trainers, we created a survey for you to fill out on the Trainer. Please fill this form out AFTER you have spoken with the client.
+
+{!Training_Event__c.Link} 
+Hover over the &quot;Training Event Internal Surveys&quot; link at the top of the Training Event page, then click on the &quot;New Training Event Internal Surveys&quot; button to fill out the survey.
+ 
+The first section of the form is from YOUR perspective and the second section is based on the feedback from the CLIENT. 
+
+We can report on this feedback by Trainer, Client and Rep so we can see trends and it will be helpful in making future decisions about trainers on your Training Events.
+ 
+Please take the time to fill this out as accurately as possible.  
+**Hover over the yellow &quot;?&quot; icons to see a full description of the question.</textOnly>
+    <type>html</type>
+</EmailTemplate>
