@@ -1,36 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
-        <name>ActionLinkGroupTemplate</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>AnalyticSnapshot</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>LastContractDateFunctionalityHandler</members>
+        <members>LastContractDateFunctionalityHandlerTest</members>
+        <members>PostSurveyTriggerTest</members>
+        <members>ProductSelector_AddProducts_Controller</members>
+        <members>ProductSelector_ChangeProds_Controller</members>
+        <members>ProductSelector_Test</members>
+        <members>SP_ConvertTrainingCoverage</members>
+        <members>SP_ConvertTrainingEventController</members>
+        <members>TaskTriggerTest</members>
+        <members>TaskTriggerUtilities</members>
+        <members>TrainingSeriesCreatorController</members>
+        <members>TrainingSeriesCreatorControllerTest</members>
+        <members>dlrs_Training_EventTest</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>*</members>
+        <members>ProductSelector_AddProducts</members>
+        <members>ProductSelector_ChangeProducts</members>
+        <members>ProductSelector_ProductModal</members>
         <name>ApexComponent</name>
     </types>
     <types>
-        <members>*</members>
+        <members>ProductSelector</members>
+        <members>SP_ConvertTrainingEvent</members>
+        <members>TrainingSeriesCreator</members>
         <name>ApexPage</name>
     </types>
     <types>
-        <members>*</members>
+        <members>LastContractDateFunctionality</members>
+        <members>PostSurveyTrigger</members>
+        <members>TaskTrigger</members>
+        <members>dlrs_Training_EventTrigger</members>
         <name>ApexTrigger</name>
     </types>
     <types>
-        <members>*</members>
+        <members>AppSwitcher</members>
+        <members>Salesforce1</members>
         <name>AppMenu</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApprovalProcess</name>
     </types>
     <types>
         <members>Case</members>
@@ -38,60 +46,836 @@
         <name>AssignmentRules</name>
     </types>
     <types>
-        <members>*</members>
-        <name>AuraDefinitionBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>AuthProvider</name>
-    </types>
-    <types>
         <members>Case</members>
         <members>Lead</members>
         <name>AutoResponseRules</name>
     </types>
     <types>
-        <members>*</members>
-        <name>CallCenter</name>
+        <members>Lead.General Leads</members>
+        <members>Lead.Prospecting</members>
+        <members>Opportunity.On-site Training</members>
+        <members>Opportunity.Standard</members>
+        <name>BusinessProcess</name>
     </types>
     <types>
-        <members>*</members>
+        <members>SelfSignedCert_30Jun2017_191137</members>
         <name>Certificate</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ChannelLayout</name>
+        <members>DataCloudCompanyMatch</members>
+        <members>DataCloudGeoLocation</members>
+        <members>DataCloudLeadAppend</members>
+        <name>CleanDataService</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Internal Zone</members>
         <name>Community</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ConnectedApp</name>
+        <members>Content_Pack__c.Content_Pack_Layout</members>
+        <members>Topic__c.OS_Topics_Layout</members>
+        <members>Training_Event__c.OS_TE_Layout</members>
+        <name>CompactLayout</name>
     </types>
     <types>
-        <members>*</members>
-        <name>CorsWhitelistOrigin</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>On_site_Sales</members>
+        <members>SkillPath_Console</members>
+        <members>standard__Chatter</members>
+        <members>standard__Community</members>
+        <members>standard__Content</members>
+        <members>standard__LightningSales</members>
+        <members>standard__LightningSalesConsole</members>
+        <members>standard__Marketing</members>
+        <members>standard__Platform</members>
+        <members>standard__Sales</members>
+        <members>standard__Service</members>
+        <members>standard__ServiceConsole</members>
         <name>CustomApplication</name>
     </types>
     <types>
-        <members>*</members>
-        <name>CustomApplicationComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomFeedFilter</name>
+        <members>Account.Account_Banner__c</members>
+        <members>Account.Account_Level_Travel_Notes__c</members>
+        <members>Account.Account_Specific_Billing_Invoicing__c</members>
+        <members>Account.Address_Description__c</members>
+        <members>Account.Date_Last_Opportunity_Created__c</members>
+        <members>Account.Entity_specific_LOA_verbiage__c</members>
+        <members>Account.Exclude_from_COORD_Activities__c</members>
+        <members>Account.Ext__c</members>
+        <members>Account.FID__c</members>
+        <members>Account.Fiscal_Year_Start_Date__c</members>
+        <members>Account.Flag_as_Duplicate__c</members>
+        <members>Account.Invoice_Type__c</members>
+        <members>Account.Legacy_SLX_ID__c</members>
+        <members>Account.NDA_Received_Date__c</members>
+        <members>Account.Named_Account__c</members>
+        <members>Account.National_Bar__c</members>
+        <members>Account.OldSalesforceID__c</members>
+        <members>Account.Payable_Period__c</members>
+        <members>Account.Power_of_One__c</members>
+        <members>Account.SP_Account_Number__c</members>
+        <members>Account.STAR12_Eligible__c</members>
+        <members>Account.Scheduling_Notes__c</members>
+        <members>Account.Special_Billing_Terms__c</members>
+        <members>Account.Tax_Exempt_No__c</members>
+        <members>Account.Total_Number_Sales__c</members>
+        <members>Account.Total_Open_Opportunities__c</members>
+        <members>Account.Total_Won_All_time__c</members>
+        <members>Account.Total_Won_Revenue__c</members>
+        <members>Account.Trainer_Notes__c</members>
+        <members>Account.X180_Days_since_last_Activity__c</members>
+        <members>Account.X90_days_since_last_activity__c</members>
+        <members>Activity.Assigned_To_is_Active__c</members>
+        <members>Activity.Assigned_To_s_Manager__c</members>
+        <members>Activity.Call_Date_Time__c</members>
+        <members>Activity.Call_Dial_Number__c</members>
+        <members>Activity.Call_Hour__c</members>
+        <members>Activity.Call_Lead_Status__c</members>
+        <members>Activity.Call_Recording__c</members>
+        <members>Activity.Call_Ring_Time__c</members>
+        <members>Activity.Call_Time_Zone__c</members>
+        <members>Activity.Callback_Date_Time__c</members>
+        <members>Activity.Count__c</members>
+        <members>Activity.FS_Connect__c</members>
+        <members>Activity.FS_Day_of_Week__c</members>
+        <members>Activity.FS_Last_List_ID__c</members>
+        <members>Activity.FS_Last_List_Name__c</members>
+        <members>Activity.FS_Last_Playbook_ID__c</members>
+        <members>Activity.FS_Last_Playbook_Name__c</members>
+        <members>Activity.FS_Last_Playbook_Step_ID__c</members>
+        <members>Activity.FS_Last_Playbook_Step_Name__c</members>
+        <members>Activity.FS_Last_Playbook_Step_Type__c</members>
+        <members>Activity.FS_Last_Voice_Message_ID__c</members>
+        <members>Activity.FS_Last_Voice_Message_Name__c</members>
+        <members>Activity.FS_Playbook_Step_Day__c</members>
+        <members>Activity.FS_Time_of_Day__c</members>
+        <members>Activity.Legacy_SLX_ID__c</members>
+        <members>Activity.OldSalesforceID__c</members>
+        <members>Activity.dependent_on_start_date__c</members>
+        <members>Activity.ext__c</members>
+        <members>Asset.OldSalesforceID__c</members>
+        <members>Campaign.OldSalesforceID__c</members>
+        <members>Change_Request__c.Billing_DM_Contact__c</members>
+        <members>Change_Request__c.Cancel__c</members>
+        <members>Change_Request__c.City__c</members>
+        <members>Change_Request__c.Cost_per_Attendee__c</members>
+        <members>Change_Request__c.Country__c</members>
+        <members>Change_Request__c.Date_Options__c</members>
+        <members>Change_Request__c.Email__c</members>
+        <members>Change_Request__c.End_Time__c</members>
+        <members>Change_Request__c.First_Name__c</members>
+        <members>Change_Request__c.Hard_Expense__c</members>
+        <members>Change_Request__c.Last_Name__c</members>
+        <members>Change_Request__c.Notes__c</members>
+        <members>Change_Request__c.Number_of_Attendees__c</members>
+        <members>Change_Request__c.Number_of_Days__c</members>
+        <members>Change_Request__c.OldSalesforceID__c</members>
+        <members>Change_Request__c.Opportunity_Owner__c</members>
+        <members>Change_Request__c.PO_Number__c</members>
+        <members>Change_Request__c.Phone__c</members>
+        <members>Change_Request__c.Postal_Code__c</members>
+        <members>Change_Request__c.Price__c</members>
+        <members>Change_Request__c.Shipping_Address_Line__c</members>
+        <members>Change_Request__c.Start_Date__c</members>
+        <members>Change_Request__c.Start_Time__c</members>
+        <members>Change_Request__c.State__c</members>
+        <members>Change_Request__c.Status__c</members>
+        <members>Change_Request__c.Street__c</members>
+        <members>Change_Request__c.Topic__c</members>
+        <members>Change_Request__c.Trainer_Requested__c</members>
+        <members>Change_Request__c.Training_Event_Number__c</members>
+        <members>Change_Request__c.Training_Event__c</members>
+        <members>Change_Request__c.Type__c</members>
+        <members>Change_Request__c.Webinar_Attendees_Per_Session__c</members>
+        <members>Change_Request__c.Webinar_Evaluation_Link__c</members>
+        <members>Change_Request__c.Webinar_Hosting__c</members>
+        <members>Change_Request__c.Webinar_Notes__c</members>
+        <members>Change_Request__c.Webinar_Recording_Required__c</members>
+        <members>Change_Request__c.Webinar_Same_Attendees_per_Session__c</members>
+        <members>Change_Request__c.Webinar_Session_Times__c</members>
+        <members>Change_Request__c.Webinar_Time_Zone__c</members>
+        <members>Contact.Banner__c</members>
+        <members>Contact.Contact_Specific_Billing_Invoicing__c</members>
+        <members>Contact.Contact_Specific_LOA_Verbiage__c</members>
+        <members>Contact.Contact_Specific_Payable_Period__c</members>
+        <members>Contact.Contact_Specific_Scheduling_Notes__c</members>
+        <members>Contact.Contact_Specific_Trainer_Notes__c</members>
+        <members>Contact.Contact_Specific_Travel_Notes__c</members>
+        <members>Contact.Ext__c</members>
+        <members>Contact.FS_Last_Call_Date_Time__c</members>
+        <members>Contact.FS_Last_List_ID__c</members>
+        <members>Contact.FS_Last_List_Name__c</members>
+        <members>Contact.FS_Last_Playbook_Exit_Reason__c</members>
+        <members>Contact.FS_Last_Playbook_ID__c</members>
+        <members>Contact.FS_Last_Playbook_Name__c</members>
+        <members>Contact.FS_Last_Playbook_Step_ID__c</members>
+        <members>Contact.FS_Last_Playbook_Step_Name__c</members>
+        <members>Contact.FS_Last_Playbook_Step_Type__c</members>
+        <members>Contact.FS_Last_Voice_Message_ID__c</members>
+        <members>Contact.FS_Last_Voice_Message_Name__c</members>
+        <members>Contact.FS_Total_Calls__c</members>
+        <members>Contact.Fiscal_Year_Start_Date__c</members>
+        <members>Contact.Flag_as_Duplicate__c</members>
+        <members>Contact.HasOptedOutOfMail__c</members>
+        <members>Contact.INACTIVE_CONTACT__c</members>
+        <members>Contact.Individual_Trainer_Fee__c</members>
+        <members>Contact.Is_Exclude_from_Post_Event_Survey__c</members>
+        <members>Contact.Last_Completed_Activity__c</members>
+        <members>Contact.Last_Contract_Date__c</members>
+        <members>Contact.Legacy_SLX_ID__c</members>
+        <members>Contact.NDA_Received_Date__c</members>
+        <members>Contact.National_Account_Banner__c</members>
+        <members>Contact.National_Bar__c</members>
+        <members>Contact.OldSalesforceID__c</members>
+        <members>Contact.Power_of_One__c</members>
+        <members>Contact.Rollup_Training_Events_Revenue__c</members>
+        <members>Contact.Rollup_Training_Events__c</members>
+        <members>Contact.SLX_Legacy_Contact_Info__c</members>
+        <members>Contact.SP_Contact_Number__c</members>
+        <members>Contact.Tax_Exempt_No__c</members>
+        <members>Contact.Use_Shipping_on_Account__c</members>
+        <members>Contact.Website__c</members>
+        <members>Contact.X180_Days_since_last_Activity_on_Account__c</members>
+        <members>Contact.X90_days_since_last_activity_on_Account__c</members>
+        <members>ContentVersion.Short_Code__c</members>
+        <members>Content_Item__c.Account__c</members>
+        <members>Content_Item__c.Additional_Info__c</members>
+        <members>Content_Item__c.Client_Review_Due_Date__c</members>
+        <members>Content_Item__c.Completed_Date__c</members>
+        <members>Content_Item__c.Content_Designer__c</members>
+        <members>Content_Item__c.Content_Item_Number__c</members>
+        <members>Content_Item__c.Content_Pack__c</members>
+        <members>Content_Item__c.Content_Team_Due_Date__c</members>
+        <members>Content_Item__c.Date_Submitted__c</members>
+        <members>Content_Item__c.Design_Status__c</members>
+        <members>Content_Item__c.Existing_FG__c</members>
+        <members>Content_Item__c.FG_Type_Needed__c</members>
+        <members>Content_Item__c.File_Format__c</members>
+        <members>Content_Item__c.Item_Type__c</members>
+        <members>Content_Item__c.Logo_Needed__c</members>
+        <members>Content_Item__c.OldSalesforceID__c</members>
+        <members>Content_Item__c.Opp_Won__c</members>
+        <members>Content_Item__c.Opportunity_Stage__c</members>
+        <members>Content_Item__c.Opportunity__c</members>
+        <members>Content_Item__c.Powerpoint_Due_Date__c</members>
+        <members>Content_Item__c.Powerpoint_Needed__c</members>
+        <members>Content_Item__c.Product_Code__c</members>
+        <members>Content_Item__c.Production_Due_Date__c</members>
+        <members>Content_Item__c.Production_Owner__c</members>
+        <members>Content_Item__c.Production_Status__c</members>
+        <members>Content_Item__c.Program_Title__c</members>
+        <members>Content_Item__c.Removed_from_Product_Selector__c</members>
+        <members>Content_Item__c.Requested_Due_Date__c</members>
+        <members>Content_Item__c.Special_Formatting_Instructions__c</members>
+        <members>Content_Item__c.Workbook_Location__c</members>
+        <members>Content_Item__c.Workbook_UPC__c</members>
+        <members>Content_Pack__c.Account__c</members>
+        <members>Content_Pack__c.Active__c</members>
+        <members>Content_Pack__c.Completed_Date__c</members>
+        <members>Content_Pack__c.Content_Team_Due_Date__c</members>
+        <members>Content_Pack__c.Date_Submitted__c</members>
+        <members>Content_Pack__c.Description__c</members>
+        <members>Content_Pack__c.Design_Status__c</members>
+        <members>Content_Pack__c.Existing_PowerPoint_to_be_Modified__c</members>
+        <members>Content_Pack__c.Fees_Per_Day__c</members>
+        <members>Content_Pack__c.Logo_Needed__c</members>
+        <members>Content_Pack__c.Number_of_Content_Items__c</members>
+        <members>Content_Pack__c.OldSalesforceID__c</members>
+        <members>Content_Pack__c.Opp_Won__c</members>
+        <members>Content_Pack__c.Opportunity_Amount__c</members>
+        <members>Content_Pack__c.Opportunity_Stage__c</members>
+        <members>Content_Pack__c.Opportunity__c</members>
+        <members>Content_Pack__c.Powerpoint_Due_Date__c</members>
+        <members>Content_Pack__c.Powerpoint_Needed__c</members>
+        <members>Content_Pack__c.Powerpoint_Owner__c</members>
+        <members>Content_Pack__c.Pre_Sales_Request__c</members>
+        <members>Content_Pack__c.Primary_Content_Designer__c</members>
+        <members>Content_Pack__c.Primary_Production_Owner__c</members>
+        <members>Content_Pack__c.Production_Due_Date__c</members>
+        <members>Content_Pack__c.Production_Status__c</members>
+        <members>Content_Pack__c.Program_Title__c</members>
+        <members>Content_Pack__c.Removed_from_Product_Selector__c</members>
+        <members>Content_Pack__c.Requested_Due_Date__c</members>
+        <members>Content_Pack__c.Requires_Client_Review__c</members>
+        <members>Content_Pack__c.Sent_to_Faculty__c</members>
+        <members>Content_Pack__c.Sent_to_Trainer__c</members>
+        <members>Content_Pack__c.Special_Formatting_Instructions__c</members>
+        <members>Content_Pack__c.Standard_Price__c</members>
+        <members>Content_Pack__c.Type__c</members>
+        <members>Contract.OldSalesforceID__c</members>
+        <members>Currency_Detail__c.Active__c</members>
+        <members>Currency_Detail__c.Conversion_Rate__c</members>
+        <members>Currency_Detail__c.Currency_Abbreviation__c</members>
+        <members>Currency_Detail__c.Effective_Date__c</members>
+        <members>Currency_Detail__c.Expiration_Date__c</members>
+        <members>Currency_Detail__c.OldSalesforceID__c</members>
+        <members>Currency_Detail__c.Tax_Rate_Abbreviation__c</members>
+        <members>Currency_Detail__c.Tax_Rate__c</members>
+        <members>Custom_Content_Item__c.Account__c</members>
+        <members>Custom_Content_Item__c.Additional_Info__c</members>
+        <members>Custom_Content_Item__c.Bullets_Page_Numbers__c</members>
+        <members>Custom_Content_Item__c.Capacity__c</members>
+        <members>Custom_Content_Item__c.Client_Industry__c</members>
+        <members>Custom_Content_Item__c.Content_Designer__c</members>
+        <members>Custom_Content_Item__c.Content_Team_Due_Date__c</members>
+        <members>Custom_Content_Item__c.Date_Submitted__c</members>
+        <members>Custom_Content_Item__c.Design_Status__c</members>
+        <members>Custom_Content_Item__c.Education_level__c</members>
+        <members>Custom_Content_Item__c.Existing_FG__c</members>
+        <members>Custom_Content_Item__c.FG_Type_Needed__c</members>
+        <members>Custom_Content_Item__c.File_Format__c</members>
+        <members>Custom_Content_Item__c.Item_Type__c</members>
+        <members>Custom_Content_Item__c.Level_of_Supervision__c</members>
+        <members>Custom_Content_Item__c.Logo_Needed__c</members>
+        <members>Custom_Content_Item__c.NDA_Received_Date__c</members>
+        <members>Custom_Content_Item__c.OldSalesforceID__c</members>
+        <members>Custom_Content_Item__c.Opportunity__c</members>
+        <members>Custom_Content_Item__c.Powerpoint_Completed_Date__c</members>
+        <members>Custom_Content_Item__c.Powerpoint_Needed__c</members>
+        <members>Custom_Content_Item__c.Pre_sales_Request__c</members>
+        <members>Custom_Content_Item__c.Prior_Training_on_Topic__c</members>
+        <members>Custom_Content_Item__c.Production_Due_Date__c</members>
+        <members>Custom_Content_Item__c.Production_Owner__c</members>
+        <members>Custom_Content_Item__c.Production_Status__c</members>
+        <members>Custom_Content_Item__c.Program_Title__c</members>
+        <members>Custom_Content_Item__c.Requested_Due_Date__c</members>
+        <members>Custom_Content_Item__c.Requires_Client_Review__c</members>
+        <members>Custom_Content_Item__c.Session_Name__c</members>
+        <members>Custom_Content_Item__c.Special_Formatting_Instructions__c</members>
+        <members>Custom_Content_Item__c.Target_Audience__c</members>
+        <members>Custom_Content_Item__c.Topic__c</members>
+        <members>Custom_Content_Item__c.Trainer_detail__c</members>
+        <members>Custom_Content_Item__c.Training_Contact_Info__c</members>
+        <members>Custom_Content_Item__c.Training_Event_ID__c</members>
+        <members>Custom_Content_Item__c.Training_Location__c</members>
+        <members>Custom_Content_Item__c.Training_Start_Date__c</members>
+        <members>EmailMessage.OldSalesforceID__c</members>
+        <members>Face_to_Face_Meetings__c.Estimated_Cost_of_Visit__c</members>
+        <members>Face_to_Face_Meetings__c.Notes_from_Visit__c</members>
+        <members>Face_to_Face_Meetings__c.Opportunity__c</members>
+        <members>Face_to_Face_Meetings__c.Primary_Contact__c</members>
+        <members>Invoice__c.Account__c</members>
+        <members>Invoice__c.Amount_Paid__c</members>
+        <members>Invoice__c.Check_No__c</members>
+        <members>Invoice__c.FID__c</members>
+        <members>Invoice__c.Invoice_Sent_Date__c</members>
+        <members>Invoice__c.OldSalesforceID__c</members>
+        <members>Invoice__c.Opportunity__c</members>
+        <members>Invoice__c.Payment_Entered_Date__c</members>
+        <members>Invoice__c.Payment_Method__c</members>
+        <members>Invoice__c.Payment_Received_Date__c</members>
+        <members>Invoice__c.Status__c</members>
+        <members>Invoice__c.Total_Contract_Amount__c</members>
+        <members>Invoice__c.Total_Invoice_Amount__c</members>
+        <members>Invoice__c.Training_Event__c</members>
+        <members>Invoice__c.Training_Fee__c</members>
+        <members>Lead.BDR_Source__c</members>
+        <members>Lead.Buzz_words__c</members>
+        <members>Lead.Company_wide_Initiatives__c</members>
+        <members>Lead.Current_Issues__c</members>
+        <members>Lead.Email_for_Lead_Owner_s_Manager__c</members>
+        <members>Lead.Ext__c</members>
+        <members>Lead.FS_Last_Call_Date_Time__c</members>
+        <members>Lead.FS_Last_List_ID__c</members>
+        <members>Lead.FS_Last_List_Name__c</members>
+        <members>Lead.FS_Last_Playbook_Exit_Reason__c</members>
+        <members>Lead.FS_Last_Playbook_ID__c</members>
+        <members>Lead.FS_Last_Playbook_Name__c</members>
+        <members>Lead.FS_Last_Playbook_Step_Name__c</members>
+        <members>Lead.FS_Last_Playbook_Step_Type__c</members>
+        <members>Lead.FS_Last_Voice_Message_ID__c</members>
+        <members>Lead.FS_Last_Voice_Message_Name__c</members>
+        <members>Lead.FS_Playbook_Step_ID__c</members>
+        <members>Lead.FS_Total_Calls__c</members>
+        <members>Lead.Flag_as_Duplicate__c</members>
+        <members>Lead.Future_Development__c</members>
+        <members>Lead.Ideal_Training_Start_Date__c</members>
+        <members>Lead.Lead_Gen_Quota__c</members>
+        <members>Lead.Mandatory_Attendance__c</members>
+        <members>Lead.Mentor__c</members>
+        <members>Lead.Named_Account__c</members>
+        <members>Lead.Nickname__c</members>
+        <members>Lead.Not_important_content__c</members>
+        <members>Lead.OldSalesforceID__c</members>
+        <members>Lead.Other_training_staff_development__c</members>
+        <members>Lead.Power_of_One__c</members>
+        <members>Lead.Referring_Trainer__c</members>
+        <members>Lead.Special_Shipping__c</members>
+        <members>Lead.Tailoring_to_needs__c</members>
+        <members>Lead.Target_Audience__c</members>
+        <members>Lead.Title_s_of_training_program__c</members>
+        <members>Lead.Topic_selection_criteria__c</members>
+        <members>Lead.Training_Priorities__c</members>
+        <members>Opportunity.Airport_Drive_time__c</members>
+        <members>Opportunity.Auto_CloseDate__c</members>
+        <members>Opportunity.BDR_Source__c</members>
+        <members>Opportunity.Billing_Contact__c</members>
+        <members>Opportunity.Billing_Currency__c</members>
+        <members>Opportunity.Bullets_Page_Numbers__c</members>
+        <members>Opportunity.Buzz_words__c</members>
+        <members>Opportunity.Cancellation_Fee__c</members>
+        <members>Opportunity.Closed_Lost_Notes__c</members>
+        <members>Opportunity.Closed_Lost_Reason__c</members>
+        <members>Opportunity.Combined_LOA_verbiage__c</members>
+        <members>Opportunity.Combined_NDA_Received_Date__c</members>
+        <members>Opportunity.Combined_Payable_Period__c</members>
+        <members>Opportunity.Combined_Scheduling_Notes__c</members>
+        <members>Opportunity.Combined_Tax_Exempt_No__c</members>
+        <members>Opportunity.Combined_Trainer_Notes__c</members>
+        <members>Opportunity.Combined_Travel_Notes__c</members>
+        <members>Opportunity.Company_wide_Initiatives__c</members>
+        <members>Opportunity.Contract_Amount__c</members>
+        <members>Opportunity.Contract_Sent_Date__c</members>
+        <members>Opportunity.Conversion_Rate__c</members>
+        <members>Opportunity.Cost_Per_Additional_Attendee__c</members>
+        <members>Opportunity.Currency_Conversion__c</members>
+        <members>Opportunity.Current_Issues__c</members>
+        <members>Opportunity.Date_Options_Available__c</members>
+        <members>Opportunity.Date_Options__c</members>
+        <members>Opportunity.Decision_Maker__c</members>
+        <members>Opportunity.Education_level__c</members>
+        <members>Opportunity.Email_for_Opp_Owner_s_Manager__c</members>
+        <members>Opportunity.End_Time__c</members>
+        <members>Opportunity.Fee_Adjustment__c</members>
+        <members>Opportunity.Fee_Day__c</members>
+        <members>Opportunity.Fee_Per_Day__c</members>
+        <members>Opportunity.Follow_up_training_development__c</members>
+        <members>Opportunity.Future_Development__c</members>
+        <members>Opportunity.General_Session_Notes__c</members>
+        <members>Opportunity.Group_communication__c</members>
+        <members>Opportunity.Hard_Expenses_USD__c</members>
+        <members>Opportunity.Hotel_Recommendation__c</members>
+        <members>Opportunity.Important_Content__c</members>
+        <members>Opportunity.Invoice_Hard_Expenses__c</members>
+        <members>Opportunity.Issues_trends_affecting_group__c</members>
+        <members>Opportunity.Legacy_Record_Type_Name__c</members>
+        <members>Opportunity.Legacy_SLX_ID__c</members>
+        <members>Opportunity.Level_of_Supervision__c</members>
+        <members>Opportunity.Logistical_Contact__c</members>
+        <members>Opportunity.Manager_ID__c</members>
+        <members>Opportunity.Manager_Name__c</members>
+        <members>Opportunity.Mandatory_Attendance__c</members>
+        <members>Opportunity.Max_Attendees__c</members>
+        <members>Opportunity.Mentor__c</members>
+        <members>Opportunity.Number_of_Contacts_Roles_Assigned__c</members>
+        <members>Opportunity.Number_of_Custom_Content_Items__c</members>
+        <members>Opportunity.Number_of_Days__c</members>
+        <members>Opportunity.Number_of_Opp_Products__c</members>
+        <members>Opportunity.Number_of_TE_Days_Created__c</members>
+        <members>Opportunity.Number_of_TE_Days_Remaining__c</members>
+        <members>Opportunity.OldSalesforceID__c</members>
+        <members>Opportunity.Opportunity_Converted__c</members>
+        <members>Opportunity.PO_Number__c</members>
+        <members>Opportunity.Power_of_One__c</members>
+        <members>Opportunity.Pre_Sale_Trainer_Info__c</members>
+        <members>Opportunity.Pre_Sale_Trainer_Request__c</members>
+        <members>Opportunity.PricebookIDforFormula__c</members>
+        <members>Opportunity.Primary_Competitor__c</members>
+        <members>Opportunity.Prior_Training_on_Topic__c</members>
+        <members>Opportunity.Product_Quantity__c</members>
+        <members>Opportunity.Projector_Provided__c</members>
+        <members>Opportunity.Quarter_Sold__c</members>
+        <members>Opportunity.Ready_to_Convert__c</members>
+        <members>Opportunity.Recommended_Hotel__c</members>
+        <members>Opportunity.Referring_Trainer__c</members>
+        <members>Opportunity.Related_Tax_Rate__c</members>
+        <members>Opportunity.Scheduling_Detail__c</members>
+        <members>Opportunity.Shipping_Attention_Line__c</members>
+        <members>Opportunity.Shipping_Contact__c</members>
+        <members>Opportunity.Special_Billing_Terms__c</members>
+        <members>Opportunity.Start_Time__c</members>
+        <members>Opportunity.TE_Performed_RollUp__c</members>
+        <members>Opportunity.TE_count_dlrs__c</members>
+        <members>Opportunity.Tailoring_to_needs__c</members>
+        <members>Opportunity.Target_Audience__c</members>
+        <members>Opportunity.Tax_Calculation__c</members>
+        <members>Opportunity.Total_Event_Price__c</members>
+        <members>Opportunity.Total_Number_Hours__c</members>
+        <members>Opportunity.Trainer_Requested__c</members>
+        <members>Opportunity.Trainer_detail__c</members>
+        <members>Opportunity.TrainingStartDate__c</members>
+        <members>Opportunity.Training_End_Date__c</members>
+        <members>Opportunity.Training_Event_ID__c</members>
+        <members>Opportunity.Training_Location_Contact_Address__c</members>
+        <members>Opportunity.Training_Location_Contact_City__c</members>
+        <members>Opportunity.Training_Location_Contact_Country__c</members>
+        <members>Opportunity.Training_Location_Contact_Name__c</members>
+        <members>Opportunity.Training_Location_Contact_Postal_Code__c</members>
+        <members>Opportunity.Training_Location_Contact_State__c</members>
+        <members>Opportunity.Training_Location_Contact_Street__c</members>
+        <members>Opportunity.Training_Location_Contact__c</members>
+        <members>Opportunity.Training_Location_Tax__c</members>
+        <members>Opportunity.Training_of_Days__c</members>
+        <members>Opportunity.Travel_Notes__c</members>
+        <members>Opportunity.Webinar_Attendees_Per_Session__c</members>
+        <members>Opportunity.Webinar_Client_Provided_Roster__c</members>
+        <members>Opportunity.Webinar_Conference_Line_Needed__c</members>
+        <members>Opportunity.Webinar_Evaluation_Link__c</members>
+        <members>Opportunity.Webinar_Hosting__c</members>
+        <members>Opportunity.Webinar_International_Conference_Line__c</members>
+        <members>Opportunity.Webinar_Notes__c</members>
+        <members>Opportunity.Webinar_Platform__c</members>
+        <members>Opportunity.Webinar_Recording_Required__c</members>
+        <members>Opportunity.Webinar_Same_Attendees_per_Session__c</members>
+        <members>Opportunity.Webinar_Session_Times__c</members>
+        <members>Opportunity.Webinar_Time_Zone__c</members>
+        <members>OpportunityLineItem.Content_Pack_Name__c</members>
+        <members>OpportunityLineItem.Content_Pack__c</members>
+        <members>OpportunityLineItem.End_Date__c</members>
+        <members>OpportunityLineItem.End_Time__c</members>
+        <members>OpportunityLineItem.Line_Item_Commission_Percent__c</members>
+        <members>OpportunityLineItem.Modality__c</members>
+        <members>OpportunityLineItem.Number_of_hours__c</members>
+        <members>OpportunityLineItem.OldSalesforceID__c</members>
+        <members>OpportunityLineItem.Product_Name__c</members>
+        <members>OpportunityLineItem.Start_Date__c</members>
+        <members>OpportunityLineItem.Start_Time__c</members>
+        <members>OpportunityLineItem.Topic_Name__c</members>
+        <members>OpportunityLineItem.Type__c</members>
+        <members>OpportunityLineItem.Workbook_Country__c</members>
+        <members>OpportunityLineItem.Workbook_ID__c</members>
+        <members>OpportunityLineItem.Workbook_Location__c</members>
+        <members>OpportunityLineItem.Workbook_UPC__c</members>
+        <members>Order.OldSalesforceID__c</members>
+        <members>OrderItem.OldSalesforceID__c</members>
+        <members>Post_Survey__c.AM_Accountabillity__c</members>
+        <members>Post_Survey__c.AM_Additional_Comments__c</members>
+        <members>Post_Survey__c.AM_Availability__c</members>
+        <members>Post_Survey__c.AM_Follow_up__c</members>
+        <members>Post_Survey__c.AM_Initial_Contact__c</members>
+        <members>Post_Survey__c.AM_Professionalism__c</members>
+        <members>Post_Survey__c.AM_Understood_Needs__c</members>
+        <members>Post_Survey__c.Account_Manager__c</members>
+        <members>Post_Survey__c.Account__c</members>
+        <members>Post_Survey__c.Annual_Training_Budget__c</members>
+        <members>Post_Survey__c.Company__c</members>
+        <members>Post_Survey__c.Contact_Email__c</members>
+        <members>Post_Survey__c.Contact_Phone__c</members>
+        <members>Post_Survey__c.Contact__c</members>
+        <members>Post_Survey__c.Final_Comments__c</members>
+        <members>Post_Survey__c.Future_Needs__c</members>
+        <members>Post_Survey__c.Industry__c</members>
+        <members>Post_Survey__c.OldSalesforceID__c</members>
+        <members>Post_Survey__c.Other_Contacts__c</members>
+        <members>Post_Survey__c.Overall_Rating_Comments__c</members>
+        <members>Post_Survey__c.Overall_Rating__c</members>
+        <members>Post_Survey__c.SurveyID__c</members>
+        <members>Post_Survey__c.TR_Content__c</members>
+        <members>Post_Survey__c.TR_Examples_Used__c</members>
+        <members>Post_Survey__c.TR_Initial_Contact__c</members>
+        <members>Post_Survey__c.TR_Interaction_Activities__c</members>
+        <members>Post_Survey__c.TR_Overall_Comments__c</members>
+        <members>Post_Survey__c.TR_Overall_Rating__c</members>
+        <members>Post_Survey__c.TR_Presentation__c</members>
+        <members>Post_Survey__c.TR_Professionalism__c</members>
+        <members>Post_Survey__c.TR_Tailoring__c</members>
+        <members>Post_Survey__c.TR_Understood_Needs__c</members>
+        <members>Post_Survey__c.Trainer_Name__c</members>
+        <members>Post_Survey__c.Trainer__c</members>
+        <members>Post_Survey__c.Training_Date__c</members>
+        <members>Post_Survey__c.Training_Event__c</members>
+        <members>Post_Survey__c.Use_As_Reference__c</members>
+        <members>Post_Survey__c.Uses_Coaching__c</members>
+        <members>Post_Survey__c.Uses_Contact__c</members>
+        <members>Post_Survey__c.Uses_Perpetual_Licensing_Content_Dev__c</members>
+        <members>Post_Survey__c.Uses_Trainer_Certification__c</members>
+        <members>Post_Survey__c.Uses_Training_Webinars__c</members>
+        <members>Post_Survey__c.Worbook_Quality__c</members>
+        <members>Pricebook2.OldSalesforceID__c</members>
+        <members>PricebookEntry.OldSalesforceID__c</members>
+        <members>Product2.Adjustment_Percent__c</members>
+        <members>Product2.Category__c</members>
+        <members>Product2.OldSalesforceID__c</members>
+        <members>Product2.Workbook_Location__c</members>
+        <members>Product2.Workbook_UPC__c</members>
+        <members>Topic__c.Clear_Product_Lookup__c</members>
+        <members>Topic__c.Commission_Adjustment_Percent__c</members>
+        <members>Topic__c.Content_Pack__c</members>
+        <members>Topic__c.Event_Start_Date__c</members>
+        <members>Topic__c.Fill_product_values__c</members>
+        <members>Topic__c.Has_Content_Pack__c</members>
+        <members>Topic__c.Line_Item_Commission_Percent__c</members>
+        <members>Topic__c.Modality__c</members>
+        <members>Topic__c.Number_of_Hours__c</members>
+        <members>Topic__c.Number_of_workbooks__c</members>
+        <members>Topic__c.OldSalesforceID__c</members>
+        <members>Topic__c.Opportunity_LineItem_ID__c</members>
+        <members>Topic__c.Product_Code__c</members>
+        <members>Topic__c.Product_Name__c</members>
+        <members>Topic__c.Quantity__c</members>
+        <members>Topic__c.Sales_Price__c</members>
+        <members>Topic__c.Shipping_Delivery_Date__c</members>
+        <members>Topic__c.Shipping_Signer__c</members>
+        <members>Topic__c.Shipping_Tracking_No__c</members>
+        <members>Topic__c.Topic_Name__c</members>
+        <members>Topic__c.Topic__c</members>
+        <members>Topic__c.Total_Price__c</members>
+        <members>Topic__c.Training_Event_Number__c</members>
+        <members>Topic__c.Training_Event__c</members>
+        <members>Topic__c.Training_Start_Date__c</members>
+        <members>Topic__c.Type__c</members>
+        <members>Topic__c.Workbook_Country__c</members>
+        <members>Topic__c.Workbook_ID__c</members>
+        <members>Topic__c.Workbook_Location__c</members>
+        <members>Topic__c.Workbook_UPC__c</members>
+        <members>Topic__c.null_value__c</members>
+        <members>Topic__c.product_selected_for_prefill__c</members>
+        <members>Topic__c.xAssigned_Trainer__c</members>
+        <members>Topic__c.xEnd_Time__c</members>
+        <members>Topic__c.xTrainer_Notified__c</members>
+        <members>Topic__c.xTraining_End_Date_Time__c</members>
+        <members>Topic__c.xTraining_End_Date__c</members>
+        <members>Topic__c.xTraining_Start_Date_Time__c</members>
+        <members>Training_Event_Dissats__c.Account__c</members>
+        <members>Training_Event_Dissats__c.Action_Taken_to_Date__c</members>
+        <members>Training_Event_Dissats__c.Client_Requested__c</members>
+        <members>Training_Event_Dissats__c.Date_Resolved__c</members>
+        <members>Training_Event_Dissats__c.Description__c</members>
+        <members>Training_Event_Dissats__c.Hard_Costs__c</members>
+        <members>Training_Event_Dissats__c.Issue_Is_Currently_With__c</members>
+        <members>Training_Event_Dissats__c.Manager_Name__c</members>
+        <members>Training_Event_Dissats__c.Notes__c</members>
+        <members>Training_Event_Dissats__c.OldSalesforceID__c</members>
+        <members>Training_Event_Dissats__c.Opportunity_Owner__c</members>
+        <members>Training_Event_Dissats__c.Reason__c</members>
+        <members>Training_Event_Dissats__c.Resolution__c</members>
+        <members>Training_Event_Dissats__c.Soft_Costs__c</members>
+        <members>Training_Event_Dissats__c.Status__c</members>
+        <members>Training_Event_Dissats__c.TE_Contract_Amount__c</members>
+        <members>Training_Event_Dissats__c.TE_Days__c</members>
+        <members>Training_Event_Dissats__c.TE_Number__c</members>
+        <members>Training_Event_Dissats__c.TE_Start_Date__c</members>
+        <members>Training_Event_Dissats__c.TE_Trainer_Lookup__c</members>
+        <members>Training_Event_Dissats__c.TE_Trainer__c</members>
+        <members>Training_Event_Dissats__c.Training_Event__c</members>
+        <members>Training_Event_Internal_Survey__c.Account__c</members>
+        <members>Training_Event_Internal_Survey__c.Client_Communications__c</members>
+        <members>Training_Event_Internal_Survey__c.Client_Content__c</members>
+        <members>Training_Event_Internal_Survey__c.Client_Customization__c</members>
+        <members>Training_Event_Internal_Survey__c.Client_Engagement__c</members>
+        <members>Training_Event_Internal_Survey__c.Client_Negative__c</members>
+        <members>Training_Event_Internal_Survey__c.Client_Overall__c</members>
+        <members>Training_Event_Internal_Survey__c.Client_Positive__c</members>
+        <members>Training_Event_Internal_Survey__c.Client_Professionalism__c</members>
+        <members>Training_Event_Internal_Survey__c.Client_Tailoring__c</members>
+        <members>Training_Event_Internal_Survey__c.Client_interaction__c</members>
+        <members>Training_Event_Internal_Survey__c.LOA_Creation__c</members>
+        <members>Training_Event_Internal_Survey__c.OldSalesforceID__c</members>
+        <members>Training_Event_Internal_Survey__c.Operations_Comments__c</members>
+        <members>Training_Event_Internal_Survey__c.Overall_Rating_Comments__c</members>
+        <members>Training_Event_Internal_Survey__c.Overall_Rating__c</members>
+        <members>Training_Event_Internal_Survey__c.Trainer_Assignment__c</members>
+        <members>Training_Event_Internal_Survey__c.Trainer_Comments__c</members>
+        <members>Training_Event_Internal_Survey__c.Trainer_Customizing__c</members>
+        <members>Training_Event_Internal_Survey__c.Trainer_Future_Use__c</members>
+        <members>Training_Event_Internal_Survey__c.Trainer_Initial_Contact__c</members>
+        <members>Training_Event_Internal_Survey__c.Trainer_Name__c</members>
+        <members>Training_Event_Internal_Survey__c.Trainer_Overall_Comments__c</members>
+        <members>Training_Event_Internal_Survey__c.Trainer_Overall_Rating__c</members>
+        <members>Training_Event_Internal_Survey__c.Trainer_Professionalism__c</members>
+        <members>Training_Event_Internal_Survey__c.Trainer_Responsiveness__c</members>
+        <members>Training_Event_Internal_Survey__c.Trainer_Scheduling__c</members>
+        <members>Training_Event_Internal_Survey__c.Trainer_Style__c</members>
+        <members>Training_Event_Internal_Survey__c.Trainer_Tailoring__c</members>
+        <members>Training_Event_Internal_Survey__c.Trainer_Understood_Needs__c</members>
+        <members>Training_Event_Internal_Survey__c.Training_Event__c</members>
+        <members>Training_Event__c.AM_Client_Follow_up__c</members>
+        <members>Training_Event__c.AM_Locations_Verification__c</members>
+        <members>Training_Event__c.AM_Prep_Trainer__c</members>
+        <members>Training_Event__c.AM_Tailoring_Call__c</members>
+        <members>Training_Event__c.AM_Thank_You_Card__c</members>
+        <members>Training_Event__c.AM_Trainer_Follow_Up__c</members>
+        <members>Training_Event__c.AM_Wkbk_Confirmation__c</members>
+        <members>Training_Event__c.AM_Workbook_Confirmation_Received__c</members>
+        <members>Training_Event__c.Account_Level_Travel_Notes__c</members>
+        <members>Training_Event__c.Account__c</members>
+        <members>Training_Event__c.Addendum_Needed__c</members>
+        <members>Training_Event__c.Airport_Drive_time__c</members>
+        <members>Training_Event__c.Amount_of_each_SkillCheck__c</members>
+        <members>Training_Event__c.Base_Event_Price__c</members>
+        <members>Training_Event__c.Billed_Hard_Expenses_Local_Currency__c</members>
+        <members>Training_Event__c.Billing_Contact__c</members>
+        <members>Training_Event__c.Billing_Currency__c</members>
+        <members>Training_Event__c.Cancellation_Date__c</members>
+        <members>Training_Event__c.Cancellation_Fee__c</members>
+        <members>Training_Event__c.Cancelled_Amount__c</members>
+        <members>Training_Event__c.Client_Webinar_Platform__c</members>
+        <members>Training_Event__c.Close_Date__c</members>
+        <members>Training_Event__c.Combined_Billing_Invoicing__c</members>
+        <members>Training_Event__c.Combined_NDA_Received_Date__c</members>
+        <members>Training_Event__c.Combined_Payable_Period_new__c</members>
+        <members>Training_Event__c.Combined_Scheduling_Notes__c</members>
+        <members>Training_Event__c.Combined_Tax_Exempt_No__c</members>
+        <members>Training_Event__c.Combined_Trainer_Notes__c</members>
+        <members>Training_Event__c.Combined_Travel_Notes__c</members>
+        <members>Training_Event__c.Confirm_call_date__c</members>
+        <members>Training_Event__c.Confirmation_Call_Completed__c</members>
+        <members>Training_Event__c.Confirmation_Call_Date__c</members>
+        <members>Training_Event__c.Confirmation_Call_Notes__c</members>
+        <members>Training_Event__c.Confirmation_Call_Owner__c</members>
+        <members>Training_Event__c.Conversion_Rate__c</members>
+        <members>Training_Event__c.Cost_per_Additional_Attendee__c</members>
+        <members>Training_Event__c.DM_specific_LOA_verbiage__c</members>
+        <members>Training_Event__c.Date_Delivered__c</members>
+        <members>Training_Event__c.Date_Options_Available__c</members>
+        <members>Training_Event__c.Date_Options__c</members>
+        <members>Training_Event__c.Date_Shipped__c</members>
+        <members>Training_Event__c.Date_SkillChecks_Requested__c</members>
+        <members>Training_Event__c.Date_SkillChecks_Sent__c</members>
+        <members>Training_Event__c.Days_Since_Sold__c</members>
+        <members>Training_Event__c.Decision_Maker_Email__c</members>
+        <members>Training_Event__c.Decision_Maker_First_Name__c</members>
+        <members>Training_Event__c.Decision_Maker_Last_Name__c</members>
+        <members>Training_Event__c.Decision_Maker__c</members>
+        <members>Training_Event__c.End_Time__c</members>
+        <members>Training_Event__c.Entity_specific_LOA_verbiage__c</members>
+        <members>Training_Event__c.Event_Billing_Notes__c</members>
+        <members>Training_Event__c.Event_specific_Trainer_Notes__c</members>
+        <members>Training_Event__c.General_Session_Notes__c</members>
+        <members>Training_Event__c.Hard_Expenses_USD__c</members>
+        <members>Training_Event__c.Individual_Trainer_Fee__c</members>
+        <members>Training_Event__c.Initial_Invoice_Date__c</members>
+        <members>Training_Event__c.Internal_Shipping_Notes__c</members>
+        <members>Training_Event__c.Invoice_Hard_Expenses__c</members>
+        <members>Training_Event__c.LOA_Owner__c</members>
+        <members>Training_Event__c.LOA_Pending_Approval__c</members>
+        <members>Training_Event__c.LOA_Sent_Date__c</members>
+        <members>Training_Event__c.Legacy_OSM_ID__c</members>
+        <members>Training_Event__c.Logistical_Contact2__c</members>
+        <members>Training_Event__c.Logistical_Contact__c</members>
+        <members>Training_Event__c.Mandatory_Attendance__c</members>
+        <members>Training_Event__c.Max_Attendees__c</members>
+        <members>Training_Event__c.NDA_Received_Date__c</members>
+        <members>Training_Event__c.Non_Commissionable__c</members>
+        <members>Training_Event__c.Num_SkillChecks_Requested__c</members>
+        <members>Training_Event__c.Number_of_Non_Standard_Workbooks__c</members>
+        <members>Training_Event__c.Number_of_Selected_Topics__c</members>
+        <members>Training_Event__c.Number_of_Training__c</members>
+        <members>Training_Event__c.OldSalesforceID__c</members>
+        <members>Training_Event__c.Opportunity_Close_Date__c</members>
+        <members>Training_Event__c.Opportunity_Description__c</members>
+        <members>Training_Event__c.Opportunity_Owner_Email__c</members>
+        <members>Training_Event__c.Opportunity_Owner_Phone__c</members>
+        <members>Training_Event__c.Opportunity_Owner_Title__c</members>
+        <members>Training_Event__c.Opportunity_Owner__c</members>
+        <members>Training_Event__c.Opportunity_Record_Type_Name__c</members>
+        <members>Training_Event__c.Opportunity_Record_Type__c</members>
+        <members>Training_Event__c.Opportunity__c</members>
+        <members>Training_Event__c.Original_TE_Owner__c</members>
+        <members>Training_Event__c.PO_Number__c</members>
+        <members>Training_Event__c.PPT_sent_to_Trainer__c</members>
+        <members>Training_Event__c.Payable_Period__c</members>
+        <members>Training_Event__c.Power_of_One__c</members>
+        <members>Training_Event__c.Projector_Provided__c</members>
+        <members>Training_Event__c.Quarter_Performed__c</members>
+        <members>Training_Event__c.Ready_To_Ship__c</members>
+        <members>Training_Event__c.Recommended_Hotel__c</members>
+        <members>Training_Event__c.Related_Tax_Rate__c</members>
+        <members>Training_Event__c.Requested_Delivery_Date__c</members>
+        <members>Training_Event__c.STAR12_Eligible__c</members>
+        <members>Training_Event__c.STAR12_Invoice_Num__c</members>
+        <members>Training_Event__c.SafeID__c</members>
+        <members>Training_Event__c.Scheduling_Detail__c</members>
+        <members>Training_Event__c.Scheduling_Notes__c</members>
+        <members>Training_Event__c.Scheduling_Owner__c</members>
+        <members>Training_Event__c.Sent_to_Printer__c</members>
+        <members>Training_Event__c.Shipping_Attention_Line__c</members>
+        <members>Training_Event__c.Shipping_Comments__c</members>
+        <members>Training_Event__c.Shipping_Contact__c</members>
+        <members>Training_Event__c.Shipping_Location_Address__c</members>
+        <members>Training_Event__c.Shipping_Method__c</members>
+        <members>Training_Event__c.Shipping_Number_s__c</members>
+        <members>Training_Event__c.Shipping_Owner__c</members>
+        <members>Training_Event__c.SkillChecks_Requested__c</members>
+        <members>Training_Event__c.Software_sent_to_Trainer__c</members>
+        <members>Training_Event__c.Special_Billing_Instructions__c</members>
+        <members>Training_Event__c.Special_Billing_Terms__c</members>
+        <members>Training_Event__c.Start_Time__c</members>
+        <members>Training_Event__c.Status_Banner__c</members>
+        <members>Training_Event__c.Status_Indicator__c</members>
+        <members>Training_Event__c.Status__c</members>
+        <members>Training_Event__c.Sum_of_Sales_Price__c</members>
+        <members>Training_Event__c.TBD_Date__c</members>
+        <members>Training_Event__c.TE_Contract_Amount__c</members>
+        <members>Training_Event__c.TE_Currency_Conversion__c</members>
+        <members>Training_Event__c.TE_Scheduling_Notes__c</members>
+        <members>Training_Event__c.TE_Tax_Calculation__c</members>
+        <members>Training_Event__c.Tailoring_Call_date__c</members>
+        <members>Training_Event__c.Tax_Exempt_No__c</members>
+        <members>Training_Event__c.Trainer_Assigned__c</members>
+        <members>Training_Event__c.Trainer_Change__c</members>
+        <members>Training_Event__c.Trainer_Fee_Per_Day__c</members>
+        <members>Training_Event__c.Trainer_Notes__c</members>
+        <members>Training_Event__c.Trainer_Notified__c</members>
+        <members>Training_Event__c.Trainer_Requested_Contact__c</members>
+        <members>Training_Event__c.Trainer_Requested__c</members>
+        <members>Training_Event__c.Trainer_detail__c</members>
+        <members>Training_Event__c.Training_Capacity__c</members>
+        <members>Training_Event__c.Training_Coming_Within_30_Days__c</members>
+        <members>Training_Event__c.Training_Date_Change_Tracking__c</members>
+        <members>Training_Event__c.Training_End_Date__c</members>
+        <members>Training_Event__c.Training_Event_Number__c</members>
+        <members>Training_Event__c.Training_Location_Address__c</members>
+        <members>Training_Event__c.Training_Location_Contact_City__c</members>
+        <members>Training_Event__c.Training_Location_Contact_Country__c</members>
+        <members>Training_Event__c.Training_Location_Contact_Name__c</members>
+        <members>Training_Event__c.Training_Location_Contact_Postal_Code__c</members>
+        <members>Training_Event__c.Training_Location_Contact_State__c</members>
+        <members>Training_Event__c.Training_Location_Contact_Street__c</members>
+        <members>Training_Event__c.Training_Location_Contact__c</members>
+        <members>Training_Event__c.Training_Num_of_Days__c</members>
+        <members>Training_Event__c.Training_Series__c</members>
+        <members>Training_Event__c.Training_Start_Date__c</members>
+        <members>Training_Event__c.Travel_Notes__c</members>
+        <members>Training_Event__c.Webinar_Attendees_Per_Session__c</members>
+        <members>Training_Event__c.Webinar_Conference_Line_Nee__c</members>
+        <members>Training_Event__c.Webinar_Evaluation_Link__c</members>
+        <members>Training_Event__c.Webinar_Hosting__c</members>
+        <members>Training_Event__c.Webinar_International_Conference_Line__c</members>
+        <members>Training_Event__c.Webinar_Notes__c</members>
+        <members>Training_Event__c.Webinar_Recording_Required__c</members>
+        <members>Training_Event__c.Webinar_Same_Attendees_per_Session__c</members>
+        <members>Training_Event__c.Webinar_Session_Times__c</members>
+        <members>Training_Event__c.Webinar_SkillPath_Sends_Invites__c</members>
+        <members>Training_Event__c.Webinar_Time_Zone__c</members>
+        <members>Training_Event__c.Workbook_confirmation_date__c</members>
+        <members>Training_Event__c.Workbook_sent_to_Trainer__c</members>
+        <members>Training_Series__c.Account_Specific_LOA_Verbiage__c</members>
+        <members>Training_Series__c.Account__c</members>
+        <members>Training_Series__c.Billing_Contact__c</members>
+        <members>Training_Series__c.Billing_Currency__c</members>
+        <members>Training_Series__c.Cost_per_Additional_Attendee__c</members>
+        <members>Training_Series__c.Decision_Maker__c</members>
+        <members>Training_Series__c.LOA_Owner__c</members>
+        <members>Training_Series__c.LOA_Pending_Approval__c</members>
+        <members>Training_Series__c.LOA_Sent_Date__c</members>
+        <members>Training_Series__c.NDA_Received_Date__c</members>
+        <members>Training_Series__c.Number_of_Days_Remaining__c</members>
+        <members>Training_Series__c.OldSalesforceID__c</members>
+        <members>Training_Series__c.Opportunity_Close_Date__c</members>
+        <members>Training_Series__c.Opportunity_Owner__c</members>
+        <members>Training_Series__c.Opportunity_Record_Type__c</members>
+        <members>Training_Series__c.Opportunity__c</members>
+        <members>Training_Series__c.PO_Number__c</members>
+        <members>Training_Series__c.Payable_Period__c</members>
+        <members>Training_Series__c.Sold_By__c</members>
+        <members>Training_Series__c.Special_Billing_Terms__c</members>
+        <members>Training_Series__c.Tax_Exempt_No__c</members>
+        <members>User.Appt_Min__c</members>
+        <members>User.Legacy_SLX_ID__c</members>
+        <members>User.OldSalesforceID__c</members>
+        <members>User.User_Team__c</members>
+        <members>User.scheduling__c</members>
+        <members>VRS__c.no_Zero_amount_opp_products__c</members>
+        <name>CustomField</name>
     </types>
     <types>
         <members>CustomLabels</members>
         <name>CustomLabels</name>
     </types>
     <types>
-        <members>*</members>
+        <members>dlrs__LookupRollupSummary2.Summarize_Amt_TEs_on_DM_contact</members>
+        <members>dlrs__LookupRollupSummary2.Summarize_Num_TEs_on_DM_contact</members>
+        <members>dlrs__LookupRollupSummary2.training_event_count_rollup</members>
         <name>CustomMetadata</name>
     </types>
     <types>
@@ -154,8 +938,6 @@
         <members>Solution</members>
         <members>StreamingChannel</members>
         <members>Task</members>
-        <members>Territory2</members>
-        <members>Territory2Model</members>
         <members>Topic</members>
         <members>TopicAssignment</members>
         <members>Topic__c</members>
@@ -165,7 +947,6 @@
         <members>Training_Series__c</members>
         <members>User</members>
         <members>UserProvisioningRequest</members>
-        <members>UserTerritory2Association</members>
         <members>VRS__c</members>
         <members>WorkBadge</members>
         <members>WorkBadgeDefinition</members>
@@ -173,23 +954,492 @@
         <name>CustomObject</name>
     </types>
     <types>
-        <members>*</members>
+        <members>APXTConga4__Composer_QuickMerge__c-en_US</members>
+        <members>APXTConga4__Conga_Composer_Settings__c-en_US</members>
+        <members>APXTConga4__Conga_Email_Staging__c-en_US</members>
+        <members>APXTConga4__Conga_Email_Template__c-en_US</members>
+        <members>APXTConga4__Conga_Merge_Query__c-en_US</members>
+        <members>APXTConga4__Conga_Solution_Email_Template__c-en_US</members>
+        <members>APXTConga4__Conga_Solution_Parameter__c-en_US</members>
+        <members>APXTConga4__Conga_Solution_Query__c-en_US</members>
+        <members>APXTConga4__Conga_Solution_Report__c-en_US</members>
+        <members>APXTConga4__Conga_Solution_Template__c-en_US</members>
+        <members>APXTConga4__Conga_Solution__c-en_US</members>
+        <members>APXTConga4__Conga_Solutions_Settings__c-en_US</members>
+        <members>APXTConga4__Conga_Template__c-en_US</members>
+        <members>Change_Request__c-en_US</members>
+        <members>Content_Item__c-en_US</members>
+        <members>Content_Pack__c-en_US</members>
+        <members>Currency_Detail__c-en_US</members>
+        <members>Custom_Content_Item__c-en_US</members>
+        <members>Face_to_Face_Meetings__c-en_US</members>
+        <members>Invoice__c-en_US</members>
+        <members>Post_Survey__c-en_US</members>
+        <members>Topic__c-en_US</members>
+        <members>Training_Event_Dissats__c-en_US</members>
+        <members>Training_Event_Internal_Survey__c-en_US</members>
+        <members>Training_Event__c-en_US</members>
+        <members>Training_Series__c-en_US</members>
+        <members>User-da</members>
+        <members>User-de</members>
+        <members>User-es</members>
+        <members>User-es_MX</members>
+        <members>User-fi</members>
+        <members>User-fr</members>
+        <members>User-it</members>
+        <members>User-ja</members>
+        <members>User-ko</members>
+        <members>User-nl_NL</members>
+        <members>User-pt_BR</members>
+        <members>User-ru</members>
+        <members>User-sv</members>
+        <members>User-th</members>
+        <members>User-zh_CN</members>
+        <members>User-zh_TW</members>
+        <members>VRS__c-en_US</members>
+        <members>dlrs__DeclarativeLookupRollupSummaries__c-en_US</members>
+        <members>dlrs__LookupChildAReallyReallyReallyBigBigName__c-en_US</members>
+        <members>dlrs__LookupChild__c-en_US</members>
+        <members>dlrs__LookupParent__c-en_US</members>
+        <members>dlrs__LookupRollupCalculateJob__c-en_US</members>
+        <members>dlrs__LookupRollupSummary2__mdt-en_US</members>
+        <members>dlrs__LookupRollupSummaryLog__c-en_US</members>
+        <members>dlrs__LookupRollupSummaryScheduleItems__c-en_US</members>
+        <members>dlrs__LookupRollupSummary__c-en_US</members>
+        <members>echosign_dev1__Agreement_Push_Mapping_Settings__c-en_US</members>
+        <members>echosign_dev1__Agreement_Template__c-da</members>
+        <members>echosign_dev1__Agreement_Template__c-de</members>
+        <members>echosign_dev1__Agreement_Template__c-en_US</members>
+        <members>echosign_dev1__Agreement_Template__c-es</members>
+        <members>echosign_dev1__Agreement_Template__c-es_MX</members>
+        <members>echosign_dev1__Agreement_Template__c-fi</members>
+        <members>echosign_dev1__Agreement_Template__c-fr</members>
+        <members>echosign_dev1__Agreement_Template__c-it</members>
+        <members>echosign_dev1__Agreement_Template__c-ja</members>
+        <members>echosign_dev1__Agreement_Template__c-ko</members>
+        <members>echosign_dev1__Agreement_Template__c-nl_NL</members>
+        <members>echosign_dev1__Agreement_Template__c-pt_BR</members>
+        <members>echosign_dev1__Agreement_Template__c-ru</members>
+        <members>echosign_dev1__Agreement_Template__c-sv</members>
+        <members>echosign_dev1__Agreement_Template__c-th</members>
+        <members>echosign_dev1__Agreement_Template__c-zh_CN</members>
+        <members>echosign_dev1__Agreement_Template__c-zh_TW</members>
+        <members>echosign_dev1__Attachment_Template__c-da</members>
+        <members>echosign_dev1__Attachment_Template__c-de</members>
+        <members>echosign_dev1__Attachment_Template__c-en_US</members>
+        <members>echosign_dev1__Attachment_Template__c-es</members>
+        <members>echosign_dev1__Attachment_Template__c-es_MX</members>
+        <members>echosign_dev1__Attachment_Template__c-fi</members>
+        <members>echosign_dev1__Attachment_Template__c-fr</members>
+        <members>echosign_dev1__Attachment_Template__c-it</members>
+        <members>echosign_dev1__Attachment_Template__c-ja</members>
+        <members>echosign_dev1__Attachment_Template__c-ko</members>
+        <members>echosign_dev1__Attachment_Template__c-nl_NL</members>
+        <members>echosign_dev1__Attachment_Template__c-pt_BR</members>
+        <members>echosign_dev1__Attachment_Template__c-ru</members>
+        <members>echosign_dev1__Attachment_Template__c-sv</members>
+        <members>echosign_dev1__Attachment_Template__c-th</members>
+        <members>echosign_dev1__Attachment_Template__c-zh_CN</members>
+        <members>echosign_dev1__Attachment_Template__c-zh_TW</members>
+        <members>echosign_dev1__Chatter_Settings__c-en_US</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-da</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-de</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-en_US</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-es</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-es_MX</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-fi</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-fr</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-it</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-ja</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-ko</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-nl_NL</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-pt_BR</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-ru</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-sv</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-th</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-zh_CN</members>
+        <members>echosign_dev1__DocumentKeyMutex__c-zh_TW</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-da</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-de</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-en_US</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-es</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-es_MX</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-fi</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-fr</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-it</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-ja</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-ko</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-nl_NL</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-pt_BR</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-ru</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-sv</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-th</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-zh_CN</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c-zh_TW</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-da</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-de</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-en_US</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-es</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-es_MX</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-fi</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-fr</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-it</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-ja</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-ko</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-nl_NL</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-pt_BR</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-ru</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-sv</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-th</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-zh_CN</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c-zh_TW</members>
+        <members>echosign_dev1__Environment_Settings__c-en_US</members>
+        <members>echosign_dev1__Field_Template__c-da</members>
+        <members>echosign_dev1__Field_Template__c-de</members>
+        <members>echosign_dev1__Field_Template__c-en_US</members>
+        <members>echosign_dev1__Field_Template__c-es</members>
+        <members>echosign_dev1__Field_Template__c-es_MX</members>
+        <members>echosign_dev1__Field_Template__c-fi</members>
+        <members>echosign_dev1__Field_Template__c-fr</members>
+        <members>echosign_dev1__Field_Template__c-it</members>
+        <members>echosign_dev1__Field_Template__c-ja</members>
+        <members>echosign_dev1__Field_Template__c-ko</members>
+        <members>echosign_dev1__Field_Template__c-nl_NL</members>
+        <members>echosign_dev1__Field_Template__c-pt_BR</members>
+        <members>echosign_dev1__Field_Template__c-ru</members>
+        <members>echosign_dev1__Field_Template__c-sv</members>
+        <members>echosign_dev1__Field_Template__c-th</members>
+        <members>echosign_dev1__Field_Template__c-zh_CN</members>
+        <members>echosign_dev1__Field_Template__c-zh_TW</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-da</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-de</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-en_US</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-es</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-es_MX</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-fi</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-fr</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-it</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-ja</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-ko</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-nl_NL</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-pt_BR</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-ru</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-sv</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-th</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-zh_CN</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c-zh_TW</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-da</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-de</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-en_US</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-es</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-es_MX</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-fi</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-fr</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-it</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-ja</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-ko</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-nl_NL</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-pt_BR</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-ru</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-sv</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-th</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-zh_CN</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c-zh_TW</members>
+        <members>echosign_dev1__Layer_Template__c-da</members>
+        <members>echosign_dev1__Layer_Template__c-de</members>
+        <members>echosign_dev1__Layer_Template__c-en_US</members>
+        <members>echosign_dev1__Layer_Template__c-es</members>
+        <members>echosign_dev1__Layer_Template__c-es_MX</members>
+        <members>echosign_dev1__Layer_Template__c-fi</members>
+        <members>echosign_dev1__Layer_Template__c-fr</members>
+        <members>echosign_dev1__Layer_Template__c-it</members>
+        <members>echosign_dev1__Layer_Template__c-ja</members>
+        <members>echosign_dev1__Layer_Template__c-ko</members>
+        <members>echosign_dev1__Layer_Template__c-nl_NL</members>
+        <members>echosign_dev1__Layer_Template__c-pt_BR</members>
+        <members>echosign_dev1__Layer_Template__c-ru</members>
+        <members>echosign_dev1__Layer_Template__c-sv</members>
+        <members>echosign_dev1__Layer_Template__c-th</members>
+        <members>echosign_dev1__Layer_Template__c-zh_CN</members>
+        <members>echosign_dev1__Layer_Template__c-zh_TW</members>
+        <members>echosign_dev1__Lead_Conversion_Settings__c-en_US</members>
+        <members>echosign_dev1__Library_Template__c-da</members>
+        <members>echosign_dev1__Library_Template__c-de</members>
+        <members>echosign_dev1__Library_Template__c-en_US</members>
+        <members>echosign_dev1__Library_Template__c-es</members>
+        <members>echosign_dev1__Library_Template__c-es_MX</members>
+        <members>echosign_dev1__Library_Template__c-fi</members>
+        <members>echosign_dev1__Library_Template__c-fr</members>
+        <members>echosign_dev1__Library_Template__c-it</members>
+        <members>echosign_dev1__Library_Template__c-ja</members>
+        <members>echosign_dev1__Library_Template__c-ko</members>
+        <members>echosign_dev1__Library_Template__c-nl_NL</members>
+        <members>echosign_dev1__Library_Template__c-pt_BR</members>
+        <members>echosign_dev1__Library_Template__c-ru</members>
+        <members>echosign_dev1__Library_Template__c-sv</members>
+        <members>echosign_dev1__Library_Template__c-th</members>
+        <members>echosign_dev1__Library_Template__c-zh_CN</members>
+        <members>echosign_dev1__Library_Template__c-zh_TW</members>
+        <members>echosign_dev1__Merge_Mapping_Settings__c-en_US</members>
+        <members>echosign_dev1__Recipient_Template__c-da</members>
+        <members>echosign_dev1__Recipient_Template__c-de</members>
+        <members>echosign_dev1__Recipient_Template__c-en_US</members>
+        <members>echosign_dev1__Recipient_Template__c-es</members>
+        <members>echosign_dev1__Recipient_Template__c-es_MX</members>
+        <members>echosign_dev1__Recipient_Template__c-fi</members>
+        <members>echosign_dev1__Recipient_Template__c-fr</members>
+        <members>echosign_dev1__Recipient_Template__c-it</members>
+        <members>echosign_dev1__Recipient_Template__c-ja</members>
+        <members>echosign_dev1__Recipient_Template__c-ko</members>
+        <members>echosign_dev1__Recipient_Template__c-nl_NL</members>
+        <members>echosign_dev1__Recipient_Template__c-pt_BR</members>
+        <members>echosign_dev1__Recipient_Template__c-ru</members>
+        <members>echosign_dev1__Recipient_Template__c-sv</members>
+        <members>echosign_dev1__Recipient_Template__c-th</members>
+        <members>echosign_dev1__Recipient_Template__c-zh_CN</members>
+        <members>echosign_dev1__Recipient_Template__c-zh_TW</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-da</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-de</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-en_US</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-es</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-es_MX</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-fi</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-fr</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-it</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-ja</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-ko</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-nl_NL</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-pt_BR</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-ru</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-sv</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-th</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-zh_CN</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c-zh_TW</members>
+        <members>echosign_dev1__SIGN_Agreement__c-da</members>
+        <members>echosign_dev1__SIGN_Agreement__c-de</members>
+        <members>echosign_dev1__SIGN_Agreement__c-en_US</members>
+        <members>echosign_dev1__SIGN_Agreement__c-es</members>
+        <members>echosign_dev1__SIGN_Agreement__c-es_MX</members>
+        <members>echosign_dev1__SIGN_Agreement__c-fi</members>
+        <members>echosign_dev1__SIGN_Agreement__c-fr</members>
+        <members>echosign_dev1__SIGN_Agreement__c-it</members>
+        <members>echosign_dev1__SIGN_Agreement__c-ja</members>
+        <members>echosign_dev1__SIGN_Agreement__c-ko</members>
+        <members>echosign_dev1__SIGN_Agreement__c-nl_NL</members>
+        <members>echosign_dev1__SIGN_Agreement__c-pt_BR</members>
+        <members>echosign_dev1__SIGN_Agreement__c-ru</members>
+        <members>echosign_dev1__SIGN_Agreement__c-sv</members>
+        <members>echosign_dev1__SIGN_Agreement__c-th</members>
+        <members>echosign_dev1__SIGN_Agreement__c-zh_CN</members>
+        <members>echosign_dev1__SIGN_Agreement__c-zh_TW</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-da</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-de</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-en_US</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-es</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-es_MX</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-fi</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-fr</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-it</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-ja</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-ko</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-nl_NL</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-pt_BR</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-ru</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-sv</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-th</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-zh_CN</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c-zh_TW</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-da</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-de</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-en_US</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-es</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-es_MX</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-fi</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-fr</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-it</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-ja</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-ko</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-nl_NL</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-pt_BR</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-ru</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-sv</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-th</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-zh_CN</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c-zh_TW</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-da</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-de</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-en_US</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-es</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-es_MX</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-fi</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-fr</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-it</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-ja</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-ko</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-nl_NL</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-pt_BR</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-ru</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-sv</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-th</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-zh_CN</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c-zh_TW</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-da</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-de</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-en_US</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-es</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-es_MX</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-fi</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-fr</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-it</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-ja</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-ko</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-nl_NL</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-pt_BR</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-ru</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-sv</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-th</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-zh_CN</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c-zh_TW</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-da</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-de</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-en_US</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-es</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-es_MX</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-fi</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-fr</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-it</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-ja</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-ko</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-nl_NL</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-pt_BR</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-ru</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-sv</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-th</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-zh_CN</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c-zh_TW</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-da</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-de</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-en_US</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-es</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-es_MX</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-fi</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-fr</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-it</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-ja</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-ko</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-nl_NL</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-pt_BR</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-ru</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-sv</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-th</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-zh_CN</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c-zh_TW</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-da</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-de</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-en_US</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-es</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-es_MX</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-fi</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-fr</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-it</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-ja</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-ko</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-nl_NL</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-pt_BR</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-ru</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-sv</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-th</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-zh_CN</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c-zh_TW</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-da</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-de</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-en_US</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-es</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-es_MX</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-fi</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-fr</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-it</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-ja</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-ko</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-nl_NL</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-pt_BR</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-ru</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-sv</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-th</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-zh_CN</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c-zh_TW</members>
+        <members>echosign_dev1__SIGN_Recipients__c-da</members>
+        <members>echosign_dev1__SIGN_Recipients__c-de</members>
+        <members>echosign_dev1__SIGN_Recipients__c-en_US</members>
+        <members>echosign_dev1__SIGN_Recipients__c-es</members>
+        <members>echosign_dev1__SIGN_Recipients__c-es_MX</members>
+        <members>echosign_dev1__SIGN_Recipients__c-fi</members>
+        <members>echosign_dev1__SIGN_Recipients__c-fr</members>
+        <members>echosign_dev1__SIGN_Recipients__c-it</members>
+        <members>echosign_dev1__SIGN_Recipients__c-ja</members>
+        <members>echosign_dev1__SIGN_Recipients__c-ko</members>
+        <members>echosign_dev1__SIGN_Recipients__c-nl_NL</members>
+        <members>echosign_dev1__SIGN_Recipients__c-pt_BR</members>
+        <members>echosign_dev1__SIGN_Recipients__c-ru</members>
+        <members>echosign_dev1__SIGN_Recipients__c-sv</members>
+        <members>echosign_dev1__SIGN_Recipients__c-th</members>
+        <members>echosign_dev1__SIGN_Recipients__c-zh_CN</members>
+        <members>echosign_dev1__SIGN_Recipients__c-zh_TW</members>
+        <members>echosign_dev1__SIGN_Settings__c-en_US</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-da</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-de</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-en_US</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-es</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-es_MX</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-fi</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-fr</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-it</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-ja</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-ko</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-nl_NL</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-pt_BR</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-ru</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-sv</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-th</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-zh_CN</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c-zh_TW</members>
+        <members>echosign_dev1__SIGN_Toolbar_Settings__c-en_US</members>
+        <members>echosign_dev1__SIGN_Trigger__c-da</members>
+        <members>echosign_dev1__SIGN_Trigger__c-de</members>
+        <members>echosign_dev1__SIGN_Trigger__c-en_US</members>
+        <members>echosign_dev1__SIGN_Trigger__c-es</members>
+        <members>echosign_dev1__SIGN_Trigger__c-es_MX</members>
+        <members>echosign_dev1__SIGN_Trigger__c-fi</members>
+        <members>echosign_dev1__SIGN_Trigger__c-fr</members>
+        <members>echosign_dev1__SIGN_Trigger__c-it</members>
+        <members>echosign_dev1__SIGN_Trigger__c-ja</members>
+        <members>echosign_dev1__SIGN_Trigger__c-ko</members>
+        <members>echosign_dev1__SIGN_Trigger__c-nl_NL</members>
+        <members>echosign_dev1__SIGN_Trigger__c-pt_BR</members>
+        <members>echosign_dev1__SIGN_Trigger__c-ru</members>
+        <members>echosign_dev1__SIGN_Trigger__c-sv</members>
+        <members>echosign_dev1__SIGN_Trigger__c-th</members>
+        <members>echosign_dev1__SIGN_Trigger__c-zh_CN</members>
+        <members>echosign_dev1__SIGN_Trigger__c-zh_TW</members>
+        <members>npe5__Affiliation__c-en_US</members>
+        <members>npe5__Affiliation__c-es</members>
+        <members>npe5__Affiliation__c-fr</members>
+        <members>npe5__Affiliations_Settings__c-en_US</members>
         <name>CustomObjectTranslation</name>
     </types>
     <types>
-        <members>*</members>
-        <name>CustomPageWebLink</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomPermission</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomSite</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>Change_Request__c</members>
+        <members>Content_Item__c</members>
+        <members>Content_Pack__c</members>
+        <members>Currency_Detail__c</members>
+        <members>Custom_Content_Item__c</members>
+        <members>Face_to_Face_Meetings__c</members>
+        <members>Invoice__c</members>
+        <members>Post_Survey__c</members>
+        <members>Topic__c</members>
+        <members>Training_Event_Dissats__c</members>
+        <members>Training_Event_Internal_Survey__c</members>
+        <members>Training_Event__c</members>
         <name>CustomTab</name>
     </types>
     <types>
@@ -202,14 +1452,6 @@
         <members>FrontSpin_Dashboards/FS_Sales_Team_Activity_Call_Metrics</members>
         <members>FrontSpin_Dashboards/Sales_Team_Activity_Email_Metrics</members>
         <name>Dashboard</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>DataCategoryGroup</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>DelegateGroup</name>
     </types>
     <types>
         <members>Administrative</members>
@@ -441,6 +1683,14 @@
         <name>Document</name>
     </types>
     <types>
+        <members>Account.Standard_Account_duplicate_rule</members>
+        <members>Contact.Standard_Contact_duplicate_rule</members>
+        <members>Contact.Standard_Rule_for_Contacts_with_Duplicate_Leads</members>
+        <members>Lead.Standard_Lead_duplicate_rule</members>
+        <members>Lead.Standard_Rule_for_Leads_with_Duplicate_Contacts</members>
+        <name>DuplicateRule</name>
+    </types>
+    <types>
         <members>Change_Request_Templates</members>
         <members>Change_Request_Templates/Change_Request_Content</members>
         <members>Change_Request_Templates/Change_Request_Financial</members>
@@ -511,60 +1761,469 @@
         <name>EscalationRules</name>
     </types>
     <types>
-        <members>*</members>
-        <name>EventDelivery</name>
+        <members>Opportunity.Field_Set_for_Training_Creator</members>
+        <members>OpportunityLineItem.Product_Selector_ChangeProducts_Columns</members>
+        <members>OpportunityLineItem.Training_Event_Products_Columns</members>
+        <members>Product2.Product_Filter_By_Field</members>
+        <members>Product2.Product_Selector_Columns</members>
+        <name>FieldSet</name>
     </types>
     <types>
-        <members>*</members>
-        <name>EventSubscription</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ExternalDataSource</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>LightningSalesConsole_UtilityBar</members>
+        <members>LightningService_UtilityBar</members>
         <name>FlexiPage</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Account_Ownership_Assignment</members>
+        <members>Auto_update_opps_to_Closed_Lost_after_90_days</members>
+        <members>Auto_update_opps_to_Closed_Lost_after_90_days-1</members>
+        <members>COORD-1</members>
+        <members>COORD_Trainer_Prep_Call-1</members>
+        <members>COORD_tasks_set_on_TE_status_performed-1</members>
+        <members>COORD_update_tasks_on_start_date_change-1</members>
+        <members>Content_Pack_Closed_Won_to_Content_Item</members>
+        <members>Create_OCR_for_Decision_Maker</members>
+        <members>Create_OCR_for_Decision_Maker-1</members>
+        <members>Ext_on_Activities_related_to_Contacts</members>
+        <members>Ext_on_Activities_related_to_Contacts-1</members>
+        <members>Ext_on_Activities_related_to_Contacts-2</members>
+        <members>Ext_on_Activities_related_to_Contacts-3</members>
+        <members>New_Account_Ownership_Routing</members>
+        <members>New_Account_Ownership_Routing-1</members>
+        <members>Opp_Closed_Won_to_Content_Pack</members>
+        <members>Opp_lookups_to_contact_roles</members>
+        <members>Push_Lookups_from_Content_Pack_to_Content_Item</members>
+        <members>Push_Primary_Content_Designer</members>
+        <members>Push_Primary_Production_Owner</members>
+        <members>Remove_Product_Selection</members>
+        <members>Set_Opportunity_Price_Book_ID</members>
+        <members>Update_Account_on_Dissat</members>
+        <members>Update_Close_date_when_Stage_is_Won</members>
+        <members>Update_Close_date_when_Stage_is_Won-1</members>
+        <members>Update_Close_date_when_Stage_is_Won-2</members>
+        <members>updateTaskEXT</members>
+        <members>updateTaskEXT-1</members>
         <name>Flow</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Account_Ownership_Assignment</members>
+        <members>Auto_update_opps_to_Closed_Lost_after_90_days</members>
+        <members>COORD</members>
+        <members>COORD_Trainer_Prep_Call</members>
+        <members>COORD_tasks_set_on_TE_status_performed</members>
+        <members>COORD_update_tasks_on_start_date_change</members>
+        <members>Content_Pack_Closed_Won_to_Content_Item</members>
+        <members>Create_OCR_for_Decision_Maker</members>
+        <members>Ext_on_Activities_related_to_Contacts</members>
+        <members>New_Account_Ownership_Routing</members>
+        <members>Opp_Closed_Won_to_Content_Pack</members>
+        <members>Opp_lookups_to_contact_roles</members>
+        <members>Push_Lookups_from_Content_Pack_to_Content_Item</members>
+        <members>Push_Primary_Content_Designer</members>
+        <members>Push_Primary_Production_Owner</members>
+        <members>Remove_Product_Selection</members>
+        <members>Set_Opportunity_Price_Book_ID</members>
+        <members>Update_Account_on_Dissat</members>
+        <members>Update_Close_date_when_Stage_is_Won</members>
+        <members>updateTaskEXT</members>
         <name>FlowDefinition</name>
     </types>
     <types>
-        <members>*</members>
-        <name>GlobalPicklist</name>
+        <members>Agree_Scale_1_5</members>
+        <name>GlobalValueSet</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Library_Manager</members>
         <name>Group</name>
     </types>
     <types>
-        <members>*</members>
-        <name>HomePageComponent</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>Dashboard Home Page Default</members>
         <name>HomePageLayout</name>
     </types>
     <types>
-        <members>*</members>
+        <members>APXTConga4</members>
+        <members>APXTConga4</members>
+        <members>APXTConga4</members>
+        <members>APXTConga4</members>
+        <members>APXTConga4</members>
+        <members>APXTConga4</members>
+        <members>APXTConga4</members>
+        <members>APXTConga4</members>
+        <members>APXTConga4</members>
+        <members>ctu</members>
+        <members>dlrs</members>
+        <members>echosign_dev1</members>
+        <members>npe5</members>
+        <members>pub</members>
+        <members>pub</members>
+        <members>pub</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_com_apps</members>
+        <members>sf_com_apps</members>
+        <members>sf_com_apps</members>
+        <members>sf_com_apps</members>
+        <members>sf_com_apps</members>
+        <members>sf_com_apps</members>
+        <members>sf_com_apps</members>
+        <members>sf_com_apps</members>
+        <members>sf_com_apps</members>
+        <members>sf_com_apps</members>
+        <members>sf_com_apps</members>
+        <members>sf_com_apps</members>
+        <members>sf_com_apps</members>
+        <members>sf_com_apps</members>
+        <members>sf_com_apps</members>
+        <members>sf_com_apps</members>
+        <members>sf_com_apps</members>
+        <members>tfa</members>
         <name>InstalledPackage</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Account-Account Layout</members>
+        <members>Account-On-site Account Layout</members>
+        <members>Account-On-site Account Layout - Admin only</members>
+        <members>Asset-Asset Layout</members>
+        <members>Campaign-Campaign Layout</members>
+        <members>CampaignMember-Campaign Member Page Layout</members>
+        <members>Case-Case Layout</members>
+        <members>CaseClose-Close Case Layout</members>
+        <members>Change_Request__c-Change Request Layout</members>
+        <members>Change_Request__c-Content Layout</members>
+        <members>Change_Request__c-Financial Layout</members>
+        <members>Change_Request__c-Location Layout</members>
+        <members>Change_Request__c-People Layout</members>
+        <members>Change_Request__c-Scheduling Layout</members>
+        <members>Change_Request__c-Webinar Details Layout</members>
+        <members>CollaborationGroup-Group Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>Contact-On-site Contact Layout</members>
+        <members>Contact-On-site Contact Layout-Sales Rep</members>
+        <members>Contact-Trainer Layout</members>
+        <members>ContentVersion-Content Version Layout</members>
+        <members>Content_Item__c-Content Item Layout</members>
+        <members>Content_Pack__c-Content Pack Layout</members>
+        <members>Contract-Contract Layout</members>
+        <members>Currency_Detail__c-Conversion Detail Layout</members>
+        <members>Currency_Detail__c-Currency Detail Layout</members>
+        <members>Currency_Detail__c-Tax Detail Layout</members>
+        <members>Custom_Content_Item__c-Custom Content Item Layout</members>
+        <members>Custom_Content_Item__c-Custom Lite Item Layout</members>
+        <members>Custom_Content_Item__c-Custom Lite Item Layout%3A Sales Rep</members>
+        <members>Custom_Content_Item__c-Facilitator Guide Item Layout</members>
+        <members>Custom_Content_Item__c-Facilitator Guide Item Layout%3A Sales Rep</members>
+        <members>Custom_Content_Item__c-Flyer Item Layout</members>
+        <members>Custom_Content_Item__c-Flyer Item Layout%3A Sales Rep</members>
+        <members>Custom_Content_Item__c-General Item Layout</members>
+        <members>Custom_Content_Item__c-General Item Layout%3A Sales Rep</members>
+        <members>Custom_Content_Item__c-Workbook Item Layout</members>
+        <members>Custom_Content_Item__c-Workbook Item Layout%3A Sales Rep</members>
+        <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
+        <members>EmailMessage-Email Message Layout</members>
+        <members>Event-Event Layout</members>
+        <members>Face_to_Face_Meetings__c-Face to Face Meetings Layout</members>
+        <members>FeedItem-Feed Item Layout</members>
+        <members>Global-Global Layout</members>
+        <members>Idea-Idea Layout</members>
+        <members>Invoice__c-Invoice Layout</members>
+        <members>Lead-Lead Gen Lead Layout</members>
+        <members>Lead-Lead Layout</members>
+        <members>Macro-Macro Layout</members>
+        <members>Opportunity-Custom Operations Opportunity Layout</members>
+        <members>Opportunity-Custom Sales Rep Opportunity Layout</members>
+        <members>Opportunity-Locked Onsite Opportunity - Sales Reps Layout</members>
+        <members>Opportunity-Locked Onsite Opportunity Layout</members>
+        <members>Opportunity-Operations Opportunity Layout</members>
+        <members>Opportunity-Opportunity Layout</members>
+        <members>Opportunity-Sales Rep Opportunity Layout</members>
+        <members>Opportunity-Webinar Operations Opportunity Layout</members>
+        <members>Opportunity-Webinar Sales Rep Opportunity Layout</members>
+        <members>OpportunityLineItem-Opportunity Product Layout</members>
+        <members>Order-Order Layout</members>
+        <members>OrderItem-Order Product Layout</members>
+        <members>Post_Survey__c-Training Event Post Survey Layout</members>
+        <members>Post_Survey__c-Training Event Tailoring Survey Layout</members>
+        <members>Pricebook2-Price Book Layout</members>
+        <members>PricebookEntry-Price Book Entry</members>
+        <members>Product2-Product Layout</members>
+        <members>ProfileSkill-Skill Layout</members>
+        <members>ProfileSkillEndorsement-Endorsement Layout</members>
+        <members>ProfileSkillUser-Skill User Layout</members>
+        <members>QuickText-Quick Text Layout</members>
+        <members>Scorecard-Scorecard Layout</members>
+        <members>ScorecardAssociation-Scorecard Association Layout</members>
+        <members>ScorecardMetric-Scorecard Metric Layout</members>
+        <members>SocialPersona-Social Persona Layout</members>
+        <members>SocialPost-Social Post Layout</members>
+        <members>Solution-Solution Layout</members>
+        <members>Task-Task Layout</members>
+        <members>Topic__c-Operations Topic Layout</members>
+        <members>Topic__c-Sales Rep Topic Layout</members>
+        <members>Topic__c-Session Layout</members>
+        <members>Topic__c-Topic Layout</members>
+        <members>Topic__c-prefill Operations Topic Layout</members>
+        <members>Training_Event_Dissats__c-Ops - Training Event Dissats Layout</members>
+        <members>Training_Event_Dissats__c-Sales - Training Event Dissats Layout</members>
+        <members>Training_Event_Dissats__c-Training Event Dissat%2FIncident Layout</members>
+        <members>Training_Event_Dissats__c-Training Event Dissats Layout</members>
+        <members>Training_Event_Internal_Survey__c-Training Event Internal Survey Layout</members>
+        <members>Training_Event__c-Ops Training Event Layout</members>
+        <members>Training_Event__c-Sales Rep Training Event Layout</members>
+        <members>Training_Event__c-Training Event Layout</members>
+        <members>Training_Series__c-Training Series Layout</members>
+        <members>User-User Layout</members>
+        <members>UserAlt-User Profile Layout</members>
+        <members>UserProvAccount-User Provisioning Account Layout</members>
+        <members>UserProvisioningLog-User Provisioning Log Layout</members>
+        <members>UserProvisioningRequest-User Provisioning Request Layout</members>
+        <members>WorkAccess-Access Layout</members>
+        <members>WorkBadge-Badge Received Layout</members>
+        <members>WorkBadgeDefinition-Badge Layout</members>
+        <members>WorkThanks-Thanks Layout</members>
         <name>Layout</name>
     </types>
     <types>
-        <members>*</members>
+        <members>LeadConvertSettings</members>
         <name>LeadConvertSettings</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Blank</members>
+        <members>SkillPath</members>
         <name>Letterhead</name>
+    </types>
+    <types>
+        <members>Account.AllAccounts</members>
+        <members>Account.MyAccounts</members>
+        <members>Account.NewThisWeek</members>
+        <members>Activity.MyActivities</members>
+        <members>Activity.MyDelegatedActivities</members>
+        <members>Activity.MyTeamsActivities</members>
+        <members>Activity.TodaysTasks</members>
+        <members>Activity.UpcomingEvents</members>
+        <members>Asset.AllAssets</members>
+        <members>Campaign.AllActiveCampaigns</members>
+        <members>Campaign.MyActiveCampaigns</members>
+        <members>Case.AllOpenCases</members>
+        <members>Case.MyCases</members>
+        <members>Case.MyOpenCases</members>
+        <members>Change_Request__c.All_Change_Requests</members>
+        <members>CollaborationGroup.All_ChatterGroups</members>
+        <members>Contact.AllContacts</members>
+        <members>Contact.BirthdaysThisMonth</members>
+        <members>Contact.NewThisWeek</members>
+        <members>Content_Item__c.All_Content_Items2</members>
+        <members>Content_Item__c.All_Incomplete_Content_Items</members>
+        <members>Content_Item__c.Amy_s_Content_Completed_Items</members>
+        <members>Content_Item__c.Amy_s_Content_Items</members>
+        <members>Content_Item__c.Andrea_D_Content_Completed_Items</members>
+        <members>Content_Item__c.Andrea_Duncans_Content_Items</members>
+        <members>Content_Item__c.Andrea_S_Content_Completed_Items</members>
+        <members>Content_Item__c.Andrea_s_Content_Items</members>
+        <members>Content_Item__c.Angela_Content_Completed_Items</members>
+        <members>Content_Item__c.Angelas_Content_Items</members>
+        <members>Content_Item__c.Chanda_Content_Completed_Items</members>
+        <members>Content_Item__c.Chandas_Content_Items</members>
+        <members>Content_Item__c.Christy_s_Content_Items</members>
+        <members>Content_Item__c.Jean_Content_Completed_Items</members>
+        <members>Content_Item__c.Jessica_B_Content_Completed_Items</members>
+        <members>Content_Item__c.Jessica_B_s_Content_Items</members>
+        <members>Content_Item__c.Ken_s_Content_Completed_Items</members>
+        <members>Content_Item__c.Mary_s_Content_Completed_Items</members>
+        <members>Content_Item__c.Mary_s_Content_Items</members>
+        <members>Content_Item__c.Mary_s_Content_Items1</members>
+        <members>Content_Item__c.Marys_Content_Items</members>
+        <members>Content_Item__c.Rebecca_s_Content_Items</members>
+        <members>Content_Item__c.Sara_Content_Completed_Items</members>
+        <members>Content_Item__c.Saras_Content_Items</members>
+        <members>Content_Item__c.Susan_s_Content_Completed_Items</members>
+        <members>Content_Item__c.Susan_s_Revised_Content_Items</members>
+        <members>Content_Item__c.Tammicole_Content_Completed_Items</members>
+        <members>Content_Item__c.Tammicoles_Content_Items</members>
+        <members>Content_Item__c.Unassigned_Closed_Won_Content_Items</members>
+        <members>Content_Item__c.Unassigned_Content_Items</members>
+        <members>Content_Item__c.Unassigned_Pre_Sales_Content_Items</members>
+        <members>Content_Pack__c.All</members>
+        <members>Content_Pack__c.All_Content_Packs_Ever</members>
+        <members>Content_Pack__c.All_Open_Content_Packs</members>
+        <members>Content_Pack__c.Content_Packs_WITHOUT_items</members>
+        <members>Content_Pack__c.Operations_PowerPoints_Needed</members>
+        <members>Content_Pack__c.by_Account</members>
+        <members>Contract.AllActivatedContracts</members>
+        <members>Contract.AllContracts</members>
+        <members>Contract.AllDraftContracts</members>
+        <members>Contract.AllInApprovalContracts</members>
+        <members>Contract.MyActivatedContracts</members>
+        <members>Contract.MyDraftContracts</members>
+        <members>Contract.MyInApprovalContracts</members>
+        <members>Currency_Detail__c.Active</members>
+        <members>Currency_Detail__c.All</members>
+        <members>Currency_Detail__c.Countries_Where_We_Charge_Tax</members>
+        <members>Currency_Detail__c.States_We_Charge_Tax_On</members>
+        <members>Custom_Content_Item__c.Andrea_D_Completed_Items</members>
+        <members>Custom_Content_Item__c.Andrea_Duncan_s_Completed_Items</members>
+        <members>Custom_Content_Item__c.Andrea_Duncan_s_Custom_Items</members>
+        <members>Custom_Content_Item__c.Andrea_S_Completed_Items</members>
+        <members>Custom_Content_Item__c.Andrea_s_Custom_Items</members>
+        <members>Custom_Content_Item__c.Angela_s_Custom_Items</members>
+        <members>Custom_Content_Item__c.Angela_s_Custom_Items1</members>
+        <members>Custom_Content_Item__c.Chanda_Z_Completed_Items</members>
+        <members>Custom_Content_Item__c.Chanda_s_Custom_Items</members>
+        <members>Custom_Content_Item__c.Completed_Custom_Content_Items</members>
+        <members>Custom_Content_Item__c.Incomplete_Content_Items</members>
+        <members>Custom_Content_Item__c.Incomplete_Custom_Lite_Workbooks</members>
+        <members>Custom_Content_Item__c.Incomplete_Facilitator_Guides</members>
+        <members>Custom_Content_Item__c.Incomplete_Flyer</members>
+        <members>Custom_Content_Item__c.Incomplete_Other_Custom_Items</members>
+        <members>Custom_Content_Item__c.Incomplete_Workbooks</members>
+        <members>Custom_Content_Item__c.Jean_s_Custom_Items</members>
+        <members>Custom_Content_Item__c.Jill_s_Custom_Content_Items</members>
+        <members>Custom_Content_Item__c.Mary_s_Completed_Items</members>
+        <members>Custom_Content_Item__c.Mary_s_Custom_Items</members>
+        <members>Custom_Content_Item__c.Missing_Information</members>
+        <members>Custom_Content_Item__c.New_Custom_Content_Items</members>
+        <members>Custom_Content_Item__c.PowerPoints_Needed</members>
+        <members>Custom_Content_Item__c.Ready_for_Production</members>
+        <members>Custom_Content_Item__c.Sara_s_Completed_Items</members>
+        <members>Custom_Content_Item__c.Sara_s_Custom_Items</members>
+        <members>Custom_Content_Item__c.Susan_s_Custom_Items</members>
+        <members>Custom_Content_Item__c.Tammicole_s_Completed_Items</members>
+        <members>Custom_Content_Item__c.Tammicole_s_Custom_Items</members>
+        <members>Face_to_Face_Meetings__c.All</members>
+        <members>Idea.Ideas_Last_7_Days</members>
+        <members>Invoice__c.All</members>
+        <members>Invoice__c.LOA_Pending</members>
+        <members>Invoice__c.Open</members>
+        <members>Invoice__c.Open1</members>
+        <members>Invoice__c.Overdue</members>
+        <members>Invoice__c.Paid</members>
+        <members>Lead.AllOpenLeads</members>
+        <members>Lead.MyUnreadLeads</members>
+        <members>Lead.TodaysLeads</members>
+        <members>Lead.ZoomInfo_Leads</members>
+        <members>Opportunity.AllOpportunities</members>
+        <members>Opportunity.ClosingNextMonth</members>
+        <members>Opportunity.ClosingThisMonth</members>
+        <members>Opportunity.Default_Opportunity_Pipeline</members>
+        <members>Opportunity.MyOpportunities</members>
+        <members>Opportunity.NewThisWeek</members>
+        <members>Opportunity.Scheduling_PreSales_Working</members>
+        <members>Opportunity.Scheduling_PreSales_Working1</members>
+        <members>Opportunity.Won</members>
+        <members>Order.AllActivatedOrders</members>
+        <members>Order.AllDraftOrders</members>
+        <members>Order.AllOrders</members>
+        <members>Post_Survey__c.All</members>
+        <members>Post_Survey__c.Poor_Ratings</members>
+        <members>Post_Survey__c.Survey_by_date</members>
+        <members>Product2.AllProducts</members>
+        <members>Scorecard.AllScorecards</members>
+        <members>Scorecard.MyScorecards</members>
+        <members>SocialPost.AllSocialPosts</members>
+        <members>Solution.AllReviewedSolutions</members>
+        <members>Solution.AllUnreviewedSolutions</members>
+        <members>Training_Event_Dissats__c.All_Records</members>
+        <members>Training_Event_Dissats__c.Dissat_by_Trainer</members>
+        <members>Training_Event_Internal_Survey__c.All</members>
+        <members>Training_Event_Internal_Survey__c.Trainer</members>
+        <members>Training_Event__c.All_Training_Events_Today_Forward</members>
+        <members>Training_Event__c.By_Trainer</members>
+        <members>Training_Event__c.CANCELED_TRAINING_EVENTS</members>
+        <members>Training_Event__c.CREATED_TODAY</members>
+        <members>Training_Event__c.Canceled_No_Date</members>
+        <members>Training_Event__c.MY_Training_Events_SOLD_This_Month</members>
+        <members>Training_Event__c.My_Events_Performing_Next_30_days</members>
+        <members>Training_Event__c.My_Performed_Training</members>
+        <members>Training_Event__c.NEW_TRAINING_EVENTS</members>
+        <members>Training_Event__c.NEW_TRAINING_EVENTS_LOAs_to_Send</members>
+        <members>Training_Event__c.NST_Workbook_Confirmation_TO_DO</members>
+        <members>Training_Event__c.Open_Trainings</members>
+        <members>Training_Event__c.Open_Trainings_Type</members>
+        <members>Training_Event__c.Operations_Addendum_to_Send_Excl_SFA</members>
+        <members>Training_Event__c.Operations_Cheryl_APO_FPO</members>
+        <members>Training_Event__c.Operations_Cheryl_Non_USA_Trainings</members>
+        <members>Training_Event__c.Operations_Hard_Expenses</members>
+        <members>Training_Event__c.Operations_LOAs_Pending_NAM_Approval</members>
+        <members>Training_Event__c.Operations_LOAs_Sent</members>
+        <members>Training_Event__c.Operations_LOAs_to_Send_Excl_SFA</members>
+        <members>Training_Event__c.Operations_Lookup_by_Event_Number</members>
+        <members>Training_Event__c.Operations_NAM_Workbook_Confirmation</members>
+        <members>Training_Event__c.Operations_NST_Workbooks_need_Confirm</members>
+        <members>Training_Event__c.Operations_On_Demand_Workbooks_Printed</members>
+        <members>Training_Event__c.Operations_On_Demand_Workbooks_to_Ship</members>
+        <members>Training_Event__c.Operations_Rebecca_New_Sales</members>
+        <members>Training_Event__c.Operations_Rebecca_s_Webinars</members>
+        <members>Training_Event__c.Operations_Recent_Cancellations_w_Fees</members>
+        <members>Training_Event__c.Operations_Surveys_to_Send</members>
+        <members>Training_Event__c.Operations_Training_Events_in_NEW_Status</members>
+        <members>Training_Event__c.Operations_Upcoming_Training1</members>
+        <members>Training_Event__c.Operations_Warehouse_Ready_to_Ship</members>
+        <members>Training_Event__c.Past_Events</members>
+        <members>Training_Event__c.Performed_Training_Events1</members>
+        <members>Training_Event__c.Performed_Training_Events_Country</members>
+        <members>Training_Event__c.Performing_Next_Calendar_Month</members>
+        <members>Training_Event__c.Price_Check</members>
+        <members>Training_Event__c.RECENT_CLOSE_IN_SALES</members>
+        <members>Training_Event__c.Recent_Change_Activity_48_hrs</members>
+        <members>Training_Event__c.Recently_sold_NST_TE_s</members>
+        <members>Training_Event__c.Scheduling_Account_Report_add_account</members>
+        <members>Training_Event__c.Scheduling_Close_in_Dates_No_Trainer</members>
+        <members>Training_Event__c.Scheduling_Colin_Alex_by_month</members>
+        <members>Training_Event__c.Scheduling_Core_Trainer_Pool</members>
+        <members>Training_Event__c.Scheduling_Date_Options</members>
+        <members>Training_Event__c.Scheduling_Fallon_s_Items</members>
+        <members>Training_Event__c.Scheduling_Need_Trainer_Assigned_Pulled</members>
+        <members>Training_Event__c.Scheduling_Need_Trainer_Colin_To_Dos</members>
+        <members>Training_Event__c.Scheduling_No_Country_Code</members>
+        <members>Training_Event__c.Scheduling_No_Scheduler_Assigned</members>
+        <members>Training_Event__c.Scheduling_No_Scheduler_Assigned_Amand</members>
+        <members>Training_Event__c.Scheduling_TEs_by_Account_Manager</members>
+        <members>Training_Event__c.Scheduling_Total_Assigned_Day1</members>
+        <members>Training_Event__c.Scheduling_Trainer_Report_add_trainer</members>
+        <members>Training_Event__c.Scheduling_Trainer_Requests</members>
+        <members>Training_Event__c.Scheduling_Trainer_Requests_New_Open</members>
+        <members>Training_Event__c.Scheduling_Training_Events_in_TBD_Cancel</members>
+        <members>Training_Event__c.TBD_TRAINING_EVENTS</members>
+        <members>Training_Event__c.Test_Training_Events</members>
+        <members>Training_Event__c.Today_sTraining_Events</members>
+        <members>Training_Event__c.Training_Events_Created_FRIDAY2</members>
+        <members>Training_Event__c.Training_Events_Created_TODAY3</members>
+        <members>Training_Event__c.Training_Events_Created_TODAY4</members>
+        <members>Training_Event__c.Training_Events_Created_This_Month</members>
+        <members>Training_Event__c.Training_Events_Created_YESTERDAY</members>
+        <members>Training_Event__c.Training_Events_Created_YESTERDAY2</members>
+        <members>Training_Event__c.Training_Events_Not_Yet_Performed</members>
+        <members>Training_Event__c.Training_Events_in_Star_12_Status</members>
+        <members>Training_Event__c.Training_Events_in_TBD</members>
+        <members>Training_Event__c.Training_Events_in_TBD_Today_minus_UBT</members>
+        <members>User.ActiveUsers</members>
+        <members>User.AdminUsers</members>
+        <members>User.AllUsers</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Account.Standard_Account_Match_Rule_v1_0</members>
+        <members>Contact.Standard_Contact_Match_Rule_v1_1</members>
+        <members>Lead.Standard_Lead_Match_Rule_v1_0</members>
+        <name>MatchingRule</name>
     </types>
     <types>
         <members>Account</members>
@@ -573,39 +2232,119 @@
         <name>MatchingRules</name>
     </types>
     <types>
-        <members>*</members>
-        <name>NamedCredential</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>PathAssistant</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>Conga_Curator2</members>
+        <members>Conga_User</members>
+        <members>Content_Pack_and_Items_Admin</members>
+        <members>Create_Custom_Report_Types</members>
+        <members>Delete_Permissions_for_Account_Contact</members>
+        <members>Password_Never_Expires</members>
+        <members>Reports_and_Dashboards_Admin</members>
         <name>PermissionSet</name>
     </types>
     <types>
-        <members>*</members>
-        <name>PlatformCachePartition</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>PostTemplate</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>Admin</members>
+        <members>BDR</members>
+        <members>Chatter External User</members>
+        <members>Chatter Free User</members>
+        <members>Chatter Moderator User</members>
+        <members>ContractManager</members>
+        <members>Guest</members>
+        <members>Guest License User</members>
+        <members>MarketingProfile</members>
+        <members>Non-Mgmt%2FStandard User</members>
+        <members>Operations</members>
+        <members>ReadOnly</members>
+        <members>Sales Managers</members>
+        <members>Sales Rep</members>
+        <members>SolutionManager</members>
+        <members>Standard</members>
+        <members>StandardAul</members>
+        <members>Super Admin</members>
         <name>Profile</name>
     </types>
     <types>
-        <members>*</members>
-        <name>Queue</name>
+        <members>Operations_profilePasswordPolicy1491920243751</members>
+        <members>PT1_profilePasswordPolicy1495569301468</members>
+        <members>Sales_Rep_profilePasswordPolicy1491862779833</members>
+        <members>Super_Admin_profilePasswordPolicy1491612868046</members>
+        <name>ProfilePasswordPolicy</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Operations_profileSessionSetting1491920243660</members>
+        <members>PT1_profileSessionSetting1495569301271</members>
+        <members>Sales_Rep_profileSessionSetting1491862779752</members>
+        <members>Super_Admin_profileSessionSetting1491612867919</members>
+        <name>ProfileSessionSetting</name>
+    </types>
+    <types>
+        <members>Case.NewChildCase</members>
+        <members>Change_Request__c.Change_Status</members>
+        <members>CollaborationGroup.NewGroupMember</members>
+        <members>CollaborationGroup.NewGroupRecord</members>
+        <members>FeedItem.NewTaskFromFeedItem</members>
+        <members>LogACall</members>
+        <members>NewAccount</members>
+        <members>NewCase</members>
+        <members>NewContact</members>
+        <members>NewEvent</members>
+        <members>NewGroup</members>
+        <members>NewLead</members>
+        <members>NewNote</members>
+        <members>NewOpportunity</members>
+        <members>NewTask</members>
+        <members>SendEmail</members>
+        <members>Task.Defer</members>
+        <members>Task.Defer_0</members>
+        <members>Task.Defer_1</members>
+        <members>Task.Defer_2</members>
+        <members>Task.EditDescription</members>
+        <members>Task.EditDescription_0</members>
+        <members>Task.EditDescription_1</members>
+        <members>Task.EditDescription_2</members>
+        <members>Task.UpdatePriority</members>
+        <members>Task.UpdatePriority_0</members>
+        <members>Task.UpdatePriority_1</members>
+        <members>Task.UpdatePriority_2</members>
+        <members>Task.UpdateStatus</members>
+        <members>Task.UpdateStatus_0</members>
+        <members>Task.UpdateStatus_1</members>
+        <members>Task.UpdateStatus_2</members>
         <name>QuickAction</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Change_Request__c.Content</members>
+        <members>Change_Request__c.Financial</members>
+        <members>Change_Request__c.Location</members>
+        <members>Change_Request__c.People</members>
+        <members>Change_Request__c.Scheduling</members>
+        <members>Change_Request__c.Webinar_Details</members>
+        <members>Contact.General_Contacts</members>
+        <members>Contact.Trainer_Contacts</members>
+        <members>Contact.Vendor_Contacts</members>
+        <members>Currency_Detail__c.Conversion_Record_Type</members>
+        <members>Currency_Detail__c.Tax_Record_Type</members>
+        <members>Custom_Content_Item__c.Custom_Lite_Workbooks</members>
+        <members>Custom_Content_Item__c.Facilitator_Guide</members>
+        <members>Custom_Content_Item__c.Flyer</members>
+        <members>Custom_Content_Item__c.Other_Custom_Item</members>
+        <members>Custom_Content_Item__c.Outline</members>
+        <members>Custom_Content_Item__c.Workbook</members>
+        <members>Lead.BDR_Leads</members>
+        <members>Lead.Customer_Care</members>
+        <members>Lead.Internet_Web</members>
+        <members>Lead.Prospecting</members>
+        <members>Opportunity.On_site_Custom</members>
+        <members>Opportunity.On_site_License</members>
+        <members>Opportunity.On_site_Locked</members>
+        <members>Opportunity.On_site_Standard</members>
+        <members>Opportunity.On_site_Webinar</members>
+        <members>Opportunity.Standard_Opportunity</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>adobeesign_api</members>
+        <members>adobeesign_mdapi_v18</members>
+        <members>dlrs_mdapi</members>
         <name>RemoteSiteSetting</name>
     </types>
     <types>
@@ -633,7 +2372,6 @@
         <members>ELS_Management_Reports/Self_Generated_Leads_by_Employee1</members>
         <members>ELS_Management_Reports/Training_Evaluations</members>
         <members>ELS_Management_Reports/Training_Events_by_TC</members>
-        <members>ELS_Management_Reports/Training_Events_w_o_Trainer</members>
         <members>ELS_Management_Reports/Unread_Leads</members>
         <members>ELS_Rep_Reports</members>
         <members>ELS_Rep_Reports/Account_YOY_Comparison</members>
@@ -869,152 +2607,383 @@
         <name>Report</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Campaigns_with_Leads</members>
+        <members>Opportunities_for_Minimums</members>
+        <members>Opportunities_with_Training_Events_with_Change_Requests</members>
+        <members>Opportunities_with_or_without_contact_roles</members>
+        <members>Training_Events</members>
+        <members>Training_Events_with_Dissats</members>
+        <members>Training_Events_with_Internal_Surveys</members>
+        <members>Training_Events_with_Post_Event_Surveys</members>
         <name>ReportType</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Former</members>
+        <members>On_Site_BDR</members>
+        <members>On_site_Exec</members>
+        <members>On_site_Management</members>
+        <members>On_site_Rep</members>
         <name>Role</name>
     </types>
     <types>
-        <members>*</members>
-        <name>SamlSsoConfig</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Scontrol</name>
+        <members>Account.On_site_Role_Sharing_Accounts</members>
+        <members>Lead.On_site_Exec</members>
+        <members>Opportunity.On_site_Role_Sharing</members>
+        <name>SharingOwnerRule</name>
     </types>
     <types>
         <members>Account</members>
         <members>Asset</members>
-        <members>AssistantProgress</members>
         <members>Campaign</members>
         <members>Case</members>
-        <members>Change_Request__c</members>
         <members>Contact</members>
-        <members>Content_Item__c</members>
         <members>Content_Pack__c</members>
         <members>Currency_Detail__c</members>
-        <members>Custom_Content_Item__c</members>
-        <members>ExchangeUserMapping</members>
-        <members>Face_to_Face_Meetings__c</members>
-        <members>Invoice__c</members>
         <members>Lead</members>
-        <members>Macro</members>
         <members>Opportunity</members>
         <members>Order</members>
-        <members>Post_Survey__c</members>
-        <members>ProfileSkill</members>
-        <members>QuickText</members>
-        <members>Scorecard</members>
-        <members>SocialPost</members>
-        <members>StreamingChannel</members>
-        <members>Topic__c</members>
         <members>Training_Event_Dissats__c</members>
-        <members>Training_Event_Internal_Survey__c</members>
-        <members>Training_Event__c</members>
         <members>Training_Series__c</members>
         <members>User</members>
-        <members>UserProvisioningRequest</members>
         <members>VRS__c</members>
-        <members>WorkBadgeDefinition</members>
-        <members>WorkThanks</members>
         <name>SharingRules</name>
     </types>
     <types>
-        <members>*</members>
-        <name>SiteDotCom</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>ProductSelector_JSScript</members>
+        <members>SLDS100</members>
+        <members>aljs</members>
+        <members>aljs2</members>
+        <members>animatingNumbers</members>
+        <members>jQuery1_11</members>
+        <members>momentjs</members>
         <name>StaticResource</name>
     </types>
     <types>
-        <members>*</members>
-        <name>SynonymDictionary</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Territory2</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Territory2Model</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Territory2Rule</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Territory2Type</name>
-    </types>
-    <types>
+        <members>APXTConga4__Composer_QuickMerge__c</members>
+        <members>APXTConga4__Conga_Email_Staging__c</members>
+        <members>APXTConga4__Conga_Email_Template__c</members>
+        <members>APXTConga4__Conga_Merge_Query__c</members>
+        <members>APXTConga4__Conga_Solution_Email_Template__c</members>
+        <members>APXTConga4__Conga_Solution_Parameter__c</members>
+        <members>APXTConga4__Conga_Solution_Query__c</members>
+        <members>APXTConga4__Conga_Solution_Report__c</members>
+        <members>APXTConga4__Conga_Solution_Template__c</members>
+        <members>APXTConga4__Conga_Solution__c</members>
+        <members>APXTConga4__Conga_Template__c</members>
         <members>Account</members>
         <members>Asset</members>
-        <members>AssetRelationship</members>
-        <members>AssistantProgress</members>
         <members>Campaign</members>
-        <members>CampaignMember</members>
         <members>Case</members>
-        <members>CaseComment</members>
         <members>Change_Request__c</members>
-        <members>CollaborationGroup</members>
-        <members>CollaborationGroupMember</members>
         <members>Contact</members>
+        <members>ContentDocument</members>
         <members>Content_Item__c</members>
         <members>Content_Pack__c</members>
         <members>Contract</members>
         <members>Currency_Detail__c</members>
         <members>Custom_Content_Item__c</members>
-        <members>DuplicateRecordItem</members>
-        <members>DuplicateRecordSet</members>
-        <members>EmailMessage</members>
         <members>Event</members>
-        <members>ExchangeUserMapping</members>
         <members>Face_to_Face_Meetings__c</members>
-        <members>FeedItem</members>
-        <members>Idea</members>
         <members>Invoice__c</members>
         <members>Lead</members>
-        <members>Macro</members>
-        <members>MacroAction</members>
-        <members>MacroInstruction</members>
         <members>Opportunity</members>
-        <members>OpportunityLineItem</members>
         <members>Order</members>
-        <members>OrderItem</members>
-        <members>Organization</members>
         <members>Post_Survey__c</members>
-        <members>Product2</members>
-        <members>ProfileSkill</members>
-        <members>ProfileSkillEndorsement</members>
-        <members>ProfileSkillUser</members>
-        <members>QuickText</members>
-        <members>Site</members>
-        <members>SocialPersona</members>
-        <members>SocialPost</members>
         <members>Solution</members>
-        <members>StreamingChannel</members>
         <members>Task</members>
-        <members>Topic</members>
-        <members>TopicAssignment</members>
         <members>Topic__c</members>
         <members>Training_Event_Dissats__c</members>
         <members>Training_Event_Internal_Survey__c</members>
         <members>Training_Event__c</members>
         <members>Training_Series__c</members>
-        <members>User</members>
-        <members>UserLicense</members>
-        <members>UserProvisioningRequest</members>
-        <members>VRS__c</members>
-        <members>WorkBadge</members>
-        <members>WorkBadgeDefinition</members>
-        <members>WorkThanks</members>
+        <members>dlrs__LookupChildAReallyReallyReallyBigBigName__c</members>
+        <members>dlrs__LookupChild__c</members>
+        <members>dlrs__LookupParent__c</members>
+        <members>dlrs__LookupRollupCalculateJob__c</members>
+        <members>dlrs__LookupRollupSummaryLog__c</members>
+        <members>dlrs__LookupRollupSummaryScheduleItems__c</members>
+        <members>dlrs__LookupRollupSummary__c</members>
+        <members>echosign_dev1__Agreement_Template__c</members>
+        <members>echosign_dev1__Attachment_Template__c</members>
+        <members>echosign_dev1__DocumentKeyMutex__c</members>
+        <members>echosign_dev1__EchoSignGroupMapping__c</members>
+        <members>echosign_dev1__EchoSign_User_Sync_Result__c</members>
+        <members>echosign_dev1__Field_Template__c</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping_Entry__c</members>
+        <members>echosign_dev1__Form_Field_Child_Mapping__c</members>
+        <members>echosign_dev1__Layer_Template__c</members>
+        <members>echosign_dev1__Library_Template__c</members>
+        <members>echosign_dev1__Recipient_Template__c</members>
+        <members>echosign_dev1__SIGN_AgreementEvent__c</members>
+        <members>echosign_dev1__SIGN_Agreement__c</members>
+        <members>echosign_dev1__SIGN_Data_Mapping__c</members>
+        <members>echosign_dev1__SIGN_Field_Mapping__c</members>
+        <members>echosign_dev1__SIGN_File_Mapping__c</members>
+        <members>echosign_dev1__SIGN_Form_Field_Import__c</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping_Entry__c</members>
+        <members>echosign_dev1__SIGN_Form_Field_Mapping__c</members>
+        <members>echosign_dev1__SIGN_Merge_Mapping__c</members>
+        <members>echosign_dev1__SIGN_Object_Mapping__c</members>
+        <members>echosign_dev1__SIGN_Recipients__c</members>
+        <members>echosign_dev1__SIGN_SignedAgreement__c</members>
+        <members>echosign_dev1__SIGN_Trigger__c</members>
+        <members>npe5__Affiliation__c</members>
+        <name>TopicsForObjects</name>
+    </types>
+    <types>
+        <members>Account.Only_Ops_Manages_Trainers</members>
+        <members>Account.Restrict_Changing_Ownership</members>
+        <members>Change_Request__c.Billing_DM_Requires_Existing_Contact</members>
+        <members>Contact.Only_Ops_Manages_Trainers</members>
+        <members>Contact.Restrict_Changing_Ownership</members>
+        <members>Lead.Restrict_Changing_Ownership</members>
+        <members>Opportunity.Close_Lost_requirments</members>
+        <members>Opportunity.Closed_Won_Billing_Currency</members>
+        <members>Opportunity.Closed_Won_Decision_Maker</members>
+        <members>Opportunity.Closed_Won_Fields_All</members>
+        <members>Opportunity.Closed_Won_Fields_All_Not_OS_License</members>
+        <members>Opportunity.Closed_Won_Fields_OS_Standard</members>
+        <members>Opportunity.Closed_Won_Fields_OS_Webinar</members>
+        <members>Opportunity.Closed_Won_Max_Attendees</members>
+        <members>Opportunity.Closed_Won_Number_of_Opp_Products</members>
+        <members>Opportunity.Closed_Won_Requirements_NEW</members>
+        <members>Opportunity.Closed_Won_Training_Location_Tax</members>
+        <members>Opportunity.Custom_Content_Must_Be_on_Custom_Opp</members>
+        <members>Opportunity.Lock_Onsite_Opportunity</members>
+        <members>Opportunity.On_site_Won_deals_require_detailed_info</members>
+        <members>Opportunity.Prevent_License_Without_NDA</members>
+        <members>Opportunity.Restrict_Changing_Ownership</members>
+        <members>Opportunity.Shipping_Contact_Needs_Address_Data</members>
+        <members>Opportunity.Training_Loc_Contact_Needs_Address_Data</members>
+        <members>OpportunityLineItem.Cannot_change_name_unless_Custom</members>
+        <members>OpportunityLineItem.no_Zero_amount_opp_products</members>
+        <members>Training_Event__c.Enter_Cancellation_Date</members>
+        <members>Training_Event__c.No_Sales_Rep_Edits_Once_Open</members>
+        <members>Training_Event__c.Ready_to_Ship_Requires_All_Shipping_Info</members>
+        <members>Training_Event__c.Training_Event_Status_Cannot_Be_Blank</members>
+        <name>ValidationRule</name>
+    </types>
+    <types>
+        <members>Account.AltavistaNews</members>
+        <members>Account.Create_NDA</members>
+        <members>Account.DUNS_Lookup</members>
+        <members>Account.GoogleMaps</members>
+        <members>Account.GoogleNews</members>
+        <members>Account.GoogleSearch</members>
+        <members>Account.HooversProfile</members>
+        <members>Account.YahooMaps</members>
+        <members>Campaign.ViewAllCampaignMembers</members>
+        <members>Campaign.ViewCampaignInfluenceReport</members>
+        <members>Contact.GoogleMaps</members>
+        <members>Contact.GoogleSearch</members>
+        <members>Contact.SendGmail</members>
+        <members>Contact.YahooMaps</members>
+        <members>Contact.YahooWeather</members>
+        <members>Lead.AltavistaNews</members>
+        <members>Lead.GoogleMaps</members>
+        <members>Lead.GoogleNews</members>
+        <members>Lead.GoogleSearch</members>
+        <members>Lead.HooversProfile</members>
+        <members>Lead.SendGmail</members>
+        <members>Lead.YahooMaps</members>
+        <members>Opportunity.Clone</members>
+        <members>Opportunity.Convert_to_Training_Event</members>
+        <members>Opportunity.Create_NDA</members>
+        <members>Opportunity.New_Opportunity</members>
+        <members>Opportunity.Training_Series_Creator</members>
+        <members>OpportunityLineItem.Add_Product</members>
+        <members>OpportunityLineItem.Edit_Product</members>
+        <members>Training_Event__c.Auto_Create_LOA</members>
+        <members>Training_Event__c.Auto_Create_Trainer_Paperwork</members>
+        <members>Training_Event__c.Create_LOA</members>
+        <members>Training_Event__c.Create_Pick_Ticket</members>
+        <members>Training_Event__c.Create_Trainer_Paperwork</members>
+        <members>Training_Event__c.Training_Event_Conga</members>
+        <name>WebLink</name>
+    </types>
+    <types>
+        <members>Change_Request__c</members>
+        <members>Content_Item__c</members>
+        <members>Custom_Content_Item__c</members>
+        <members>Lead</members>
+        <members>Opportunity</members>
+        <members>OpportunityLineItem</members>
+        <members>Post_Survey__c</members>
+        <members>Topic__c</members>
+        <members>Training_Event_Dissats__c</members>
+        <members>Training_Event_Internal_Survey__c</members>
+        <members>Training_Event__c</members>
         <name>Workflow</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Change_Request__c.New_Change_Request_Content</members>
+        <members>Change_Request__c.New_Change_Request_Financial</members>
+        <members>Change_Request__c.New_Change_Request_Location</members>
+        <members>Change_Request__c.New_Change_Request_People</members>
+        <members>Change_Request__c.New_Change_Request_Scheduling</members>
+        <members>Change_Request__c.New_Change_Request_Webinar</members>
+        <members>Change_Request__c.Notice_of_Change_Request_Created</members>
+        <members>Content_Item__c.Notice_of_Content_Item_Changed_by_Production</members>
+        <members>Content_Item__c.Notice_of_Content_Item_to_Design</members>
+        <members>Content_Item__c.Notice_of_Content_Item_to_Production</members>
+        <members>Content_Item__c.Notice_of_New_Content_Item_to_IDs</members>
+        <members>Content_Item__c.Notice_of_New_Content_Item_to_IDs_3rd_Party</members>
+        <members>Custom_Content_Item__c.Notice_of_Custom_Content_Item_Changed_by_Production</members>
+        <members>Custom_Content_Item__c.Notice_of_Custom_Content_Item_to_Production</members>
+        <members>Custom_Content_Item__c.Notice_of_New_Custom_Content_Item</members>
+        <members>Custom_Content_Item__c.Notice_of_New_Custom_Content_Item_3rd_Party</members>
+        <members>Lead.Lead_Owner_and_Manager_Alert</members>
+        <members>Opportunity.Closed_Won_Notification_Below_Manager_Purview</members>
+        <members>Opportunity.Closed_Won_Notification_Ready_to_Convert</members>
+        <members>Opportunity.Closed_Won_Notification_Sales_Manager_Transition</members>
+        <members>Post_Survey__c.Notify_Opp_Owner_of_Results</members>
+        <members>Topic__c.Alert_Andrea_Strong_to_topic_changes</members>
+        <members>Topic__c.Notification_of_Topic_Modality_Content_Licence</members>
+        <members>Training_Event_Dissats__c.New_Disssat_Created</members>
+        <members>Training_Event_Internal_Survey__c.Send_notice_of_new_TE_internal_survey</members>
+        <members>Training_Event__c.Custom_Training_Event_Change_Notif</members>
+        <members>Training_Event__c.Notice_of_New_Training_Event</members>
+        <members>Training_Event__c.Notice_of_New_Training_Event_Urgent</members>
+        <members>Training_Event__c.Notification_of_Canceled_TE</members>
+        <members>Training_Event__c.Send_Internal_Post_TE_Survey</members>
+        <members>Training_Event__c.Send_Post_Training_Event_Survey</members>
+        <members>Training_Event__c.TE_Webinar_Recording_Required</members>
+        <name>WorkflowAlert</name>
+    </types>
+    <types>
+        <members>Content_Item__c.Set_Content_Item_Name</members>
+        <members>Custom_Content_Item__c.Fill_Content_Team_Due_Date</members>
+        <members>Custom_Content_Item__c.Fill_Production_Due_Date</members>
+        <members>Custom_Content_Item__c.Update_Pre_sale_field</members>
+        <members>Lead.Lead_gen_quota</members>
+        <members>Lead.Set_Manager_Email_Field</members>
+        <members>Lead.Update_Owner_s_Mgr_Email_field</members>
+        <members>Opportunity.Add_Quarter_Sold_FY16_FY18</members>
+        <members>Opportunity.Auto_fill_Manager_ID</members>
+        <members>Opportunity.Close_Lost_Onsite</members>
+        <members>Opportunity.Close_Onsite_Today</members>
+        <members>Opportunity.Closed_Lost_Notes</members>
+        <members>Opportunity.Closed_Lost_Reason</members>
+        <members>Opportunity.Manager_Name</members>
+        <members>Opportunity.Set_Closed_Date_to_Today</members>
+        <members>Opportunity.Set_Manager_Email_Field</members>
+        <members>Opportunity.Set_Record_Type_as_Onsite_Locked</members>
+        <members>Opportunity.Update_With_Record_Type</members>
+        <members>OpportunityLineItem.ClearLocationForCustomLite</members>
+        <members>OpportunityLineItem.Set_Workbook_ID</members>
+        <members>OpportunityLineItem.Set_Workbook_Location</members>
+        <members>Post_Survey__c.TE_Naming_Convention</members>
+        <members>Topic__c.Set_Topic_Name</members>
+        <members>Topic__c.Set_Total_Price</members>
+        <members>Topic__c.check_clear_product_lookup</members>
+        <members>Topic__c.update_product_code</members>
+        <members>Topic__c.update_product_name</members>
+        <members>Topic__c.update_workbook_id</members>
+        <members>Topic__c.update_workbook_location</members>
+        <members>Training_Event_Dissats__c.TE_Dissat_Resolved_Date</members>
+        <members>Training_Event_Dissats__c.Update_TE_Dissat_Status_to_Open</members>
+        <members>Training_Event_Dissats__c.Update_TE_Dissat_Status_to_Resolved</members>
+        <members>Training_Event__c.Clear_Start_Date_when_Date_Options_Exist</members>
+        <members>Training_Event__c.Pre_FY15_Qtr_Performed_Update</members>
+        <members>Training_Event__c.Training_Date_Is_Changed_Count</members>
+        <members>Training_Event__c.Update_Conversion_Rate</members>
+        <name>WorkflowFieldUpdate</name>
+    </types>
+    <types>
+        <members>Lead.IS_Lead_Convert_to_Opp</members>
+        <members>Lead.Lead_Qualified_Status</members>
+        <members>Opportunity.IS_Opp_Closed_Won</members>
+        <name>WorkflowOutboundMessage</name>
+    </types>
+    <types>
+        <members>Change_Request__c.Change Request Completed</members>
+        <members>Change_Request__c.New Change Request - Content</members>
+        <members>Change_Request__c.New Change Request - Financial</members>
+        <members>Change_Request__c.New Change Request - Location</members>
+        <members>Change_Request__c.New Change Request - People</members>
+        <members>Change_Request__c.New Change Request - Scheduling</members>
+        <members>Change_Request__c.New Change Request - Webinar</members>
+        <members>Content_Item__c.Notice of Content Item Created - Post-Sales</members>
+        <members>Content_Item__c.Notice of Content Item Created - Post-Sales 3rd Party</members>
+        <members>Content_Item__c.Notice of Content Item Created - Pre-Sales</members>
+        <members>Content_Item__c.Notice of Content Item Production Status Change</members>
+        <members>Content_Item__c.Notice of Content Item sent to Design</members>
+        <members>Content_Item__c.Notice of Content Item sent to Production</members>
+        <members>Content_Item__c.Set Content Item Name</members>
+        <members>Custom_Content_Item__c.Auto-fill Due Dates</members>
+        <members>Custom_Content_Item__c.Auto-fill Pre-sale Request</members>
+        <members>Custom_Content_Item__c.Notice of CCI to Production</members>
+        <members>Custom_Content_Item__c.Notice of Custom Content Item Created</members>
+        <members>Custom_Content_Item__c.Notice of Custom Content Item Production Status Change</members>
+        <members>Custom_Content_Item__c.Notice of Custom Content Item sent to Production</members>
+        <members>Lead.Fill Lead Gen Quota</members>
+        <members>Lead.IS - Lead Convert to Opp</members>
+        <members>Lead.IS - Lead Qualified Status</members>
+        <members>Lead.Send Owner and Manager Email Alert</members>
+        <members>Lead.Set Manager Email Field</members>
+        <members>Opportunity.Auto-close Date</members>
+        <members>Opportunity.Auto-fill Owner%27s Manager</members>
+        <members>Opportunity.Closed Won Notification - Below Manager Purview</members>
+        <members>Opportunity.Closed Won Notification - Ready to Convert</members>
+        <members>Opportunity.Closed Won Notification - Sales Manager %2F Transition</members>
+        <members>Opportunity.Closed-Won Field Updates</members>
+        <members>Opportunity.IS - Opp Closed Won</members>
+        <members>Opportunity.Set Closed Date to Today</members>
+        <members>Opportunity.Set Manager Email Field</members>
+        <members>Opportunity.When auto close date updated</members>
+        <members>OpportunityLineItem.ClearLocationForCustomLite</members>
+        <members>OpportunityLineItem.Set Workbook Location and ID</members>
+        <members>Post_Survey__c.Notify Opp Owner of Results</members>
+        <members>Post_Survey__c.TE Survey Naming</members>
+        <members>Topic__c.Content License Topic</members>
+        <members>Topic__c.Set Topic Name</members>
+        <members>Topic__c.Set Total Price</members>
+        <members>Topic__c.Update to topic with content pack</members>
+        <members>Topic__c.update product fields on topic</members>
+        <members>Training_Event_Dissats__c.Notice of TE Dissat created</members>
+        <members>Training_Event_Dissats__c.TE Dissat Auto update Open Dissats</members>
+        <members>Training_Event_Dissats__c.TE Dissat Auto update Resolved Dissats</members>
+        <members>Training_Event_Dissats__c.TE Dissat Resolved</members>
+        <members>Training_Event_Internal_Survey__c.New TE Internal Survey created</members>
+        <members>Training_Event__c.Clear Start Date when Date Options Exist</members>
+        <members>Training_Event__c.Custom Training Event Change</members>
+        <members>Training_Event__c.Notice of TE Created</members>
+        <members>Training_Event__c.Notice of TE Created - Urgent Due to Timing</members>
+        <members>Training_Event__c.Quarter Performed Update</members>
+        <members>Training_Event__c.Send Post Training Event Survey</members>
+        <members>Training_Event__c.TE Webinar Recording Required</members>
+        <members>Training_Event__c.TE canceled or TBD</members>
+        <members>Training_Event__c.Training Date Is Changed Count Calculation</members>
+        <members>Training_Event__c.Update Conversion Rate</members>
+        <name>WorkflowRule</name>
+    </types>
+    <types>
+        <members>Opportunity.Opportunity_Resubmit</members>
+        <name>WorkflowTask</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Activities</members>
+        <members>Address</members>
+        <members>BusinessHours</members>
+        <members>Case</members>
+        <members>Contract</members>
+        <members>FileUploadAndDownloadSecurity</members>
+        <members>Forecasting</members>
+        <members>Ideas</members>
+        <members>Macro</members>
+        <members>Mobile</members>
+        <members>Name</members>
+        <members>Opportunity</members>
+        <members>Order</members>
+        <members>OrgPreference</members>
+        <members>PathAssistant</members>
+        <members>PersonalJourney</members>
+        <members>Product</members>
+        <members>Quote</members>
+        <members>Search</members>
+        <members>Security</members>
+        <members>SocialCustomerService</members>
         <name>Settings</name>
     </types>
     <version>36.0</version>
